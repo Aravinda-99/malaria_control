@@ -8,7 +8,7 @@
     /* Styles for the Malaria Info Section            */
     /* =============================================== */
     .malaria-wrapper {
-        background-color: #e9eef2;
+        background-color:rgb(252, 252, 252);
         padding: 2rem;
         display: flex;
         justify-content: center;
@@ -43,7 +43,7 @@
 
     .right-column {
         flex: 3;
-        background-color: #f8f9fa;
+        background-color:rgb(228, 213, 199);
         border-radius: 20px;
         padding: 4rem;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -64,11 +64,11 @@
     .right-column-text h2 {
         font-size: 2rem;
         font-weight: 700;
-        color: #d9534f;
+        color:rgb(133, 42, 39);
         margin-top: 0;
         margin-bottom: 1.5rem;
         padding-bottom: 0.75rem;
-        border-bottom: 3px solid #d9534f;
+        border-bottom: 3px solid rgb(133, 42, 39);;
         display: inline-block;
     }
 
@@ -113,8 +113,8 @@
         width: 100%;
         height: auto;
         border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        border: 1px solid #e0e0e0;
+       
+       
     }
 
     @media (max-width: 992px) {
@@ -145,8 +145,9 @@
         <div class="right-column">
             <div class="right-column-content">
                 <div class="right-column-images">
-                    <img src="asset/image/mosq.png" alt="Mosquito Prevention" class="strategy-img">
-                    <img src="asset/image/s1.png" alt="Malaria Control Strategy" class="strategy-img">
+                    <img src="asset/image/m1.png" alt="Mosquito Prevention" class="strategy-img">
+                    <br><br><br>
+                    <img src="asset/image/m2.png" alt="Malaria Control Strategy" class="strategy-img">
                 </div>
                 <div class="right-column-text">
                     <h2>Strategies</h2>
