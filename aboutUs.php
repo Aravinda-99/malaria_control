@@ -22,7 +22,8 @@
         /* Main Header Container */
         .about-header-container {
             width: 100%;
-            border-bottom: 3px solid #8B0000; /* Dark red border at the very bottom */
+            border-bottom: none;
+            margin: 0;
         }
 
         /* Top decorative red bar */
@@ -33,7 +34,7 @@
 
         /* Hero Section with Background Image */
         .about-hero-section {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://placehold.co/1920x600/6c757d/ffffff?text=Your+Image+Here');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('asset/image/Container.png');
             height: 60vh;
             background-position: center;
             background-repeat: no-repeat;
@@ -45,8 +46,9 @@
             align-items: center;
             text-align: center;
             color: white;
-            border-top: 2px solid #fff;
+            border-top: none;
             border-bottom: 2px solid #fff;
+            margin: 0;
         }
 
         .about-hero-section h1 {
@@ -155,24 +157,25 @@
         .about-vision-mission-container .text-content {
             background-color: #800000;
             color: white;
-            padding: 4rem;
+            padding: 2rem;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
+            text-align: center;
         }
 
         .about-vision-mission-container .text-content h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
         }
 
         .about-vision-mission-container .text-content p {
-            font-size: 1.1rem;
-            line-height: 1.6;
+            font-size: 1rem;
+            line-height: 1.4;
         }
 
         .about-vision-mission-container .image-content img {
             width: 100%;
-            height: 100%;
+            height: 300px;
             object-fit: cover;
             display: block;
         }
@@ -280,6 +283,104 @@
             }
         }
 
+        /* New styles for the principles section */
+        .principles-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 0;
+            background-color: #ffffff;
+        }
+
+        .principles-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .principles-content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .principles-text-content {
+            flex: 1;
+            padding-right: 2rem;
+        }
+
+        .principles-text-content h2 {
+            font-size: 2rem;
+            color: #800000;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #800000;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .principles-text-content p {
+            
+            color:rgb(5, 5, 5);
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+        }
+
+        .principles-text-content ul {
+            list-style-position: outside;
+            padding-left: 1.5rem;
+        }
+
+        .principles-text-content ul li {
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            line-height: 1.6;
+            color:rgb(80, 79, 79);
+        }
+
+        .principles-image-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .principles-image {
+            margin-top: 3rem;
+            margin-left: 3rem;
+            width: 110%;
+            height: 110%;
+            object-fit: cover;
+            display: block;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 992px) {
+            .principles-section {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .principles-content-wrapper {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .principles-text-content {
+                padding-right: 0;
+                padding-bottom: 2rem;
+                width: 100%;
+            }
+            .principles-text-content h2 {
+                font-size: 2rem;
+            }
+            .principles-image-content {
+                width: 100%;
+                padding: 1rem;
+            }
+        }
+
 
     </style>
 </head>
@@ -295,8 +396,6 @@
         <nav class="about-nav">
             <ul>
                 <li><a href="#vision">Vision & Mission</a></li>
-                <li><a href="#principles">Guiding Principles</a></li>
-                <li><a href="#malaria-info">Malaria Info</a></li>
                 <li><a href="#staff">Our Staff</a></li>
                 <li><a href="#structure">Organizational Structure</a></li>
                 <li><a href="#officers">Regional Officers</a></li>
@@ -315,7 +414,7 @@
                 <p>To Create A Healthier Sri Lanka Where Every Individual Has Access To Compassionate, Reliable, And Preventive Healthcare, Empowering Communities To Thrive Free From Disease.</p>
             </div>
             <div class="image-content">
-                <img src="https://placehold.co/800x400/000000/ffffff?text=Vision+Image" alt="Eye representing vision">
+                <img src="asset/image/v1.png" alt="Eye representing vision">
             </div>
         </section>
 
@@ -325,50 +424,37 @@
                 <p>To Deliver Patient-Centered Healthcare Through Dedicated Service, Modern Medical Practices, And Community Outreach — With A Focus On Disease Prevention, Early Detection, And Education, Especially In Vulnerable Rural Areas.</p>
             </div>
             <div class="image-content">
-                <img src="https://placehold.co/800x400/1e3a8a/ffffff?text=Mission+Image" alt="Target representing mission">
+                <img src="asset/image/v2.png" alt="Target representing mission">
             </div>
         </section>
 
-        <section id="principles" class="guiding-principles-container">
-            <div class="principles-text">
-                <h2>Guiding principles</h2>
-                <p>The text is difficult to read in the image you provided. I have transcribed it as best I can below. Please review and correct it.</p>
-                <ul>
-                    <li>Unwavering dedication to evidence-based medicine, ensuring scientifically proven solutions and exceptional technological advancements are at the forefront of our NGO's Care Alliance Programme and that the RDNS squad therapy is an essential part of all interventions and activities.</li>
-                    <li>Strive to eliminate access disparities in quality melanoma diagnosis and prevention.</li>
-                    <li>Emphasis on increasing knowledge of the entire population.</li>
-                    <li>Absolute Adherence.</li>
-                    <li>Giving Dignity.</li>
-                    <li>Bring social justice to all patients.</li>
-                    <li>Unwavering respect.</li>
-                </ul>
-            </div>
-            <div class="principles-image">
-                <img src="https://placehold.co/800x600/adb5bd/495057?text=Guiding+Principles+Image" alt="Team looking over a map with a magnifying glass">
+        <section id="principles" class="principles-container">
+            <div class="principles-section">
+                <div class="principles-content-wrapper">
+                        <div class="principles-text-content">
+                         <h2>Guiding Principles</h2>
+                         <p>The National Malaria Strategy is based on the following guiding principles:</p>
+                         <ul>
+                             <li>Using locally appropriate, evidence based, environmentally friendly policies and strategies conforming to recommendations of WHO's Global Malaria Programme and the SEA Regional strategy for prevention of re-establishment of malaria</li>
+                             <li>Equity</li>
+                             <li>Universal access to quality malaria diagnosis, treatment and prevention</li>
+                             <li>Emphasis on coverage of vulnerable populations</li>
+                             <li>Value for money</li>
+                             <li>Good governance</li>
+                             <li>Being sensitive to rights of people</li>
+                             <li>Being gender responsive</li>
+                         </ul>
+                     </div>
+                    <div class="principles-image-content">
+                        <img src="asset/image/p1.png" alt="Team looking over a map with a magnifying glass" class="principles-image">
+                    </div>
+                </div>
             </div>
         </section>
 
         <?php include 'about/malaria.php'; ?>
-
-    <!-- Strategies 2-->
-        <section id="principles" class="guiding-principles-container">
-            <div class="principles-text">
-                <h2>Guiding principles</h2>
-                <p>The text is difficult to read in the image you provided. I have transcribed it as best I can below. Please review and correct it.</p>
-                <ul>
-                    <li>Unwavering dedication to evidence-based medicine, ensuring scientifically proven solutions and exceptional technological advancements are at the forefront of our NGO's Care Alliance Programme and that the RDNS squad therapy is an essential part of all interventions and activities.</li>
-                    <li>Strive to eliminate access disparities in quality melanoma diagnosis and prevention.</li>
-                    <li>Emphasis on increasing knowledge of the entire population.</li>
-                    <li>Absolute Adherence.</li>
-                    <li>Giving Dignity.</li>
-                    <li>Bring social justice to all patients.</li>
-                    <li>Unwavering respect.</li>
-                </ul>
-            </div>
-            <div class="principles-image">
-                <img src="https://placehold.co/800x600/adb5bd/495057?text=Guiding+Principles+Image" alt="Team looking over a map with a magnifying glass">
-            </div>
-        </section>
+        <?php include 'about/strategies.php'; ?>
+        
 
     </main>
     <?php include 'include/footer.php'; ?>
