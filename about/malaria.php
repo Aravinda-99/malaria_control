@@ -119,21 +119,61 @@
 
     @media (max-width: 992px) {
         .malaria-wrapper {
-             padding: 1rem;
+            padding: 1rem;
         }
         .infographic-section {
             flex-direction: column;
+            gap: 1.25rem;
         }
         .right-column {
             padding: 2rem;
+            min-width: unset;
+            width: 100%;
         }
         .right-column-content {
             flex-direction: column;
+            gap: 1.25rem;
         }
         .right-column-images {
             flex: none;
             width: 100%;
+            margin-bottom: 0.5rem;
+        }
+        .right-column-text {
+            padding-left: 0;
+        }
+        .right-column h2,
+        .right-column-text h2 {
+            font-size: 1.6rem;
+        }
+        .objective-text {
+            font-size: 0.95rem;
             margin-bottom: 1rem;
+        }
+        .strategies-list {
+            font-size: 0.95rem;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .right-column {
+            padding: 1.25rem;
+            border-radius: 12px;
+        }
+        .right-column-content {
+            gap: 1rem;
+        }
+        /* Hide the two images on small mobile screens */
+        .right-column-images {
+            display: none;
+        }
+        .right-column h2,
+        .right-column-text h2 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+        .strategy-img {
+            border-radius: 6px;
         }
     }
 </style>

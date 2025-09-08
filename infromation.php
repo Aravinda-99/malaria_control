@@ -29,7 +29,7 @@
             text-align: center;
             /* Background Image & Overlay */
             position: relative;
-            background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba9996a?q=80&w=2070&auto=format&fit=crop');
+            background-image: url('asset/image/infro.png');
             background-size: cover;
             background-position: center;
             color: white;
@@ -246,6 +246,58 @@
                 flex-direction: column;
                 align-items: center;
             }
+        }
+
+        /* --- Mobile-friendly table layout (stacked rows) --- */
+        @media (max-width: 600px) {
+            .table-wrapper {
+                overflow: visible;
+            }
+            .data-table thead {
+                display: none;
+            }
+            .data-table,
+            .data-table tbody,
+            .data-table tr,
+            .data-table td {
+                display: block;
+                width: 100%;
+            }
+            .data-table tr {
+                background: #fff;
+                border: 1px solid #e9ecef;
+                border-radius: 8px;
+                margin-bottom: 12px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+            }
+            .data-table td {
+                border-bottom: 1px solid #f1f3f5;
+                padding: 12px 16px 12px 46%;
+                position: relative;
+                text-align: left;
+            }
+            .data-table td:last-child {
+                border-bottom: none;
+            }
+            .data-table td::before {
+                position: absolute;
+                left: 12px;
+                top: 12px;
+                width: 32%;
+                color: #6c757d;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.3px;
+                font-size: 0.75rem;
+                content: attr(data-label);
+            }
+            /* Provide labels for each column */
+            .data-table tbody tr td:nth-child(1) { --label: '#'; }
+            .data-table tbody tr td:nth-child(2) { --label: 'Issued Date'; }
+            .data-table tbody tr td:nth-child(3) { --label: 'Circular No'; }
+            .data-table tbody tr td:nth-child(4) { --label: 'Circular Topic'; }
+            .data-table tbody tr td:nth-child(n) { position: relative; }
+            .data-table tbody tr td:nth-child(n)::before { content: var(--label); }
         }
     </style>
 </head>
