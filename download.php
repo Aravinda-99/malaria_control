@@ -271,6 +271,23 @@
             }
              .filter-bar {
                 flex-direction: column;
+                align-items: stretch;
+            }
+            .filter-bar input[type="text"],
+            .filter-bar select,
+            .filter-bar .search-btn {
+                width: 100%;
+                flex: 1 1 100%;
+            }
+            .filter-bar input[type="text"] {
+                flex-basis: 100%;
+            }
+            .filter-bar select:nth-of-type(1),
+            .filter-bar select:nth-of-type(2) {
+                flex-basis: 100%;
+            }
+            .filter-bar .search-btn {
+                margin-top: 0.25rem;
             }
         }
 

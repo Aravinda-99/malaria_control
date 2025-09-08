@@ -378,6 +378,16 @@
             .principles-image-content {
                 width: 100%;
                 padding: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .principles-image {
+                margin: 0;
+                width: 100%;
+                height: auto;
+                max-width: 700px;
+                border-radius: 5px;
             }
         }
 
