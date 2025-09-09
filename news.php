@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News - Malaria Control</title>
+    <link rel="icon" type="image/png" href="asset/image/fav.png">
+    <link rel="shortcut icon" type="image/png" href="asset/image/fav.png">
     <style>
         /* --- Basic Reset & Body Styling --- */
         body {
@@ -329,7 +331,7 @@
                 <!-- News Card 4 -->
                 <div class="news-card">
                     <div class="news-image">
-                        <img src="asset/image/new2.jpg" alt="Vector Control">
+                        <img src="asset/image/sramadana.jpg" alt="Vector Control">
                         <div class="news-date-tag">Nov - 12 - 2024</div>
                     </div>
                     <div class="news-content">
@@ -349,7 +351,7 @@
                 <!-- News Card 5 -->
                 <div class="news-card">
                     <div class="news-image">
-                        <img src="asset/image/new6.jpg" alt="Training Program">
+                        <img src="asset/image/training.jpg" alt="Training Program">
                         <div class="news-date-tag">Nov - 10 - 2024</div>
                     </div>
                     <div class="news-content">
@@ -389,7 +391,10 @@
                 <!-- News Card 7 -->
                 <div class="news-card">
                     <div class="news-image">
-                        <img src="asset/image/new7.jpg" alt="International Collaboration">
+                        <img src="asset/image/international.jpg
+                        
+                        
+                        " alt="International Collaboration">
                         <div class="news-date-tag">Nov - 5 - 2024</div>
                     </div>
                     <div class="news-content">

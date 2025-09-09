@@ -396,7 +396,7 @@
             $current_page = basename($_SERVER['PHP_SELF']);
             ?>
             <ul class="nav-links">
-                <li><a href="index.php" <?php echo ($current_page == 'index.php') ? 'class="active"' : ''; ?>>Home</a></li>
+                <li><a href="home.php" <?php echo ($current_page == 'index.php') ? 'class="active"' : ''; ?>>Home</a></li>
                 <li onclick="if(window.innerWidth<=768){this.classList.toggle('open');}">
                     <a href="aboutUs.php" <?php echo ($current_page == 'aboutUs.php') ? 'class="active"' : ''; ?>>About Us <span class="dropdown-arrow">▼</span></a>
                     <ul class="dropdown-menu">
