@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Review Committee</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="asset/image/fav.png">
-    <link rel="shortcut icon" type="image/png" href="asset/image/fav.png">
+    <title>Regional Malaria Officers</title>
     <style>
         /* Staff Page Specific Styles - Using unique prefixes to avoid conflicts */
         body.staff-page-body {
@@ -69,7 +66,7 @@
         }
 
         .content-container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
             line-height: 1.6;
         }
@@ -132,18 +129,12 @@
 <?php include 'include/header.php'; ?>
 
 <section class="staff-hero-section">
-    <h1>Case Review Committee</h1>
+    <h1>Organizational Structure</h1>
     <p>Anti Malaria Campaign - Sri Lanka</p>
 </section>
 
-<section class="content-section">
-    <div class="content-container">
-        <h2>The Case Review Committee (CRC)</h2>
-        <p>
-            The Case Review Committee (CRC), a subcommittee of the Technical Support Group (TSG), reviews activities carried out when a case is reported and classifies all cases as per WHO classification. CRC consists of academic specialists in the fields of clinical medicine, parasitology, pharmacology, public health and a former WHO consultant for malaria control as external members. From Anti Malaria Campaign, the director, consultant community physicians, entomologists, parasitologists, medical officer in charge of case surveillance and other medical officers will participate in CRC meetings. The CRC meets once a month and reviews technical details of each and every case reported up to that particular date and the response. The committee identifies any lapses of the response and advises accordingly.
-        </p>
-    </div>
-</section>
+
+
 <?php include 'include/footer.php'; ?>
 </body>
 </html>

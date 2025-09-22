@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Regional Malaria Officers</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="asset/image/fav.png">
+    <link rel="shortcut icon" type="image/png" href="asset/image/fav.png">
     <style>
         /* Staff Page Specific Styles - Using unique prefixes to avoid conflicts */
         body.staff-page-body {
