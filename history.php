@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>History of Anti Malaria Campaign</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="asset/image/fav.png">
+    <link rel="shortcut icon" type="image/png" href="asset/image/fav.png">
     <style>
         /* Base Page Styles */
         body.staff-page-body {
