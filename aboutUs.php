@@ -409,13 +409,13 @@
         <nav class="about-nav">
             <ul>
                 <li><a href="#vision">Vision & Mission</a></li>
-                <li><a href="#staff">Our Staff</a></li>
-                <li><a href="#structure">Organizational Structure</a></li>
-                <li><a href="#officers">Regional Officers</a></li>
-                <li><a href="#support">Technical Support Group</a></li>
-                <li><a href="#review">Case Review Community</a></li>
-                <li><a href="#history">History</a></li>
-                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="ourStaf.php">Our Staff</a></li>
+                <li><a href="organizationStructure.php">Organizational Structure</a></li>
+                <li><a href="regional-malaria-office.php">Regional Officers</a></li>
+                <li><a href="tsg.php">Technical Support Group</a></li>
+                <li><a href="crc.php">Case Review Community</a></li>
+                <li><a href="history.php">History</a></li>
+                <li><a href="imageGallary.php">Gallery</a></li>
             </ul>
         </nav>
     </header>

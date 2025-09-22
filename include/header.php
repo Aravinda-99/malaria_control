@@ -398,16 +398,22 @@
             <ul class="nav-links">
                 <li><a href="home.php" <?php echo ($current_page == 'index.php') ? 'class="active"' : ''; ?>>Home</a></li>
                 <li onclick="if(window.innerWidth<=768){this.classList.toggle('open');}">
-                    <a href="aboutUs.php" <?php echo ($current_page == 'aboutUs.php') ? 'class="active"' : ''; ?>>About Us <span class="dropdown-arrow">▼</span></a>
+                    <a href="aboutUs.php" <?php echo ($current_page == 'aboutUs.php' || $current_page == 'ourStaf.php' || $current_page == 'organizationStructure.php' || $current_page == 'regional-malaria-office.php' || $current_page == 'tsg.php' || $current_page == 'crc.php' || $current_page == 'history.php' || $current_page == 'imageGallary.php') ? 'class="active"' : ''; ?>>About Us <span class="dropdown-arrow">▼</span></a>
                     <ul class="dropdown-menu">
                         <li><a href="aboutUs.php#vision-mission">Vision & Mission</a></li>
-                        <li><a href="aboutUs.php#staff">Our Staff</a></li>
-                        <li><a href="aboutUs.php#structure">Organizational Structure</a></li>
-                        <li><a href="aboutUs.php#regional">Regional Officers</a></li>
-                        <li><a href="aboutUs.php#technical">Technical Support Group</a></li>
-                        <li><a href="aboutUs.php#case-review">Case Review Community</a></li>
-                        <li><a href="aboutUs.php#history">History</a></li>
-                        <li><a href="aboutUs.php#gallery">Gallery</a></li>
+                        <li><a href="ourStaf.php">Our Staff</a></li>
+                        <li><a href="organizationStructure.php">Organizational Structure</a></li>
+                        <li><a href="regional-malaria-office.php">Regional Officers</a></li>
+                        <li><a href="tsg.php">Technical Support Group</a></li>
+                        <li><a href="crc.php">Case Review Community</a></li>
+                        <li><a href="history.php">History</a></li>
+                        <li>
+                            <a href="aboutUs.php#gallery">Gallery <span class="dropdown-arrow">▶</span></a>
+                            <ul class="sub-dropdown">
+                                <li><a href="videoGallery.php">Video Gallery</a></li>
+                                <li><a href="imageGallary.php">Photos Gallery</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <li onclick="if(window.innerWidth<=768){this.classList.toggle('open');}">
