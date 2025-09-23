@@ -64,7 +64,7 @@
         }
 
         .read-more-btn {
-            background-color: #6a0000;
+            background-color:rgb(1, 59, 18);
             color: #fff;
             text-decoration: none;
             padding: 0.8rem 2rem;
@@ -76,7 +76,7 @@
         }
 
         .read-more-btn:hover {
-            background-color: #800000;
+            background-color:rgb(1, 97, 30);
         }
 
         /* --- Info Cards --- */
@@ -89,7 +89,7 @@
         }
 
         .info-card {
-            background-color: #6a0000;
+            background-color: rgb(1, 59, 18);
             color: #fff;
             padding: 2rem;
             border-radius: 10px;
@@ -114,7 +114,7 @@
         }
 
         .doctor-card {
-            background-color: #6a0000;
+            background-color: rgb(1, 59, 18);
             color: #fff;
             border: none;
             box-shadow: none;
@@ -167,7 +167,7 @@
         }
 
         .slider-dots span.active {
-            background-color: #fff;
+            background-color: rgb(1, 109, 33);
             border-color: #fff;
         }
 
@@ -316,8 +316,8 @@
 }
 
 .section-header .read-more-link {
-    border: 1px solid #8b0000; /* Darker red for better visibility */
-    color: #8b0000;
+    border: 1px solid rgb(1, 59, 18); /* Darker red for better visibility */
+    color: rgb(1, 59, 18);
     padding: 0.6rem 1.2rem;
     border-radius: 20px;
     text-decoration: none;
@@ -326,7 +326,7 @@
 }
 
 .section-header .read-more-link:hover {
-    background-color: #8b0000;
+    background-color: rgb(1, 59, 18);
     color: #fff;
 }
 
@@ -403,7 +403,7 @@
 
 .news-card-content {
     /* CHANGED: Replaced border with a background color */
-    background-color: #6a0000;
+    background-color: rgb(1, 59, 18);
     color: #fff; /* CHANGED: Set text color to white */
     padding: 1.5rem;
     position: relative; /* ADDED: For positioning the arrow */
@@ -462,7 +462,7 @@
 }
 
 .slider-dots span.active {
-    background-color: #6a0000;
+    background-color: rgb(0, 219, 66);
 }
         
         .service-card-content {
@@ -540,7 +540,7 @@
             color: #31708f;
         }
         .calendar-grid .day.selected-start, .calendar-grid .day.selected-end {
-            background-color: #6a0000;
+            background-color: rgb(1, 59, 18);
             color: #fff;
         }
         .calendar-grid .day.in-range {
@@ -563,7 +563,7 @@
             transition: all 0.3s;
         }
         .event-item.active {
-            background-color: #6a0000;
+            background-color: rgb(1, 59, 18);
             color: #fff;
         }
         .event-item .date {
@@ -591,7 +591,7 @@
         }
         .event-item .count {
             margin-left: auto;
-            background-color: #d9534f;
+            background-color:rgb(14, 122, 0);
             color: #fff;
             width: 30px;
             height: 30px;
@@ -603,7 +603,7 @@
         }
         .event-item.active .count {
             background-color: #fff;
-            color: #6a0000;
+            color:rgb(4, 106, 0);
         }
 
         /* --- Contact Section --- */
@@ -654,7 +654,7 @@
             box-sizing: border-box; /* align width end with inputs */
         }
         .contact-form button {
-            background-color: #6a0000;
+            background-color: rgb(1, 59, 18);
             color: #fff;
             border: none;
             padding: 0.8rem 2rem;
@@ -666,7 +666,7 @@
             justify-self: start;
         }
         .contact-form button:hover {
-            background-color: #800000;
+            background-color: rgb(0, 117, 35);
         }
         .map-container {
             flex: 1;

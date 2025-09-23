@@ -95,7 +95,7 @@
 
     .search-container button {
         border: none;
-        background-color: #6a0000; /* Dark maroon */
+        background-color: #013912; /* Dark maroon */
         color: white;
         padding: 0 1.2rem;
         cursor: pointer;
@@ -105,12 +105,12 @@
     }
     
     .search-container button:hover {
-        background-color: #800000;
+        background-color:rgb(1, 82, 25);
     }
 
     /* --- Navigation Bar Section --- */
     .header-nav {
-        background-color: #6a0000; /* Dark maroon */
+        background-color: #013912; /* Dark maroon */
         color: white;
         padding: 0 1rem; /* Padding on the sides */
     }
@@ -150,12 +150,12 @@
     }
 
     .nav-links a:hover {
-        background-color: #800000; /* Slightly lighter maroon on hover */
+        background-color: rgb(1, 82, 25); /* Slightly lighter maroon on hover */
     }
 
     /* --- Active/Current Page Styling --- */
     .nav-links a.active {
-        background-color: #800000;
+        background-color: rgb(1, 82, 25);
         position: relative;
     }
 
@@ -184,7 +184,7 @@
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: #6a0000;
+        background-color: rgb(1, 82, 25);
         min-width: 200px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         opacity: 0;
@@ -218,7 +218,7 @@
     }
 
     .dropdown-menu a:hover {
-        background-color: #800000;
+        background-color: rgb(0, 53, 16);
     }
 
     /* --- Sub-submenu Styles --- */
@@ -230,7 +230,7 @@
         position: absolute;
         top: 0;
         left: 100%;
-        background-color: #800000;
+        background-color: rgb(1, 82, 25);
         min-width: 180px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.3);
         opacity: 0;
@@ -258,11 +258,11 @@
     }
 
     .sub-dropdown a:hover {
-        background-color: #a00000;
+        background-color: rgb(0, 53, 16);
     }
 
     .staff-access-btn {
-        background-color: #a00000; /* Brighter red */
+        background-color: #15A800; /* Brighter red */
         color: white;
         text-decoration: none;
         padding: 0.75rem 1.5rem;
@@ -273,7 +273,7 @@
     }
 
     .staff-access-btn:hover {
-        background-color: #c00000;
+        background-color:rgb(14, 124, 0);
     }
 
     /* --- Responsive Design --- */
@@ -419,35 +419,35 @@
                 <li onclick="if(window.innerWidth<=768){this.classList.toggle('open');}">
                     <a href="service.php" <?php echo ($current_page == 'service.php') ? 'class="active"' : ''; ?>>Our Services <span class="dropdown-arrow">▼</span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="service.php#diagnosis">Diagnosis & Treatment</a></li>
-                        <li><a href="service.php#parasitological">Parasitological Surveillance</a></li>
-                        <li><a href="service.php#entomological">Entomological Surveillance</a></li>
-                        <li><a href="service.php#vector-control">Vector Control</a></li>
-                        <li><a href="service.php#risk-group">Risk Group & Public Awareness</a></li>
+                        <li><a href="service.php?service=diagnosis">Diagnosis & Treatment</a></li>
+                        <li><a href="service.php?service=parasitological">Parasitological Surveillance</a></li>
+                        <li><a href="service.php?service=entomological">Entomological Surveillance</a></li>
+                        <li><a href="service.php?service=vector">Vector Control</a></li>
+                        <li><a href="service.php?service=riskgroup">Risk Group & Public Awareness</a></li>
                     </ul>
                 </li>
                 <li><a href="traveler.php" <?php echo ($current_page == 'traveler.php') ? 'class="active"' : ''; ?>>Travelers</a></li>
                 <li onclick="if(window.innerWidth<=768){this.classList.toggle('open');}">
-                    <a href="download.php" <?php echo ($current_page == 'download.php') ? 'class="active"' : ''; ?>>Downloads <span class="dropdown-arrow">▼</span></a>
+                    <a href="download.php" <?php echo ($current_page == 'download.php' || $current_page == 'case-management.php' || $current_page == 'parasitology.php' || $current_page == 'entomology.php' || $current_page == 'vector-control.php' || $current_page == 'human-resource.php' || $current_page == 'rdt-distribution.php') ? 'class="active"' : ''; ?>>Downloads <span class="dropdown-arrow">▼</span></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="download.php#statistics">Statistics <span class="dropdown-arrow">▶</span></a>
                             <ul class="sub-dropdown">
-                                <li><a href="download.php#case-management">Case Management</a></li>
-                                <li><a href="download.php#parasitology">Parasitology</a></li>
-                                <li><a href="download.php#entomology">Entomology</a></li>
-                                <li><a href="download.php#vector-control">Vector Control</a></li>
-                                <li><a href="download.php#human-resources">Human Resources</a></li>
-                                <li><a href="download.php#rdt-distribution">RDT Distribution</a></li>
+                                <li><a href="case-management.php" <?php echo ($current_page == 'case-management.php') ? 'class="active"' : ''; ?>>Case Management</a></li>
+                                <li><a href="parasitology.php" <?php echo ($current_page == 'parasitology.php') ? 'class="active"' : ''; ?>>Parasitology</a></li>
+                                <li><a href="entomology.php" <?php echo ($current_page == 'entomology.php') ? 'class="active"' : ''; ?>>Entomology</a></li>
+                                <li><a href="#">Vector Control</a></li>
+                                <li><a href="human-resource.php" <?php echo ($current_page == 'human-resource.php') ? 'class="active"' : ''; ?>>Human Resources</a></li>
+                                <li><a href="#" <?php echo ($current_page == 'rdt-distribution.php') ? 'class="active"' : ''; ?>>RDT Distribution</a></li>
                             </ul>
                         </li>
-                        <li><a href="download.php#annual-reports">Annual Reports</a></li>
-                        <li><a href="download.php#circulars">Circulars</a></li>
-                        <li><a href="download.php#guidelines">Guidelines</a></li>
-                        <li><a href="download.php#iec-materials">IEC Materials</a></li>
-                        <li><a href="download.php#strategic-plan">Strategic Plan</a></li>
-                        <li><a href="download.php#e-newsletter">E Newsletter</a></li>
-                        <li><a href="download.php#annual-reports-2">Annual Reports</a></li>
+                        <li><a href="annual-reports.php" >Annual Reports</a></li>
+                        <li><a href="#">Circulars</a></li>
+                        <li><a href="guidelines.php">Guidelines</a></li>
+                        <li><a href="iec-materials.php">IEC Materials</a></li>
+                        <li><a href="strategic-plan.php">Strategic Plan</a></li>
+                        <li><a href="e-newsletter.php">E Newsletter</a></li>
+                        <li><a href="annual-reports.php">Annual Reports</a></li>
                     </ul>
                 </li>
                 <li onclick="if(window.innerWidth<=768){this.classList.toggle('open');}">

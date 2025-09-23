@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services Header</title>
+    <title>Our Services - Malaria Control</title>
     <link rel="icon" type="image/png" href="asset/image/fav.png">
     <link rel="shortcut icon" type="image/png" href="asset/image/fav.png">
+    <!-- Font Awesome icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         /* --- Basic Reset & Body Styling --- */
         body {
@@ -79,7 +81,7 @@
             position: relative; /* Ensure it's on top of the overlay */
             z-index: 2;
             width: 100%;
-            background-color:rgb(216, 216, 216);
+            background-color: rgb(216, 216, 216);
         }
 
         .main-nav ul {
@@ -232,8 +234,12 @@
 </head>
 <body>
 
-
     <?php include 'include/header.php'; ?>
+
+    <?php
+    // Get the active service from URL parameter
+    $service = isset($_GET['service']) ? $_GET['service'] : 'diagnosis';
+    ?>
 
     <section class="hero-section">
         <!-- This container holds the main heading and subheading -->
@@ -245,16 +251,43 @@
         <!-- Navigation Bar -->
         <nav class="main-nav">
             <ul>
-                <!-- The 'active' class highlights the current page link -->
-                <li class="active"><a href="#">Diagnosis &amp; Treatment</a></li>
-                <li><a href="#">Parasitological Surveillance</a></li>
-                <li><a href="#">Entomological Surveillance</a></li>
-                <li><a href="#">Vector Control</a></li>
-                <li><a href="#">Risk Group &amp; Public Awareness</a></li>
+                <li class="<?php echo ($service == 'diagnosis' || $service == '') ? 'active' : ''; ?>">
+                    <a href="service.php?service=diagnosis">Diagnosis &amp; Treatment</a>
+                </li>
+                <li class="<?php echo ($service == 'parasitological') ? 'active' : ''; ?>">
+                    <a href="service.php?service=parasitological">Parasitological Surveillance</a>
+                </li>
+                <li class="<?php echo ($service == 'entomological') ? 'active' : ''; ?>">
+                    <a href="service.php?service=entomological">Entomological Surveillance</a>
+                </li>
+                <li class="<?php echo ($service == 'vector') ? 'active' : ''; ?>">
+                    <a href="service.php?service=vector">Vector Control</a>
+                </li>
+                <li class="<?php echo ($service == 'riskgroup') ? 'active' : ''; ?>">
+                    <a href="service.php?service=riskgroup">Risk Group &amp; Public Awareness</a>
+                </li>
             </ul>
         </nav>
     </section>
 
+    <?php
+    // Load the appropriate service content based on the URL parameter
+    switch ($service) {
+        case 'parasitological':
+            include 'service/parasitological.php';
+            break;
+        case 'entomological':
+            include 'service/entomological.php';
+            break;
+        case 'vector':
+            include 'service/vector.php';
+            break;
+        case 'riskgroup':
+            include 'service/riskgroup.php';
+            break;
+        default:
+            // The Diagnosis & Treatment content is shown by default
+    ?>
     <!-- Diagnosis section (moved from service/serv.php) -->
     <section class="diagnosis-section">
         <h2 class="section-title">Early Diagnosis &amp; Case Management</h2>
@@ -276,14 +309,16 @@
         <ol>
             <li>Diagnosis is confirmed using the Rapid Diagnostic Test (RDT) and blood films and where necessary the PCR.</li>
             <li>A patient confirmed of having malaria should be admitted for inward treatment for at least 3 days. Information pertaining to case management and surveillance is obtained from the patient by the AMC staff within 24 hours of the confirmation of the diagnosis.</li>
-            <li>The case-based entomological and parasitological surveillance is commenced by the AMC staff within 48 hours of the confirmation of the diagnosis. Entomological surveillance is carried out in and around the patient’s residence to search and control vector mosquitoes. Parasitological surveillance is carried out in and around patient’s residence to screen for any malaria patients.</li>
+            <li>The case-based entomological and parasitological surveillance is commenced by the AMC staff within 48 hours of the confirmation of the diagnosis. Entomological surveillance is carried out in and around the patient's residence to search and control vector mosquitoes. Parasitological surveillance is carried out in and around patient's residence to screen for any malaria patients.</li>
             <li>The Anti Malaria Campaign provides guidance and anti-malarial drugs for the management of the patient. Depending on the Plasmodium species, the patient is treated with anti-malarial drugs followed by Primaquine to prevent a relapse.</li>
             <li>Following discharge, the patient is followed up in the field by the AMC staff with RDT and blood films. The follow-up period depends on the Plasmodium species.</li>
         </ol>
     </section>
+    <?php
+        break;
+    }
+    ?>
 
-    <!-- Parasitological Surveillance section -->
-    
     <?php include 'include/footer.php'; ?>
 
 </body>

@@ -32,7 +32,7 @@
         /* Top decorative red bar */
         .about-top-bar {
             height: 5px;
-            background-color: #8B0000; /* Dark red */
+            background-color:rgb(0, 73, 0); /* Dark red */
         }
 
         /* Hero Section with Background Image */
@@ -103,17 +103,17 @@
         }
 
         .about-nav ul li a:hover {
-            background-color: #f0f0f0;
+            background-color:rgb(189, 189, 189);
         }
 
         /* Special style for the first navigation item */
         .about-nav ul li:first-child a {
-            background-color: #800000;
+            background-color:rgb(0, 95, 8);
             color: #ffffff;
         }
 
         .about-nav ul li:first-child a:hover {
-            background-color: #a00000;
+            background-color: rgb(0, 59, 5);
         }
 
         /* Responsive adjustments */
@@ -158,7 +158,7 @@
         }
 
         .about-vision-mission-container .text-content {
-            background-color: #800000;
+            background-color: rgb(0, 82, 7);
             color: white;
             padding: 2rem;
             flex-direction: column;
