@@ -1,7 +1,7 @@
 <style>
     /* --- Footer --- */
     .site-footer {
-        background-color: #3a0f0f; /* Dark maroon from image */
+        background-color: rgb(0, 49, 15); /* Dark maroon from image */
         color: #ccc;
         padding: 4rem 2rem 0; /* Remove bottom padding */
     }
@@ -85,8 +85,8 @@
     .footer-bottom {
         margin: 3rem -2rem 0 -2rem; /* extend beyond parent side padding */
         padding: 1.5rem 2rem;
-        background-color: rgba(0,0,0,0.2);
-        background-image: url("asset/image/fdesing.png");
+        background-color: rgb(0, 27, 8);
+        /* background-image: url("asset/image/fdesing.png"); */
         background-repeat: repeat-x;
         background-position: center;
         background-size: auto 100%;

@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regional Malaria Officers</title>
+    <title>Parasitological</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="asset/image/fav.png">
+    <link rel="shortcut icon" type="image/png" href="asset/image/fav.png">
     <style>
         /* Staff Page Specific Styles - Using unique prefixes to avoid conflicts */
         body.staff-page-body {
@@ -66,7 +69,7 @@
         }
 
         .content-container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
             line-height: 1.6;
         }
@@ -129,11 +132,17 @@
 <?php include 'include/header.php'; ?>
 
 <section class="staff-hero-section">
-    <h1>Organizational Structure</h1>
+    <h1>Parasitological Structure</h1>
     <p>Anti Malaria Campaign - Sri Lanka</p>
 </section>
 
-
+<section class="content-section">
+    <div class="content-container">
+        <h2>Parasitological Surveillance Summary (2017)</h2>
+        <p>The chart below illustrates the monthly breakdown of parasitological surveillance activities conducted throughout 2017, categorized by the method of case detection.</p>
+        <img src="asset/image/parasitology.png" alt="Bar chart showing the 2017 summary of Parasitological Surveillance data, broken down by month and detection method" style="width: 100%; max-width: 1100px; margin-top: 20px; display: block; margin-left: auto; margin-right: auto; border: 1px solid #ccc; padding: 5px; border-radius: 5px;">
+    </div>
+</section>
 
 <?php include 'include/footer.php'; ?>
 </body>
