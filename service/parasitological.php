@@ -43,10 +43,10 @@
         text-align: center;
         font-size: 28px;
         font-weight: 600;
-        color: #8B4513;
+        color: rgb(0, 51, 4);
         padding-bottom: 15px;
         margin-bottom: 25px;
-        border-bottom: 3px solid #8B4513;
+        border-bottom: 3px solid rgb(0, 51, 4);
         display: inline-block;
         position: relative;
         left: 50%;
@@ -86,7 +86,7 @@
     .download-title {
         font-size: 22px;
         font-weight: 600;
-        color: #8B4513;
+        color: rgb(0, 46, 4);
         margin-bottom: 20px;
         text-align: center;
     }
@@ -100,7 +100,7 @@
     .download-button {
         display: flex;
         align-items: center;
-        background-color: #8B4513;
+        background-color: rgb(0, 51, 4);
         color: white;
         padding: 12px 24px;
         border-radius: 8px;

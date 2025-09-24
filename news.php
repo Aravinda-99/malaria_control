@@ -118,7 +118,7 @@
             position: absolute;
             top: 1rem;
             right: 1rem;
-            background-color: #A00000;
+            background-color: rgb(16, 136, 0);
             color: white;
             padding: 0.5rem 0.8rem;
             border-radius: 4px;
@@ -167,7 +167,7 @@
         }
 
         .news-read-more {
-            color: #A00000;
+            color: rgb(5, 44, 0);
             text-decoration: none;
             font-weight: 600;
             display: flex;
@@ -176,7 +176,7 @@
         }
 
         .news-read-more:hover {
-            color: #800000;
+            color:rgb(5, 44, 0);
         }
 
         /* --- Load More Button --- */
@@ -187,8 +187,8 @@
 
         .load-more-btn {
             background-color: #fff;
-            color: #A00000;
-            border: 2px solid #A00000;
+            color: rgb(5, 44, 0);
+            border: 2px solid rgb(10, 88, 0);
             padding: 0.8rem 2rem;
             border-radius: 25px;
             font-weight: 600;
@@ -200,7 +200,7 @@
         }
 
         .load-more-btn:hover {
-            background-color: #A00000;
+            background-color: rgb(12, 100, 0);
             color: #fff;
         }
 
@@ -208,7 +208,7 @@
             width: 20px;
             height: 20px;
             border-radius: 50%;
-            background-color: #A00000;
+            background-color: rgb(14, 117, 0);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -218,7 +218,7 @@
 
         .load-more-btn:hover .load-more-icon {
             background-color: #fff;
-            color: #A00000;
+            color: rgb(9, 78, 0);
         }
 
         /* --- Responsive Design --- */

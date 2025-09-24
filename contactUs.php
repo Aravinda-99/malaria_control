@@ -102,7 +102,7 @@
         .contact-form-container { flex: 1; }
         .contact-form-container h2 {
             font-size: 2rem;
-            color: #6a0000;
+            color: rgb(5, 44, 0);
             margin-bottom: 1rem;
         }
         .contact-form-container p {
@@ -131,7 +131,7 @@
             box-sizing: border-box;
         }
         .contact-form button {
-            background-color: #6a0000;
+            background-color: rgb(5, 44, 0);
             color: #fff;
             border: none;
             padding: 0.8rem 2rem;
@@ -142,7 +142,7 @@
             grid-column: 1 / -1;
             justify-self: start;
         }
-        .contact-form button:hover { background-color: #800000; }
+        .contact-form button:hover { background-color: rgb(14, 117, 0); }
         .map-container { flex: 1; }
         .map-container iframe {
             width: 100%;

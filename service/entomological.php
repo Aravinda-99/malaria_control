@@ -133,7 +133,7 @@
         text-align: center;
         font-size: 28px;
         font-weight: 600;
-        color: #8B4513;
+        color: rgb(0, 51, 4);
         padding-bottom: 15px;
         margin-bottom: 25px;
         border-bottom: 3px solid #8B4513;
@@ -175,7 +175,7 @@
     .subsection-title {
         font-size: 22px;
         font-weight: 600;
-        color: #7a2f0f;
+        color:rgb(0, 51, 4);
         margin: 30px 0 15px 0;
     }
     

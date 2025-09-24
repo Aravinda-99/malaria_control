@@ -75,15 +75,15 @@
         }
 
         .content-container h2 {
-            color: #800000;
+            color: rgb(0, 51, 4);
             font-size: 1.8rem;
             margin-bottom: 1.5rem;
-            border-bottom: 2px solid #800000;
+            border-bottom: 2px solid rgb(0, 51, 4);
             padding-bottom: 0.5rem;
         }
 
         .content-container h3 {
-            color: #6a0000;
+            color: rgb(0, 51, 4);
             font-size: 1.4rem;
             margin: 2rem 0 1rem 0;
         }
@@ -126,6 +126,81 @@
             }
         }
 
+        /* Navigation Bar */
+        .about-nav {
+            background-color:rgb(209, 209, 209);
+            display: flex;
+            justify-content: center;
+            padding: 0 2rem;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+        .about-nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+
+        .about-nav ul li {
+            display: inline-block;
+            white-space: nowrap;
+            margin: 0;
+        }
+
+        .about-nav ul li a {
+            display: block;
+            padding: 1rem 1.5rem;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .about-nav ul li a:hover {
+            background-color:rgb(163, 163, 163);
+        }
+
+        /* Special style for the first navigation item */
+        .about-nav ul li:nth-child(5) a {
+            background-color:rgb(0, 95, 8);
+            color: #ffffff;
+        }
+
+        .about-nav ul li:nth-child(5) a:hover {
+            background-color: rgb(0, 59, 5);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .about-hero-section {
+                height: 40vh;
+            }
+            .about-hero-section h1 {
+                font-size: 2rem;
+            }
+            .about-hero-section p {
+                font-size: 1rem;
+            }
+            .about-nav {
+                padding: 0.5rem 0;
+            }
+            .about-nav ul {
+                flex-direction: column;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .about-nav ul li a {
+                padding: 0.75rem 1rem;
+                width: 100vw;
+                text-align: center;
+            }
+        }
+
     </style>
 </head>
 <body class="staff-page-body">
@@ -135,6 +210,20 @@
     <h1>Technical Support Group</h1>
     <p>Anti Malaria Campaign - Sri Lanka</p>
 </section>
+
+<nav class="about-nav">
+            <ul>
+                <li><a href="aboutUs.php">Vision & Mission</a></li>
+                <li><a href="ourStaf.php">Our Staff</a></li>
+                <li><a href="organizationStructure.php">Organizational Structure</a></li>
+                <li><a href="regional-malaria-office.php">Regional Officers</a></li>
+                <li><a href="tsg.php">Technical Support Group</a></li>
+                <li><a href="crc.php">Case Review Community</a></li>
+                <li><a href="history.php">History</a></li>
+                <li><a href="imageGallary.php">Gallery</a></li>
+            </ul>
+        </nav>
+
 
 <section class="content-section">
     <div class="content-container">

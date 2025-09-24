@@ -113,7 +113,7 @@
         .filter-bar .search-btn {
             padding: 0.75rem 2rem;
             border: none;
-            background-color: #981b1b;
+            background-color: rgb(12, 99, 0);
             color: white;
             font-size: 1rem;
             font-weight: 500;
@@ -123,7 +123,7 @@
         }
 
         .filter-bar .search-btn:hover {
-            background-color: #7a1515;
+            background-color: rgb(15, 129, 0);
         }
 
         /* --- Reports Grid --- */
@@ -217,13 +217,13 @@
         }
 
         .btn-view {
-            background-color: #981b1b;
+            background-color: rgb(10, 87, 0);
             color: white;
             flex: 1;
         }
 
         .btn-view:hover {
-            background-color: #7a1515;
+            background-color: rgb(5, 44, 0);
             box-shadow: 0 3px 8px rgba(152, 27, 27, 0.3);
         }
 
@@ -310,7 +310,7 @@
         }
 
         .pagination a.active {
-            background-color: #981b1b;
+            background-color: rgb(13, 112, 0);
             color: white;
             font-weight: 600;
         }

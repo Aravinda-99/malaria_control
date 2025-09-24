@@ -120,7 +120,7 @@
         .filter-bar .search-btn {
             padding: 0.75rem 2rem;
             border: none;
-            background-color: #981b1b;
+            background-color: rgb(11, 92, 0);
             color: white;
             font-size: 1rem;
             font-weight: 500;
@@ -130,7 +130,7 @@
         }
 
         .filter-bar .search-btn:hover {
-            background-color: #7a1515;
+            background-color: rgb(16, 134, 0);
         }
 
         /* --- Strategies Grid --- */
@@ -196,7 +196,7 @@
             position: absolute;
             top: 0.5rem;
             right: 0.5rem;
-            background-color: #981b1b;
+            background-color: rgb(16, 139, 0);
             color: white;
             padding: 0.3rem 0.6rem;
             border-radius: 50px;
@@ -250,12 +250,12 @@
         }
 
         .btn-view {
-            background-color: #981b1b;
+            background-color: rgb(14, 119, 0);
             color: #fff;
             flex: 1;
         }
         .btn-view:hover {
-            background-color: #7a1515;
+            background-color: rgb(17, 150, 0);
         }
 
         .btn-download {
