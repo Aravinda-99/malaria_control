@@ -354,6 +354,62 @@
             text-align: center;
         }
     }
+
+        /* --- Language Dropdown --- */
+        .lang-dropdown {
+        position: relative;
+    }
+
+    .lang-trigger {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        cursor: pointer;
+        color: #a00000;
+        font-weight: 600;
+        user-select: none;
+    }
+
+    .lang-trigger .caret {
+        font-size: 0.7rem;
+        color: #555;
+    }
+
+    .lang-menu {
+        position: absolute;
+        top: 140%;
+        right: 0;
+        background: #ffffff;
+        border: 1px solid #e5e5e5;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        border-radius: 8px;
+        min-width: 160px;
+        padding: 0.35rem 0;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-6px);
+        transition: all 0.2s ease;
+        z-index: 2000;
+    }
+
+    .lang-dropdown.open .lang-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .lang-menu a {
+        display: block;
+        padding: 0.5rem 0.9rem;
+        color: #333;
+        text-decoration: none;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+    .lang-menu a:hover {
+        background-color: #f5f5f5;
+    }
 </style>
 
 <header class="site-header">
@@ -372,7 +428,16 @@
             <div class="header-language-links">
                 <span>Government of Sri Lanka</span> |
                 <span>Translation <img src="https://flagcdn.com/lk.svg" alt="Sri Lanka Flag"></span> |
-                <a href="#">English</a>
+                <div class="lang-dropdown" id="langSwitch">
+                    <span class="lang-trigger" role="button" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                        Language: English <span class="caret">▼</span>
+                    </span>
+                    <div class="lang-menu" role="menu" aria-label="Language selection">
+                        <a href="home.php" role="menuitem">English</a>
+                        <a href="./sinhala/home.php" role="menuitem">සිංහල</a>
+                        <a href="#" role="menuitem">Tamil</a>
+                    </div>
+                </div>
             </div>
             <div class="search-container">
                 <input type="text" placeholder="Looking for...">
@@ -465,3 +530,27 @@
     </section>
 </header>
 
+<script>
+    (function(){
+        var dd = document.getElementById('langSwitch');
+        if(!dd) return;
+        var trigger = dd.querySelector('.lang-trigger');
+        function closeAll(e){
+            if(!dd.contains(e.target)){
+                dd.classList.remove('open');
+                trigger.setAttribute('aria-expanded','false');
+            }
+        }
+        function toggle(){
+            var isOpen = dd.classList.toggle('open');
+            trigger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        }
+        trigger.addEventListener('click', toggle);
+        trigger.addEventListener('keydown', function(e){
+            if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); toggle(); }
+            if(e.key === 'Escape'){ dd.classList.remove('open'); trigger.setAttribute('aria-expanded','false'); }
+        });
+        document.addEventListener('click', closeAll);
+        document.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ dd.classList.remove('open'); trigger.setAttribute('aria-expanded','false'); }});
+    })();
+</script>
