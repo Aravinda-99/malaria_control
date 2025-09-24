@@ -75,10 +75,10 @@
         }
 
         .content-container h2 {
-            color: #800000;
+            color: rgb(5, 44, 0);
             font-size: 1.8rem;
             margin-bottom: 1.5rem;
-            border-bottom: 2px solid #800000;
+            border-bottom: 2px solid rgb(5, 44, 0);
             padding-bottom: 0.5rem;
         }
 
@@ -105,7 +105,7 @@
 
         .highlight-box {
             background-color: #f8f9fa;
-            border-left: 4px solid #800000;
+            border-left: 4px solid rgb(5, 44, 0);
             padding: 1.5rem;
             margin: 2rem 0;
             border-radius: 0 8px 8px 0;

@@ -47,11 +47,11 @@
 .strategies-section h2 {
     font-size: 1.75rem;
     font-weight: 700;
-    color: #8B4513; 
+    color: rgb(0, 51, 4); 
     margin: 0 0 1rem 0;
     display: inline-block; 
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid #8B4513;
+    border-bottom: 3px solid rgb(0, 51, 4);
 }
 
 .strategies-section h3 {

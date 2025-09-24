@@ -89,7 +89,7 @@
         }
         
         .form-container h2 {
-            color: rgb(107, 0, 0); /* A brown color similar to the image */
+            color: rgb(5, 44, 0); /* A brown color similar to the image */
             font-size: 1.5rem;
             font-weight: bold;
             margin: 0;
@@ -213,7 +213,7 @@
         }
 
         .submit-btn {
-            background-color:rgb(117, 0, 0); /* Darker brown for the button */
+            background-color:rgb(5, 44, 0); /* Darker brown for the button */
             color: white;
             border: none;
             padding: 1rem 2.5rem;

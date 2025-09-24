@@ -127,7 +127,7 @@
         .filter-bar .search-btn {
             padding: 0.75rem 2rem;
             border: none;
-            background-color: #981b1b;
+            background-color: rgb(12, 102, 0);
             color: white;
             font-size: 1rem;
             font-weight: 500;
@@ -137,7 +137,7 @@
         }
 
         .filter-bar .search-btn:hover {
-            background-color: #7a1515;
+            background-color: rgb(16, 136, 0);
         }
 
         /* --- Materials List --- */
@@ -186,7 +186,7 @@
 
         .hot-tag {
             display: inline-block;
-            background-color: #981b1b;
+            background-color: rgb(15, 129, 0);
             color: white;
             font-size: 0.7rem;
             padding: 2px 8px;
@@ -237,7 +237,7 @@
         }
 
         .download-btn {
-            background-color: #981b1b;
+            background-color: rgb(17, 146, 0);
             color: white;
             border: none;
             padding: 10px 20px;

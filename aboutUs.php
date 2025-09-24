@@ -69,7 +69,7 @@
 
         /* Navigation Bar */
         .about-nav {
-            background-color: #ffffff;
+            background-color: rgb(209, 209, 209);
             display: flex;
             justify-content: center;
             padding: 0 2rem;
@@ -103,7 +103,7 @@
         }
 
         .about-nav ul li a:hover {
-            background-color:rgb(189, 189, 189);
+            background-color:rgb(153, 153, 153);
         }
 
         /* Special style for the first navigation item */
@@ -318,9 +318,9 @@
 
         .principles-text-content h2 {
             font-size: 2rem;
-            color: #800000;
+            color: rgb(0, 51, 4);
             margin-bottom: 1.5rem;
-            border-bottom: 3px solid #800000;
+            border-bottom: 3px solid rgb(0, 51, 4);
             padding-bottom: 0.5rem;
             display: inline-block;
         }
@@ -408,7 +408,7 @@
         </section>
         <nav class="about-nav">
             <ul>
-                <li><a href="#vision">Vision & Mission</a></li>
+                <li><a href="aboutUs.php">Vision & Mission</a></li>
                 <li><a href="ourStaf.php">Our Staff</a></li>
                 <li><a href="organizationStructure.php">Organizational Structure</a></li>
                 <li><a href="regional-malaria-office.php">Regional Officers</a></li>

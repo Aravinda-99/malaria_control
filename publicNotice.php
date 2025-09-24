@@ -93,7 +93,7 @@
         }
 
         .notice-table th {
-            background-color:rgb(105, 0, 0);
+            background-color:rgb(10, 83, 0);
             color: #fff;
             font-weight: 700;
             padding: 1rem;
@@ -158,7 +158,7 @@
         }
 
         .download-icon {
-            color: #A00000;
+            color: rgb(32, 66, 27);
             font-size: 32px;
             cursor: pointer;
             transition: color 0.3s;
@@ -166,7 +166,7 @@
         }
 
         .download-icon:hover {
-            color: #800000;
+            color: rgb(5, 44, 0);
         }
 
         .download-icon.multiple {

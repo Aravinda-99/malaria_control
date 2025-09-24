@@ -123,7 +123,7 @@
             padding: 12px 24px;
             border: none;
             border-radius: 8px;
-            background-color: #800000; /* Maroon color */
+            background-color: rgb(12, 100, 0); /* Maroon color */
             color: white;
             font-size: 1rem;
             font-weight: 500;

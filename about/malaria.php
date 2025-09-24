@@ -64,11 +64,11 @@
     .right-column-text h2 {
         font-size: 2rem;
         font-weight: 700;
-        color:rgb(133, 42, 39);
+        color:rgb(0, 51, 4);
         margin-top: 0;
         margin-bottom: 1.5rem;
         padding-bottom: 0.75rem;
-        border-bottom: 3px solid rgb(133, 42, 39);;
+        border-bottom: 3px solid rgb(0, 51, 4);;
         display: inline-block;
     }
 
