@@ -20,7 +20,7 @@
             /* The user specified a background image path */
             background-image: url('asset/image/welcome1.png');
             /* Fallback color in case the image doesn't load */
-            background-color:rgba(68, 9, 9, 0.99);
+            background-color:rgba(0, 44, 2, 0.99);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -127,7 +127,7 @@
             font-size: 0.7rem;
             color: #ffffff;
             text-align: center;
-            background-color: rgba(161, 33, 33, 0.27);
+            background-color: rgba(2, 24, 0, 0.55);
             padding: 0.05rem 2rem;
             border-radius: 0;
             backdrop-filter: blur(10px);
