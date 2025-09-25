@@ -67,6 +67,17 @@
             box-shadow: 0 2px 6px rgba(0,0,0,0.04);
             display: flex;
             flex-direction: column;
+            cursor: pointer;
+            transition: background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+        }
+        .timeline-item:hover {
+            background-color: #f0fff4; /* subtle green to match theme */
+            border-color: #cfe8cf;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+            transform: translateY(-2px);
+        }
+        .timeline-item:hover .timeline-year {
+            background-color: #013912; /* dark green badge on hover */
         }
         .timeline-year {
             align-self: flex-start;

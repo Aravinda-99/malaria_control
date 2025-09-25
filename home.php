@@ -769,7 +769,7 @@
                     <h2>Malaria Control Campaign</h2>
                     <p>We are a dedicated public health initiative committed to eliminating malaria in Sri Lanka and protecting every citizen from mosquito-borne diseases. Through community education, mosquito control, and access to preventive tools like treated bed nets, we work hand in hand with families, health workers, and local authorities to build a healthier nation.</p>
                 </div>
-                <a href="#" class="read-more-btn">READ MORE ❯</a>
+                <a href="aboutUs.php" class="read-more-btn">READ MORE ❯</a>
             </div>
             <div class="info-cards-container">
                 <div class="info-card vision-card">
@@ -819,7 +819,7 @@
         <section class="content-section news-section">
     <div class="section-header">
         <h2>Latest News</h2>
-        <a href="#" class="read-more-link">READ MORE NEWS &raquo;</a>
+        <a href="news.php" class="read-more-link">READ MORE NEWS &raquo;</a>
     </div>
 
     <div class="cards-grid">
@@ -856,7 +856,7 @@
 
     <!-- Mobile-only read more button (appears below cards) -->
     <div style="text-align:center;">
-        <a href="#" class="read-more-link read-more-mobile">READ MORE NEWS &raquo;</a>
+        <a href="#" class="read-more-link read-more-mobile">SEE MORE Services &raquo;</a>
     </div>
 
     <div class="slider-dots">
@@ -869,7 +869,7 @@
         <section class="content-section services-section" style="background-color: #f0f0f0;">
              <div class="section-header">
                 <h2>Our Services</h2>
-                <a href="#" class="read-more-link">READ MORE NEWS ❯</a>
+                <a href="service.php" class="read-more-link">SEE MORE SERVICES ❯</a>
             </div>
             <div class="cards-grid">
                  <a href="#" class="service-card">

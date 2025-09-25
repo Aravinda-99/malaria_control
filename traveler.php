@@ -281,13 +281,13 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="first-name">First name</label>
-                            <input type="text" id="first-name" name="first-name" value="Alexander">
+                            <input type="text" id="first-name" name="first-name" placeholder="First name">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
                             <label for="second-name">Second name</label>
-                            <input type="text" id="second-name" name="second-name" value="Smith">
+                            <input type="text" id="second-name" name="second-name" placeholder="Second name">
                         </div>
                     </div>
                     

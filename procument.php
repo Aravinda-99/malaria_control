@@ -141,6 +141,35 @@
             text-align: center;
         }
 
+        .procurement-table .download-column {
+            width: 10%;
+            text-align: center;
+        }
+
+        /* Actions cell layout */
+        .action-buttons {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .action-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 10px;
+            border-radius: 6px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: background-color 0.2s ease, opacity 0.2s ease;
+            white-space: nowrap;
+        }
+        .view-btn { background-color:rgb(15, 118, 37); }
+        .view-btn:hover { background-color:rgb(29, 201, 58); }
+        .download-btn { background-color: #475569; }
+        .download-btn:hover { background-color: #334155; }
+
         .hits-badge {
             display: inline-block;
             padding: 5px 10px;
@@ -149,6 +178,20 @@
             border-radius: 15px;
             font-size: 0.85rem;
         }
+
+        .download-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 34px;
+            height: 28px;
+            border-radius: 6px;
+            background: #eceff1;
+            color: #334155;
+            text-decoration: none;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+        .download-icon:hover { background: #dfe5e9; color: #0f172a; }
 
         /* --- Responsive Design --- */
         @media (max-width: 768px) {
@@ -263,6 +306,7 @@
                         <th class="title-column">Title</th>
                         <th class="date-column">Published Date</th>
                         <th class="hits-column">Hits</th>
+                        <th class="download-column">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -270,8 +314,20 @@
                         <td data-label="Title">Advertisement for a Consultancy for the Development of the National Monitoring & Evaluation Plan from 2018 to 2022 for the Anti malaria campaign, Sri Lanka</td>
                         <td data-label="Published Date" class="date-column">30 October 2018</td>
                         <td data-label="Hits" class="hits-column"><span class="hits-badge">Hits: 11209</span></td>
+                        <td data-label="Actions" class="download-column">
+                            <div class="action-buttons">
+                                <a href="asset/docs/procument/Advertisement-2019-2021.pdf" target="_blank" rel="noopener" class="action-btn view-btn" title="View (open PDF)" aria-label="View PDF">
+                                    <i class="fas fa-eye"></i>
+                                    <span>View</span>
+                                </a>
+                                <a href="asset/docs/procument/Advertisement-2019-2021.pdf" class="action-btn download-btn" title="Download PDF" aria-label="Download PDF" download>
+                                    <i class="fas fa-download"></i>
+                                    <span>Download</span>
+                                </a>
+                            </div>
+                        </td>
                     </tr>
-                    <tr>
+                    <!-- <tr>
                         <td data-label="Title">Procurement of Vector Control Equipment for Northern and Eastern Provinces</td>
                         <td data-label="Published Date" class="date-column">15 March 2019</td>
                         <td data-label="Hits" class="hits-column"><span class="hits-badge">Hits: 9845</span></td>
@@ -315,7 +371,7 @@
                         <td data-label="Title">Technical Support Services for Malaria Information System Upgrade</td>
                         <td data-label="Published Date" class="date-column">25 August 2020</td>
                         <td data-label="Hits" class="hits-column"><span class="hits-badge">Hits: 4875</span></td>
-                    </tr>
+                    </tr> -->
                 </tbody>
             </table>
         </div>
