@@ -134,14 +134,14 @@
                 
                 <img src="asset/image/AMC_logo1.png" alt="Malaria Control Campaign Logo">
             </div>
-            <p>The need for an effective response to malaria was recognized prior to independence in 1948. Organized malaria control activities commenced in 1911 with the establishment of the Anti Malaria Campaign in Kurunegala when Sri Lanka was still a British colony.</p>
+            <p>මැලේරියාවට ඵලදායී ප්‍රතිචාර දැක්වීමේ අවශ්‍යතාවය 1948 දී නිදහස ලැබීමට පෙර හඳුනා ගන්නා ලදී. ශ්‍රී ලංකාව තවමත් බ්‍රිතාන්‍ය යටත් විජිතයක්ව පැවති 1911 දී කුරුණෑගලදී මැලේරියා මර්දන ව්‍යාපාරය පිහිටුවීමත් සමඟ සංවිධානාත්මක මැලේරියා මර්දන කටයුතු ආරම්භ විය.</p>
         </div>
         <div class="footer-col">
-            <h4>Contact Us</h4>
+            <h4>අපව අමතන්න</h4>
              <ul>
                 <li class="footer-contact-item">
                     <i class="fas fa-map-marker-alt"></i>
-                    <span>Public Health Complex, 555/5, Elvitigala Mawatha, Colombo 05.</span>
+                    <span>මහජන සෞඛ්‍ය සංකීර්ණය, 555/5, ඇල්විටිගල මාවත, කොළඹ 05.</span>
                 </li>
                 <li class="footer-contact-item">
                     <i class="fas fa-envelope"></i>
@@ -149,30 +149,30 @@
                 </li>
                  <li class="footer-contact-item">
                     <i class="fas fa-phone-alt"></i>
-                    <span>+94 (112) 588947 | Director</span>
+                    <span>+94 (112) 588947 | අධ්‍යක්ෂක</span>
                 </li>
                 <li class="footer-contact-item">
                     <i class="fas fa-phone-alt"></i>
-                    <span>+94(112)369873 | Medical Officers</span>
+                    <span>+94(112)369873 | වෛද්‍ය නිලධාරී</span>
                 </li>
             </ul>
         </div>
         <div class="footer-col">
-            <h4>Quick Links</h4>
+            <h4>ඉක්මනින් බලන්න</h4>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Our Services</a></li>
-                <li><a href="#">Travelers</a></li>
-                <li><a href="#">Downloads</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">මුල් පිටුව</a></li>
+                <li><a href="#">අපි ගැන</a></li>
+                <li><a href="#">අපගේ සේවාවන්</a></li>
+                <li><a href="#">සංචාරකයින්</a></li>
+                <li><a href="#">බාගත කිරිම්</a></li>
+                <li><a href="#">අපව අමතන්න</a></li>
             </ul>
         </div>
          <div class="footer-col footer-search">
-            <h4>Search</h4>
+            <h4>සොයන්න</h4>
             <form>
-                <input type="search" placeholder="Search here">
-                <button type="submit">Search</button>
+                <input type="search" placeholder="මෙතනින් සොයන්න">
+                <button type="submit">සෙවීම</button>
             </form>
         </div>
     </div>

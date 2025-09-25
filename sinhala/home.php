@@ -934,12 +934,12 @@
                     </div>
                 </div>
                 <div class="event-list">
-                    <div class="event-item"><div class="date">14</div><div class="details"><p>December 2016</p><span>Monday</span></div><div class="count">13</div></div>
-                    <div class="event-item"><div class="date">15</div><div class="details"><p>December 2016</p><span>Tuesday</span></div><div class="count">22</div></div>
-                    <div class="event-item"><div class="date">16</div><div class="details"><p>December 2016</p><span>Wednesday</span></div><div class="count">14</div></div>
-                    <div class="event-item"><div class="date">17</div><div class="details"><p>December 2016</p><span>Thursday</span></div><div class="count">11</div></div>
-                    <div class="event-item active"><div class="date">18</div><div class="details"><p>December 2016</p><span>Wednesday</span></div><div class="count">14</div></div>
-                    <div class="event-item active"><div class="date">19</div><div class="details"><p>December 2016</p><span>Thursday</span></div><div class="count">11</div></div>
+                    <div class="event-item"><div class="date">14</div><div class="details"><p>දෙසැම්බර් 2016</p><span>සඳුදා</span></div><div class="count">13</div></div>
+                    <div class="event-item"><div class="date">15</div><div class="details"><p>දෙසැම්බර් 2016</p><span>අඟහරුවාදා</span></div><div class="count">22</div></div>
+                    <div class="event-item"><div class="date">16</div><div class="details"><p>දෙසැම්බර් 2016</p><span>බදාදා</span></div><div class="count">14</div></div>
+                    <div class="event-item"><div class="date">17</div><div class="details"><p>දෙසැම්බර් 2016</p><span>බ්‍රහස්පතින්දා</span></div><div class="count">11</div></div>
+                    <div class="event-item active"><div class="date">18</div><div class="details"><p>දෙසැම්බර් 2016</p><span>බදාදා</span></div><div class="count">14</div></div>
+                    <div class="event-item active"><div class="date">19</div><div class="details"><p>දෙසැම්බර් 2016</p><span>බ්‍රහස්පතින්දා</span></div><div class="count">11</div></div>
                 </div>
             </div>
         </section>
@@ -948,15 +948,15 @@
         <section class="contact-section">
             <div class="contact-container">
                 <div class="contact-form-container">
-                    <h2>Get Touch With Us</h2>
-                    <p>Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <h2>අප හා සම්බන්ධ වන්න</h2>
+                    <p>සියලුම සාමාන්‍ය විමසීම් සඳහා, කරුණාකර පහත පෝරමය පුරවන්න. අපගේ කණ්ඩායමේ සාමාජිකයෙකු ඔබගේ පණිවිඩය සමාලෝචනය කර ඉක්මනින් ඔබ හා සම්බන්ධ වනු ඇත. ඔබගේ සහභාගීත්වය අපට වැදගත් වේ.</p>
                     <form class="contact-form">
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name">
-                        <input type="email" placeholder="Email" class="full-width">
-                        <input type="tel" placeholder="Contact Number" class="full-width">
-                        <textarea placeholder="Description" class="full-width"></textarea>
-                        <button type="submit">Submit</button>
+                        <input type="text" placeholder="මුල් නම">
+                        <input type="text" placeholder="අවසන් නම">
+                        <input type="email" placeholder="විද්යුත් තැපෑල" class="full-width">
+                        <input type="tel" placeholder="සම්බන්ධතා අංකය" class="full-width">
+                        <textarea placeholder="විස්තරය" class="full-width"></textarea>
+                        <button type="submit">ඉදිරිපත් කරන්න</button>
                     </form>
                 </div>
                 <div class="map-container">

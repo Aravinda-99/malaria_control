@@ -942,7 +942,7 @@
             <div class="contact-container">
                 <div class="contact-form-container">
                     <h2>Get Touch With Us</h2>
-                    <p>Lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>For all general inquiries, please complete the following form. A member of our team will review your message and get back to you shortly. Your engagement is important to us.</p>
                     <form class="contact-form">
                         <input type="text" placeholder="First Name">
                         <input type="text" placeholder="Last Name">
