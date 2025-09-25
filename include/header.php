@@ -22,6 +22,18 @@
         background-color: #ffffff; /* Keep white background */
         border-bottom: none; /* Remove the border that was causing the white line */
         box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10000;
+        transform: translateY(0);
+        transition: transform 0.35s ease, box-shadow 0.2s ease;
+    }
+
+    .site-header.is-visible {
+        transform: translateY(0);
+        box-shadow: 0 6px 16px rgba(0,0,0,0.08);
     }
 
     /* --- Top Golden Bar --- */
@@ -37,6 +49,23 @@
         align-items: center;
         padding: 1rem 2rem;
         flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+        max-height: 500px;
+        opacity: 1;
+        overflow: visible; /* allow dropdowns to escape this section */
+        transition: max-height 0.35s ease, padding 0.35s ease, opacity 0.25s ease;
+    }
+
+    /* Condensed state on scroll: hide top bar + logo/search band */
+    .site-header.is-condensed .header-top-bar {
+        height: 0;
+        transition: height 0.25s ease;
+    }
+
+    .site-header.is-condensed .header-main {
+        max-height: 0;
+        padding: 0 2rem;
+        opacity: 0;
+        overflow: hidden; /* hide content when condensed */
     }
 
     .header-logo-container {
@@ -493,7 +522,7 @@
                 </li>
                 <li><a href="traveler.php" <?php echo ($current_page == 'traveler.php') ? 'class="active"' : ''; ?>>Travelers</a></li>
                 <li onclick="if(window.innerWidth<=768){this.classList.toggle('open');}">
-                    <a href="download.php" <?php echo ($current_page == 'download.php' || $current_page == 'case-management.php' || $current_page == 'parasitology.php' || $current_page == 'entomology.php' || $current_page == 'vector-control.php' || $current_page == 'human-resource.php' || $current_page == 'rdt-distribution.php') ? 'class="active"' : ''; ?>>Downloads <span class="dropdown-arrow">▼</span></a>
+                    <a href="downloadn.php" <?php echo ($current_page == 'download.php' || $current_page == 'case-management.php' || $current_page == 'parasitology.php' || $current_page == 'entomology.php' || $current_page == 'vector-control.php' || $current_page == 'human-resource.php' || $current_page == 'rdt-distribution.php') ? 'class="active"' : ''; ?>>Downloads <span class="dropdown-arrow">▼</span></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="download.php#statistics">Statistics <span class="dropdown-arrow">▶</span></a>
@@ -516,11 +545,11 @@
                     </ul>
                 </li>
                 <li onclick="if(window.innerWidth<=768){this.classList.toggle('open');}">
-                    <a href="infromation.php" <?php echo ($current_page == 'infromation.php' || $current_page == 'news.php' || $current_page == 'publicNotice.php') ? 'class="active"' : ''; ?>>Information <span class="dropdown-arrow">▼</span></a>
+                    <a href="#" <?php echo ($current_page == 'infromation.php' || $current_page == 'news.php' || $current_page == 'publicNotice.php' || $current_page == 'procument.php') ? 'class="active"' : ''; ?>>Information <span class="dropdown-arrow">▼</span></a>
                     <ul class="dropdown-menu">
                         <li><a href="publicNotice.php">Public Notice</a></li>
                         <li><a href="news.php">News</a></li>
-                        <li><a href="infromation.php#procurement">Procurement</a></li>
+                        <li><a href="procument.php">Procurement</a></li>
                     </ul>
                 </li>
                 <li><a href="contactUs.php" <?php echo ($current_page == 'contactUs.php') ? 'class="active"' : ''; ?>>Contact Us</a></li>
@@ -529,6 +558,8 @@
         </nav>
     </section>
 </header>
+
+<div id="header-spacer" aria-hidden="true"></div>
 
 <script>
     (function(){
@@ -552,5 +583,37 @@
         });
         document.addEventListener('click', closeAll);
         document.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ dd.classList.remove('open'); trigger.setAttribute('aria-expanded','false'); }});
+    })();
+</script>
+
+<script>
+    (function(){
+        var header = document.querySelector('.site-header');
+        var spacer = document.getElementById('header-spacer');
+        if(!header || !spacer) return;
+
+        function setSpacerHeight(){
+            spacer.style.height = header.offsetHeight + 'px';
+        }
+
+        if(document.readyState === 'complete' || document.readyState === 'interactive'){
+            setSpacerHeight();
+        } else {
+            window.addEventListener('DOMContentLoaded', setSpacerHeight);
+        }
+        window.addEventListener('resize', setSpacerHeight);
+
+        var isShown = true;
+        function onScroll(){
+            var y = window.scrollY || window.pageYOffset;
+            if(y > 10){
+                if(!isShown){ header.classList.add('is-visible'); isShown = true; }
+                header.classList.add('is-condensed');
+            } else {
+                header.classList.remove('is-condensed');
+            }
+        }
+        window.addEventListener('scroll', onScroll, { passive: true });
+        header.classList.add('is-visible');
     })();
 </script>

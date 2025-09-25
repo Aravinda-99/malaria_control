@@ -1,17 +1,17 @@
 <!-- Vector Control Banner -->
 <div style="background-image: url('asset/image/vector-banner.png'); background-size: cover; background-position: center; color: white; text-align: center; padding: 20px 0;">
-    <h2>Vector Control</h2>
+ 
 </div>
 
 <!-- Main Content Section -->
 <section class="diagnosis-section">
     <h2 class="section-title">Vector Control</h2>
     
-    <h3 style="color: rgb(0, 34, 3); margin-top: 30px; text-align: center; margin-bottom: 20px;">The longest combat against the most dreadful enemy of the history of Sri Lanka</h3>
+    <h3 style="color: #8B4513; margin-top: 30px; text-align: center; margin-bottom: 20px;">The longest combat against the most dreadful enemy of the history of Sri Lanka</h3>
     
-    <h4 style="color: rgb(0, 51, 4); margin-top: 20px; margin-bottom: 15px;">The battle against malaria vector</h4>
+    <h4 style="color: #8B4513; margin-top: 20px; margin-bottom: 15px;">The battle against malaria vector</h4>
     
-    <h4 style="color: rgb(0, 51, 4); margin-top: 20px; margin-bottom: 15px;">Disclosure of the unknown enemy</h4>
+    <h4 style="color: #8B4513; margin-top: 20px; margin-bottom: 15px;">Disclosure of the unknown enemy</h4>
     
     <div class="info-list">
         <p>"The mysterious fever" battered the civilization of the Island nation for centuries was still a "wild fever" at the beginning of last century, for which nobody knew the reason behind, until the colonial masters had the wisdom of revealing it. Mannar was the historical site which broke through the transmitter of malaria in the past century, and a century later, it was the same site from where another major discovery done in 2016 with regarding malaria</p>
@@ -24,7 +24,7 @@
         </ul>
     </div>
     
-    <h4 style="color: rgb(0, 51, 4); margin-top: 20px; margin-bottom: 15px;">The launch of the battle: Initial control measures; embryonic but environmental friendly</h4>
+    <h4 style="color: #8B4513; margin-top: 20px; margin-bottom: 15px;">The launch of the battle: Initial control measures; embryonic but environmental friendly</h4>
     
     <div class="info-list">
         <p>Organized control activities were commenced with the establishment of Anti Malaria Campaign (AMC) center at Kurunegala town in 1911. Later, AMC centers were established in Mahara prison, Anuradhapura (1922), Trincomalee (1923), Kurunegala and Chilaw. "Carters report" published in 1927 states that anti mosquito measures done at Mahara prison, Anuradhapura and Trincomalee were confined to filling, draining, oiling, and jungle clearing. In Anuradhapura, control measure was began in experimental basis to target anopheline breeding sites. In 1925, a reconstruction of Halpan ela, a stream running through Anuraghepura town was done targeting malaria control.</p>
@@ -46,7 +46,7 @@
         
     </div>
     
-    <h4 style="color: rgb(0, 51, 4); margin-top: 20px; margin-bottom: 15px;">Malaria epidemic: 1934/1935</h4>
+    <h4 style="color: #8B4513; margin-top: 20px; margin-bottom: 15px;">Malaria epidemic: 1934/1935</h4>
     
     <div class="info-list">
         <p>The long drought and failing of north east monsoons in 1934 and 1935 made the stage for a devastating malaria epidemic which is said to be the worst ever malaria epidemic in known history of Sri Lanka. The epidemic erupt in Alauwa, on the left bank on Maha oya spread to 5 major basins of rives namely Maha oya, Deduru oya, Kelani Ganga Kalu ganga and Mahaweli ganga. It covered the entire wet zone but amazingly spare the dry zone.</p>
@@ -54,7 +54,7 @@
         <p>During 1939/40 epidemic adult spray killing using a mixture contain pyrethrum was carried out in limited extent. Even though it was revealed that this method was effective, due to inability to maintain stocks of chemicals, spraying was done in limited scale and in selected areas only. Instead focus was on motivating people to do spraying by themselves and the government provided the mix of chemicals and the equipment free of charge or at a nominal fee. In addition, oiling of rivers and streams were done by using Shell Malariol. Paris green, which was superior to oil, was used as the anti-larval method, as the former could be used for the paddy fields and wells, of which water are used for dining purposes. In 1938 government initiated to build automatic flushing devises, which were meant to flush out malaria vector larvae and it was identified as an effective strategy to control malaria.</p>
     </div>
     
-    <h4 style="color: rgb(0, 51, 4); margin-top: 20px; margin-bottom: 15px;">The DDT era</h4>
+    <h4 style="color: #8B4513; margin-top: 20px; margin-bottom: 15px;">The DDT era</h4>
     
     <div class="info-list">
         <p>Adulticiding using spraying chemicals was outplayed by short duration of action of chemicals which necessitate frequent re application. Dichloro Diphenyl Trichloroethane (DDT) was found to be effective in controlling malaria adult vectors. In 1939 and in 1945, during the malaria epidemic, health department obtained a small stock of DDT from Army services. With the observed success, the use of DDT was up scaled and it helped to interrupt the malaria transmission soon. At the beginning, 5% of technical DDT, diluted in kerosene was used in Anuradhapura and in Kekirawa by engaging two mobile units. The interval between two spraying was 4 weeks which was increased to 6 weeks in shortly. Later, suspension of 5% DDT in 40% of emulsion concentrate of Zylene was used. Later, it was also replaced by spraying DDT suspension of 50% DDT water suspension powder and water was used as the diluent. The interval varied between 6 to 10 weeks. By 1947, mass scale Indoor Residual spraying (IRS)programme was launched throughout the island where the spleen rate was more than 10%. In 1949 Banzine Hexachloride was also started to use.</p>
@@ -77,7 +77,7 @@
         <p>With this, the spraying turned out to be a focal spraying, which was in par with focal case base management.</p>
     </div>
     
-    <h4 style="color: rgb(0, 51, 4); margin-top: 20px; margin-bottom: 15px;">Malaria eradication attempt: 1958-1963</h4>
+    <h4 style="color: #8B4513; margin-top: 20px; margin-bottom: 15px;">Malaria eradication attempt: 1958-1963</h4>
     
     <div class="info-list">
         <p>With the introduction of IRS using DDT, major colonization schemes were slowly getting rid of malaria. The dry zone was gradually getting repopulated. But the decision of scale downing of IRS by using DDT back fired as malaria gradually started to remerge, which warrants the health authorities to recommend reinstallation of IRS and continuous surveillance of active foci. In addition, reported resistance to DDT in other countries prompted the health authorities to embark on eradication programme soon. A 5 year malaria eradication programme was launched in December 2nd of 1958 which had three phases:</p>
@@ -90,7 +90,7 @@
         <p>As a result of the programme in 1962 only two foci with active transmission were detected. In 1963 partial withdrawal of IRS was done and no foci of active transmission was detected in the said year. In April 1964 spraying was completely withdrawn and the entire country was managed under consolidation phase.</p>
     </div>
     
-    <h4 style="color: rgb(0, 51, 4); margin-top: 20px; margin-bottom: 15px;">Resurgence of Malaria</h4>
+    <h4 style="color: #8B4513; margin-top: 20px; margin-bottom: 15px;">Resurgence of Malaria</h4>
     
     <div class="info-list">
         <p>The state of interrupted transmission was not lasted long. With the total withdrawal of residual spraying in latter part of 1964, active foci of P. falciparum and P. malaria transmission was detected. Even though P.malaria foci were controlled, the P. falciparum foci in the eastern parts of the country was remaining warranting re introduction of residual spraying reverting back to attack phase.</p>
@@ -115,7 +115,7 @@
         <p>In 1975 IRS using malarion was commensed in pase based manner in areas highly battered with P.falciparum in Uva province. In 1976 it was ween the end of usage of DDT of spraying after 30 years. With this DDT was replaced with malathion throughout the country. As a measure to delay the development of resistance government decided to ban the importation and usage of malathion on agricultural purposes and further to ban the usage of Fenotrothion which was earmarked as the alternative in case of malathion resistance, for the agriculture. The decision was given the legal status by an act of parliament.</p>
     </div>
     
-    <h4 style="color: rgb(0, 51, 4); margin-top: 20px; margin-bottom: 15px;">Intense malaria programme 1977 to 1982</h4>
+    <h4 style="color: #8B4513; margin-top: 20px; margin-bottom: 15px;">Intense malaria programme 1977 to 1982</h4>
     
     <div class="info-list">
         <p>In 1973 to 1975, 8% of total health budget was to control malaria. Realizing this and the failure to control the malaria epidemic, a 5 year malaria control programme was launched costing Rs 86 million, 75% of which was for the procurement of insecticides.</p>
@@ -152,7 +152,7 @@
         <p>Due to emerging resistance levels in 1993, malathion was replaced by Lamda cyhalothrine in Kurunegala and in 1994 Fenitrithion was introduced to Puththalm. In par with this, WHO also had advised on rotational use of insecticides.</p>
     </div>
     
-    <h4 style="color: rgb(0, 51, 4); margin-top: 20px; margin-bottom: 15px;">2008-2012 Action Plan</h4>
+    <h4 style="color: #8B4513; margin-top: 20px; margin-bottom: 15px;">2008-2012 Action Plan</h4>
     
     <div class="info-list">
         <p>IIRS coverage in foci and distribution of Long lasting insecticide impregnated bed nets (LLIN/ITN) and other vector control methods as complementary measures when indicated</p>
