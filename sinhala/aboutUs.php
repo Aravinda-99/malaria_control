@@ -403,19 +403,19 @@
     <header class="about-header-container">
         <div class="about-top-bar"></div>
         <section class="about-hero-section">
-            <h1>About Us</h1>
-            <p>Protecting Communities Through Prevention and Awareness</p>
+            <h1>අපි ගැන</h1>
+            <p>වැළැක්වීම සහ දැනුවත් කිරීම තුළින් ප්‍රජාවන් ආරක්ෂා කිරීම</p>
         </section>
         <nav class="about-nav">
             <ul>
-                <li><a href="aboutUs.php">Vision & Mission</a></li>
-                <li><a href="ourStaf.php">Our Staff</a></li>
-                <li><a href="organizationStructure.php">Organizational Structure</a></li>
-                <li><a href="regional-malaria-office.php">Regional Officers</a></li>
-                <li><a href="tsg.php">Technical Support Group</a></li>
-                <li><a href="crc.php">Case Review Community</a></li>
-                <li><a href="history.php">History</a></li>
-                <li><a href="imageGallary.php">Gallery</a></li>
+                <li><a href="aboutUs.php">දැක්ම සහ මෙහෙවර</a></li>
+                <li><a href="ourStaf.php">අපගේ කාර්ය මණ්ඩලය</a></li>
+                <li><a href="organizationStructure.php">සංවිධාන ව්‍යුහය</a></li>
+                <li><a href="regional-malaria-office.php">ප්‍රාදේශීය නිලධාරීන්</a></li>
+                <li><a href="tsg.php">තාක්ෂණික සහාය කණ්ඩායම</a></li>
+                <li><a href="crc.php">නඩු සමාලෝචන ප්‍රජාව</a></li>
+                <li><a href="history.php">ඉතිහාසය</a></li>
+                <li><a href="imageGallary.php">ගැලරිය</a></li>
             </ul>
         </nav>
     </header>
@@ -423,8 +423,8 @@
     <main>
         <section id="vision" class="about-vision-mission-container">
             <div class="text-content">
-                <h2>Our Vision</h2>
-                <p>To Create A Healthier Sri Lanka Where Every Individual Has Access To Compassionate, Reliable, And Preventive Healthcare, Empowering Communities To Thrive Free From Disease.</p>
+                <h2>අපගේ දැක්ම</h2>
+                <p>සෑම පුද්ගලයෙකුටම දයානුකම්පිත, විශ්වාසදායක සහ රෝග නිවාරණ සෞඛ්‍ය සේවා සඳහා ප්‍රවේශය ඇති, රෝගවලින් තොර ප්‍රජාවන් සවිබල ගන්වන සෞඛ්‍ය සම්පන්න ශ්‍රී ලංකාවක් නිර්මාණය කිරීම.</p>
             </div>
             <div class="image-content">
                 <img src="asset/image/v1.png" alt="Eye representing vision">
@@ -433,8 +433,8 @@
 
         <section id="mission" class="about-vision-mission-container">
             <div class="text-content">
-                <h2>Our Mission</h2>
-                <p>To Deliver Patient-Centered Healthcare Through Dedicated Service, Modern Medical Practices, And Community Outreach — With A Focus On Disease Prevention, Early Detection, And Education, Especially In Vulnerable Rural Areas.</p>
+                <h2>අපගේ මෙහෙවර</h2>
+                <p>විශේෂයෙන් අවදානමට ලක්විය හැකි ග්‍රාමීය ප්‍රදේශවල රෝග වැළැක්වීම, කලින් හඳුනා ගැනීම සහ අධ්‍යාපනය කෙරෙහි අවධානය යොමු කරමින් - කැපවූ සේවාව, නවීන වෛද්‍ය පිළිවෙත් සහ ප්‍රජා සම්බන්ධතා තුළින් රෝගී කේන්ද්‍රීය සෞඛ්‍ය සේවාවක් ලබා දීම.</p>
             </div>
             <div class="image-content">
                 <img src="asset/image/v2.png" alt="Target representing mission">
@@ -445,17 +445,17 @@
             <div class="principles-section">
                 <div class="principles-content-wrapper">
                         <div class="principles-text-content">
-                         <h2>Guiding Principles</h2>
-                         <p>The National Malaria Strategy is based on the following guiding principles:</p>
+                         <h2>මාර්ගෝපදේශක මූලධර්ම</h2>
+                         <p>ජාතික මැලේරියා උපායමාර්ගය පහත සඳහන් මාර්ගෝපදේශක මූලධර්ම මත පදනම් වේ:</p>
                          <ul>
-                             <li>Using locally appropriate, evidence based, environmentally friendly policies and strategies conforming to recommendations of WHO's Global Malaria Programme and the SEA Regional strategy for prevention of re-establishment of malaria</li>
-                             <li>Equity</li>
-                             <li>Universal access to quality malaria diagnosis, treatment and prevention</li>
-                             <li>Emphasis on coverage of vulnerable populations</li>
-                             <li>Value for money</li>
-                             <li>Good governance</li>
-                             <li>Being sensitive to rights of people</li>
-                             <li>Being gender responsive</li>
+                             <li>WHO හි ගෝලීය මැලේරියා වැඩසටහනේ නිර්දේශයන්ට සහ මැලේරියාව නැවත ස්ථාපිත කිරීම වැළැක්වීම සඳහා SEA කලාපීය උපාය මාර්ගයට අනුකූල වන දේශීය වශයෙන් සුදුසු, සාක්ෂි මත පදනම් වූ, පරිසර හිතකාමී ප්‍රතිපත්ති සහ උපාය මාර්ග භාවිතා කිරීම.</li>
+                             <li>කොටස්</li>
+                             <li>ගුණාත්මක මැලේරියා රෝග විනිශ්චය, ප්‍රතිකාර සහ වැළැක්වීම සඳහා විශ්වීය ප්‍රවේශය</li>
+                             <li>අවදානමට ලක්විය හැකි ජනගහනය ආවරණය කිරීම කෙරෙහි අවධාරණය කිරීම</li>
+                             <li>මුදල් සඳහා වටිනාකම</li>
+                             <li>යහපාලනය</li>
+                             <li>ජනතාවගේ අයිතිවාසිකම් කෙරෙහි සංවේදී වීම</li>
+                             <li>ස්ත්‍රී පුරුෂ භාවයට ප්‍රතිචාර දැක්වීම</li>
                          </ul>
                      </div>
                     <div class="principles-image-content">
