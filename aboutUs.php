@@ -72,9 +72,14 @@
             background-color: rgb(209, 209, 209);
             display: flex;
             justify-content: center;
-            padding: 0 2rem;
+            padding: 0rem 2rem;
             overflow-x: auto;
             overflow-y: hidden;
+        }
+
+        .about-nav-line {
+            height: 2px;
+            background-color: rgb(255, 255, 255);
         }
 
         .about-nav ul {
@@ -406,6 +411,7 @@
             <h1>About Us</h1>
             <p>Protecting Communities Through Prevention and Awareness</p>
         </section>
+        
         <nav class="about-nav">
             <ul>
                 <li><a href="aboutUs.php">Vision & Mission</a></li>
@@ -418,6 +424,7 @@
                 <li><a href="imageGallary.php">Gallery</a></li>
             </ul>
         </nav>
+        <div class="about-nav-line"></div>
     </header>
 
     <main>
@@ -430,7 +437,7 @@
                 <img src="asset/image/v1.png" alt="Eye representing vision">
             </div>
         </section>
-
+        <div class="about-nav-line"></div>
         <section id="mission" class="about-vision-mission-container">
             <div class="text-content">
                 <h2>Our Mission</h2>

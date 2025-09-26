@@ -70,6 +70,7 @@
         /* --- NEW: Interactive Map Section Styles --- */
         .interactive-map-section {
             margin-bottom: 4rem; /* Space between map and form */
+            margin-top: 4rem;
         }
         .interactive-map-section h2 {
             font-size: 2rem;
@@ -221,6 +222,7 @@
         </div>
     </section>
 
+    <br>
     <section class="contact-section">
         <div class="contact-wrapper">
 

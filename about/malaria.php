@@ -17,6 +17,7 @@
     }
     
     .infographic-section {
+        
         display: flex;
         flex-wrap: wrap;
         gap: 2rem;
@@ -43,7 +44,7 @@
 
     .right-column {
         flex: 3;
-        background-color:rgb(228, 213, 199);
+        background-color:rgb(206, 228, 199);
         border-radius: 20px;
         padding: 4rem;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -188,6 +189,8 @@
                     <img src="asset/image/m1.png" alt="Mosquito Prevention" class="strategy-img">
                     <br><br><br>
                     <img src="asset/image/m2.png" alt="Malaria Control Strategy" class="strategy-img">
+                    <br>
+                    <img src="asset/image/ab2.jpg" alt="Malaria Control Strategy" class="strategy-img">
                 </div>
                 <div class="right-column-text">
                     <h2>Strategies</h2>

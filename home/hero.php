@@ -167,7 +167,7 @@
     <div class="hero-content">
         <h1>Protect Your Family. Fight Malaria.</h1>
         <p>Sleep under a mosquito net. Stay safe. Stay healthy.</p>
-        <a href="#" class="hero-cta-btn">Contact Us</a>
+        <a href="contactUs.php" class="hero-cta-btn">Contact Us</a>
         <div class="hero-contact-info">
             <div><i class="fas fa-phone-alt"></i><span>+94 11 7 626 626</span></div>
             <div><i class="fas fa-envelope"></i><span>antimalariacampaign@gmail.com</span></div>
