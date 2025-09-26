@@ -133,7 +133,7 @@
 
         /* Active state for the current page link */
         .main-nav li.active a {
-            background-color: #8a151b !important; /* Dark red color from the image */
+            background-color:rgb(0, 109, 18) !important; /* Dark red color from the image */
             color: white !important;
         }
 
@@ -197,10 +197,10 @@
             text-align: center;
             font-size: 28px;
             font-weight: 600;
-            color: #8B4513;
+            color:rgb(7, 61, 0);
             padding-bottom: 15px;
             margin-bottom: 25px;
-            border-bottom: 3px solid #8B4513;
+            border-bottom: 3px solid rgb(7, 63, 0);
             display: inline-block;
             position: relative;
             left: 50%;
@@ -251,11 +251,11 @@
         }
 
         .notification-protocol .np-title {
-            color: #7a2f0f;
+            color:rgb(2, 49, 0);
             font-size: 28px;
             font-weight: 700;
             margin: 0 0 12px 0;
-            border-bottom: 3px solid #7a2f0f; /* underline matches text width */
+            border-bottom: 3px solid rgb(2, 49, 0); /* underline matches text width */
             display: inline-block;
             padding-bottom: 6px;
         }
