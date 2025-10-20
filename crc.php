@@ -83,7 +83,7 @@
         }
 
         .content-container h3 {
-            color: #6a0000;
+            color: rgb(0, 51, 4);
             font-size: 1.4rem;
             margin: 2rem 0 1rem 0;
         }
@@ -105,10 +105,60 @@
 
         .highlight-box {
             background-color: #f8f9fa;
-            border-left: 4px solid #800000;
+            border-left: 4px solid rgb(0, 51, 4);
             padding: 1.5rem;
             margin: 2rem 0;
             border-radius: 0 8px 8px 0;
+        }
+
+        /* Table Styles */
+        .crc-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .crc-table th {
+            background-color: rgb(0, 51, 4);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .crc-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e9ecef;
+            border-right: 1px solid #e9ecef;
+            vertical-align: top;
+        }
+
+        .crc-table td:last-child {
+            border-right: none;
+        }
+
+        .crc-table tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        .crc-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .member-name {
+            font-weight: 600;
+            color: rgb(0, 51, 4);
+            font-size: 1.1rem;
+        }
+
+        .member-role {
+            color: #333;
+            line-height: 1.5;
         }
 
         /* Responsive adjustments */
@@ -123,6 +173,19 @@
             
             .content-container h3 {
                 font-size: 1.2rem;
+            }
+
+            .crc-table {
+                font-size: 0.9rem;
+            }
+
+            .crc-table th,
+            .crc-table td {
+                padding: 0.75rem 0.5rem;
+            }
+
+            .member-name {
+                font-size: 1rem;
             }
         }
 
@@ -226,9 +289,43 @@
 <section class="content-section">
     <div class="content-container">
         <h2>The Case Review Committee (CRC)</h2>
-        <p>
-            The Case Review Committee (CRC), a subcommittee of the Technical Support Group (TSG), reviews activities carried out when a case is reported and classifies all cases as per WHO classification. CRC consists of academic specialists in the fields of clinical medicine, parasitology, pharmacology, public health and a former WHO consultant for malaria control as external members. From Anti Malaria Campaign, the director, consultant community physicians, entomologists, parasitologists, medical officer in charge of case surveillance and other medical officers will participate in CRC meetings. The CRC meets once a month and reviews technical details of each and every case reported up to that particular date and the response. The committee identifies any lapses of the response and advises accordingly.
-        </p>
+        
+        <div class="highlight-box">
+            <p><strong>The Case Review Committee (CRC), a subcommittee of the Technical Support Group (TSG), reviews activities carried out when a case is reported and classifies all cases as per WHO classification.</strong> CRC consists of academic specialists in the fields of clinical medicine, parasitology, pharmacology, public health and a former WHO consultant for malaria control as external members. From Anti Malaria Campaign, the director, consultant community physicians, entomologists, parasitologists, medical officer in charge of case surveillance and other medical officers will participate in CRC meetings. The CRC meets once a month and reviews technical details of each and every case reported up to that particular date and the response. The committee identifies any lapses of the response and advises accordingly.</p>
+        </div>
+
+        <h3>Members of the Case Review Committee</h3>
+        
+        <table class="crc-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Qualifications and Affiliations</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="member-name">Prof. Kamini Mendis</td>
+                    <td class="member-role">Emeritus Professor, Consultant in Malaria and Tropical Diseases<br>Former WHO Consultant</td>
+                </tr>
+                <tr>
+                    <td class="member-name">Prof. Rajitha Wickramasinghe</td>
+                    <td class="member-role">Senior Professor, Department of Public Health<br>Faculty of Medicine, University of Kelaniya</td>
+                </tr>
+                <tr>
+                    <td class="member-name">Prof. Deepika Fernando</td>
+                    <td class="member-role">Senior Professor, Department of Parasitology<br>Faculty of Medicine, University of Colombo</td>
+                </tr>
+                <tr>
+                    <td class="member-name">Prof. Rohini Fernandopulle</td>
+                    <td class="member-role">Professor in Clinical Pharmacology<br>Department of Pharmacology, Faculty of Medicine<br>Gen. SJKD Defense University</td>
+                </tr>
+                <tr>
+                    <td class="member-name">Dr. Anula Wijesundere</td>
+                    <td class="member-role">Consultant Physician</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </section>
 <?php include 'include/footer.php'; ?>

@@ -145,7 +145,7 @@
                 </li>
                 <li class="footer-contact-item">
                     <i class="fas fa-envelope"></i>
-                    <span>antimalariacampaign@gmail.com</span>
+                    <span>antimalariacampaignsl@gmail.com</span>
                 </li>
                  <li class="footer-contact-item">
                     <i class="fas fa-phone-alt"></i>
@@ -153,7 +153,7 @@
                 </li>
                 <li class="footer-contact-item">
                     <i class="fas fa-phone-alt"></i>
-                    <span>+94(112)369873 | Medical Officers</span>
+                    <span>+94 (712) 841767 | Hot line Number</span>
                 </li>
             </ul>
         </div>

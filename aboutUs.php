@@ -431,7 +431,7 @@
         <section id="vision" class="about-vision-mission-container">
             <div class="text-content">
                 <h2>Our Vision</h2>
-                <p>To Create A Healthier Sri Lanka Where Every Individual Has Access To Compassionate, Reliable, And Preventive Healthcare, Empowering Communities To Thrive Free From Disease.</p>
+                <p>A malaria-free Sri Lanka </p>
             </div>
             <div class="image-content">
                 <img src="asset/image/v1.png" alt="Eye representing vision">
@@ -441,7 +441,11 @@
         <section id="mission" class="about-vision-mission-container">
             <div class="text-content">
                 <h2>Our Mission</h2>
-                <p>To Deliver Patient-Centered Healthcare Through Dedicated Service, Modern Medical Practices, And Community Outreach — With A Focus On Disease Prevention, Early Detection, And Education, Especially In Vulnerable Rural Areas.</p>
+                <p>Plan and implement a comprehensive programme to sustain intensive surveillance,
+comprehensive case management, outbreak preparedness, providing information to
+travellers and high-risk groups, and rapid response for prevention of re-establishment of
+malaria in Sri Lanka. .
+</p>
             </div>
             <div class="image-content">
                 <img src="asset/image/v2.png" alt="Target representing mission">
@@ -472,8 +476,7 @@
             </div>
         </section>
 
-        <?php include 'about/malaria.php'; ?>
-        <?php include 'about/strategies.php'; ?>
+        
         
 
     </main>

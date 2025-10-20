@@ -105,10 +105,60 @@
 
         .highlight-box {
             background-color: #f8f9fa;
-            border-left: 4px solid #800000;
+            border-left: 4px solid rgb(0, 51, 4);
             padding: 1.5rem;
             margin: 2rem 0;
             border-radius: 0 8px 8px 0;
+        }
+
+        /* Table Styles */
+        .tsg-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .tsg-table th {
+            background-color: rgb(0, 51, 4);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .tsg-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e9ecef;
+            border-right: 1px solid #e9ecef;
+            vertical-align: top;
+        }
+
+        .tsg-table td:last-child {
+            border-right: none;
+        }
+
+        .tsg-table tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        .tsg-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .member-name {
+            font-weight: 600;
+            color: rgb(0, 51, 4);
+            font-size: 1.1rem;
+        }
+
+        .member-role {
+            color: #333;
+            line-height: 1.5;
         }
 
         /* Responsive adjustments */
@@ -123,6 +173,19 @@
             
             .content-container h3 {
                 font-size: 1.2rem;
+            }
+
+            .tsg-table {
+                font-size: 0.9rem;
+            }
+
+            .tsg-table th,
+            .tsg-table td {
+                padding: 0.75rem 0.5rem;
+            }
+
+            .member-name {
+                font-size: 1rem;
             }
         }
 
@@ -227,21 +290,100 @@
 
 <section class="content-section">
     <div class="content-container">
-        <h2>Technical Support Group to the Anti Malaria Campaign Sri Lanka</h2>
-        <p>
-            The Technical Support Group (TSG) has been appointed by the Director General of Health Services for the purpose of providing carefully considered evidence based strategic and technical advice and recommendations to the Anti Malaria Campaign (AMC) for the prevention of reintroduction (PoR) of malaria in Sri Lanka. The TSG comprises 17 members with a broad range of expertise in the fields relevant to malaria control and elimination, which include parasitology, malariology, epidemiology, pharmacology, general medicine, vector control and biology, sociology and disease control. Members have been selected basically on their individual capacities to provide expertise and guidance to the AMC. The TSG also includes members from the Ministry of Health at the central and provincial levels including the AMC. In order to provide comprehensive recommendations, additional members with specific expertise in particular fields are being co-opted in the TSG meetings. The TSG is chaired by the Director General of Health Services. The TSG functions in a purely advisory capacity to provide advice and recommendations to the DGHS and Director AMC. The Ministry of Health supports and provide a facilities and resources to conduct meetings and relevant activities of the TSG. The membership of the TSG is reviewed every 3 years and revised accordingly. TSG is convened once every two months on a pre-determined date, and additional meetings may be called if and when necessary. Case Review Committee is a subcommittee of TSG, which meets every month to conduct an independent review of every case of malaria reported in the country.
-        </p>
+        <h2>Technical Support Group (TSG)</h2>
         
-        <h3>Terms of reference</h3>
-        <ul>
-            <li>To regularly review the malaria situation in the country with the Anti Malaria Campaign (AMC) with a view of assessing challenges for the successful implementation of the malaria elimination programme in Sri Lanka.</li>
-            <li>To provide strategic advice and technical inputs for the successful elimination and Prevention of reintroduction of malaria from Sri Lanka.</li>
-            <li>To formulate, as needed, specific recommendations and key policies for improving the national malaria elimination programme.</li>
-            <li>To support the Anti-Malaria Campaign to develop the National Strategic Plans and annual reports.</li>
-            <li>To support the AMC in key areas of intervention such as advocacy and capacity building.</li>
-            <li>The full members to attend regular meetings of the TSG (every two months or as required).</li>
-            <li>Advocate the human resources needs/ gaps related to sustain malaria elimination.</li>
-        </ul>
+        <div class="highlight-box">
+            <p><strong>The Technical Support Group (TSG) of the Anti Malaria Campaign (AMC) provides expert guidance for sustaining Sri Lanka's malaria-free status and preventing re-establishment.</strong> Comprising specialists in public health, parasitology, entomology, epidemiology, and clinical medicine, the TSG advises on surveillance, case management, vector control, and policy development. It reviews technical reports, monitors emerging challenges such as imported cases, drug resistance, and vector behavior, and ensures program alignment with WHO recommendations. Through its evidence-based advice and strategic oversight, the TSG strengthens national capacity for malaria and leishmaniasis surveillance and control, supporting AMC's goal of maintaining a resilient disease-free Sri Lanka.</p>
+        </div>
+
+        <h3>Members of the Technical Support Group</h3>
+        
+        <table class="tsg-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Role/Affiliation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="member-name">Dr. Asela Gunawardene, Chairperson</td>
+                    <td class="member-role">Director General of Health Services<br>Ministry of Health, Colombo 10</td>
+                </tr>
+                <tr>
+                    <td class="member-name">Dr. S.M. Arnold</td>
+                    <td class="member-role">Deputy Director General (PHS) I<br>Ministry of Health, Colombo 10</td>
+                </tr>
+                <tr>
+                    <td class="member-name">-</td>
+                    <td class="member-role">Medical Supply Division<br>Colombo 10</td>
+                </tr>
+                <tr>
+                    <td class="member-name">Dr. Ranjith Batuwanthudawe</td>
+                    <td class="member-role">Director, Health Promotion Bureau<br>Colombo 10</td>
+                </tr>
+                <tr>
+                    <td class="member-name">Prof. Prasad Katulanda</td>
+                    <td class="member-role">President, Sri Lanka College of Physicians</td>
+                </tr>
+                <tr>
+                    <td class="member-name">Dr. Pushpa Weerasinghe</td>
+                    <td class="member-role">President, Sri Lanka College of General Practitioners</td>
+                </tr>
+                <tr>
+                    <td class="member-name">Prof. Kamini Mendis</td>
+                    <td class="member-role">Emeritus Professor, Consultant in Malaria and Tropical Diseases<br>Former WHO Consultant</td>
+                </tr>
+                <tr>
+                    <td class="member-name">Prof. Rajitha Wickramasinghe</td>
+                    <td class="member-role">Senior Professor, Department of Public Health<br>Faculty of Medicine, University of Kelaniya</td>
+                </tr>
+                <tr>
+                    <td class="member-name">Prof. Deepika Fernando</td>
+                    <td class="member-role">Senior Professor, Department of Parasitology<br>Faculty of Medicine, University of Colombo</td>
+                </tr>
+                <tr>
+                    <td class="member-name">Dr. Nirmitha Lalindi De Silva</td>
+                    <td class="member-role">Lecturer in Parasitology, Department of Parasitology<br>Faculty of Medicine, University of Ruhuna, Karapitiya</td>
+                </tr>
+                <tr>
+                    <td class="member-name">Prof. Rohini Fernandopulle</td>
+                    <td class="member-role">Professor in Clinical Pharmacology<br>Department of Pharmacology, Faculty of Medicine<br>Gen. SJKD Defense University</td>
+                </tr>
+                <tr>
+                    <td class="member-name">Prof. Chandanie Wanigatunge</td>
+                    <td class="member-role">Professor of Pharmacology<br>Department of Pharmacology, Faculty of Medical Sciences<br>University of Sri Jayewardenepura</td>
+                </tr>
+                <tr>
+                    <td class="member-name">Dr. Anula Wijesundere</td>
+                    <td class="member-role">Consultant Physician</td>
+                </tr>
+                <tr>
+                    <td class="member-name">Dr. Upul Dissanayake</td>
+                    <td class="member-role">Consultant Physician<br>National Hospital in Sri Lanka</td>
+                </tr>
+                <tr>
+                    <td class="member-name">Prof. P.A.D.H. Nayana Gunathilaka</td>
+                    <td class="member-role">Professor in Parasitology<br>Department of Parasitology, Faculty of Medicine<br>University of Kelaniya, Ragama</td>
+                </tr>
+                <tr>
+                    <td class="member-name">Prof. Thusitha Jayasooriya</td>
+                    <td class="member-role">Emeritus Professor, Professor of Zoology<br>Faculty of Natural Sciences<br>Open University of Sri Lanka</td>
+                </tr>
+                <tr>
+                    <td class="member-name">Dr. Dhammika Aryawansa</td>
+                    <td class="member-role">Regional Malaria Officer<br>Regional Malaria Office, Maho</td>
+                </tr>
+                <tr>
+                    <td class="member-name">Dr. Waruni Gunathilake</td>
+                    <td class="member-role">Regional Malaria Officer<br>Regional Malaria Office, Anuradhapura</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="highlight-box">
+            <p><strong>Through its evidence-based advice and strategic oversight, the TSG strengthens national capacity for malaria and leishmaniasis surveillance and control, supporting AMC's goal of maintaining a resilient disease-free Sri Lanka.</strong></p>
+        </div>
     </div>
 </section>
 <?php include 'include/footer.php'; ?>
