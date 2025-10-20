@@ -217,7 +217,7 @@
 
 <section class="staff-hero-section">
     <h1>Meet Our Experts</h1>
-    <p>Dedicated Professionals Committed to Malaria Control and Prevention</p>
+    <p>Dedicated Professionals Committed to Malaria Prevention of Re-establishment and control of Leishmaniasis</p>
 </section>
 
 <nav class="about-nav">
@@ -234,6 +234,77 @@
         </nav>
 
 <section class="staff-team-showcase">
+    <!-- Director -->
+    <div class="staff-team-member">
+        <img src="asset/image/staf/s11.jpg" alt="Photo of Dr. Champa Aluthweera">
+        <h3>Dr. Champa Aluthweera </h3>
+        <p class="staff-role">Director</p>
+        <p class="staff-qualifications">
+            
+        </p>
+    </div>
+
+    <!-- Deputy Director -->
+    <!-- Note: No Deputy Director currently listed -->
+
+    <!-- Consultant Community Physicians -->
+    <div class="staff-team-member">
+        <img src="asset/image/staf/s9.jpg" alt="Photo of Dr.  M P P U Chulasiri">
+        <h3>Dr.  M P P U Chulasiri</h3>
+        <p class="staff-role">Consultant Community Physician</p>
+        <p class="staff-qualifications">
+        MBBS (Colombo), MSc., MD (Community Medicine)
+        </p>
+    </div>
+
+    <div class="staff-team-member">
+        <img src="asset/image/staf/s10.jpg" alt="Photo of Dr. Nethmini Thenuwara">
+        <h3>Dr. Nethmini Thenuwara</h3>
+        <p class="staff-role">Consultant Community Physician (Surveillance, Monitoring and Evaluation)</p>
+        <p class="staff-qualifications">
+        MBBS (Colombo), MSc, MD (Community Medicine)
+        </p>
+    </div>
+
+    <!-- Medical Officers -->
+    <div class="staff-team-member">
+        <img src="asset/image/staf/s5.jpg" alt="Photo of Dr. Gayani Ranasinghe">
+        <h3>Dr. Gayani Ranasinghe</h3>
+        <p class="staff-role">Medical Officer</p>
+        <p class="staff-qualifications">
+        MBBS, MSc (Com-Med)
+        </p>
+    </div>
+
+    <div class="staff-team-member">
+        <img src="asset/image/staf/s6.jpg" alt="Photo of Dr. S Jayasinghe">
+        <h3>Dr. S Jayasinghe</h3>
+        <p class="staff-role">Medical Officer</p>
+        <p class="staff-qualifications">
+        MBBS
+        </p>
+    </div>
+
+    <div class="staff-team-member">
+        <img src="asset/image/staf/s7.jpg" alt="Photo of Dr. A H N Maduranga">
+        <h3>Dr. A H N Maduranga</h3>
+        <p class="staff-role">Medical Officer</p>
+        <p class="staff-qualifications">
+        MBBS
+        </p>
+    </div>
+
+    <!-- Parasitologist -->
+    <div class="staff-team-member">
+        <img src="asset/image/staf/s4.jpg" alt="Photo of Ms. W M K Gunasekara">
+        <h3>Ms. W M K Gunasekara</h3>
+        <p class="staff-role">Parasitologist</p>
+        <p class="staff-qualifications">
+            MSc Reading for PhD
+        </p>
+    </div>
+
+    <!-- Entomologists -->
     <div class="staff-team-member">
         <img src="asset/image/staf/s1.jpg" alt="Photo of Ms. P Somasekaran">
         <h3>Ms. P Somasekaran</h3>
@@ -262,74 +333,11 @@
     </div>
 
     <div class="staff-team-member">
-        <img src="asset/image/staf/s4.jpg" alt="Photo of Ms. W M K Gunasekara">
-        <h3>Ms. W M K Gunasekara</h3>
-        <p class="staff-role">Parasitologist</p>
-        <p class="staff-qualifications">
-            MSc Reading for PhD
-        </p>
-    </div>
-
-    <div class="staff-team-member">
-        <img src="asset/image/staf/s11.jpg" alt="Photo of Dr. Champa Aluthweera">
-        <h3>Dr. Champa Aluthweera </h3>
-        <p class="staff-role">Director</p>
-        <p class="staff-qualifications">
-            
-        </p>
-    </div>
-    
-    <div class="staff-team-member">
         <img src="asset/image/staf/s8.jpg" alt="Photo of Mr M A S T Fernando">
         <h3>Mr M A S T Fernando</h3>
         <p class="staff-role">Entomologist</p>
         <p class="staff-qualifications">
         B.Sc. sp. Zoology (Kelaniya), M.Phil. (Kelaniya)
-        </p>
-    </div>
-
-    <div class="staff-team-member">
-        <img src="asset/image/staf/s9.jpg" alt="Photo of Dr.  M P P U Chulasiri">
-        <h3>Dr.  M P P U Chulasiri</h3>
-        <p class="staff-role">Consultant Community Physician</p>
-        <p class="staff-qualifications">
-        MBBS (Colombo), MSc., MD (Community Medicine)
-        </p>
-    </div>
-
-    <div class="staff-team-member">
-        <img src="asset/image/staf/s10.jpg" alt="Photo of Dr. Nethmini Thenuwara">
-        <h3>Dr. Nethmini Thenuwara</h3>
-        <p class="staff-role">Consultant Community Physician (Surveillance, Monitoring and Evaluation)</p>
-        <p class="staff-qualifications">
-        MBBS (Colombo), MSc, MD (Community Medicine)
-        </p>
-    </div>
-
-    <div class="staff-team-member">
-        <img src="asset/image/staf/s5.jpg" alt="Photo of Dr. Gayani Ranasinghe">
-        <h3>Dr. Gayani Ranasinghe</h3>
-        <p class="staff-role">Medical Officer</p>
-        <p class="staff-qualifications">
-        MBBS, MSc (Com-Med)
-        </p>
-    </div>
-
-    <div class="staff-team-member">
-        <img src="asset/image/staf/s6.jpg" alt="Photo of Dr. S Jayasinghe">
-        <h3>Dr. S Jayasinghe</h3>
-        <p class="staff-role">Medical Officer</p>
-        <p class="staff-qualifications">
-        MBBS
-        </p>
-    </div>
-
-    <div class="staff-team-member">
-        <img src="asset/image/staf/s7.jpg" alt="Photo of Dr. A H N Maduranga">
-        <h3>Dr. A H N Maduranga</h3>
-        <p class="staff-role">Medical Officer</p>
-        <p class="staff-qualifications">
-        MBBS
         </p>
     </div>
 

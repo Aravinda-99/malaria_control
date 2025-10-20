@@ -111,6 +111,78 @@
             border-radius: 0 8px 8px 0;
         }
 
+        /* Table Styles */
+        .rmo-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .rmo-table th {
+            background-color: rgb(0, 51, 4);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .rmo-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e9ecef;
+            border-right: 1px solid #e9ecef;
+            vertical-align: top;
+        }
+
+        .rmo-table td:last-child {
+            border-right: none;
+        }
+
+        .rmo-table tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        .rmo-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .rmo-table tbody tr {
+            border-top: 1px solid #e9ecef;
+        }
+
+        .rmo-table tbody tr.province-group-start {
+            border-top: 2px solid rgb(0, 51, 4);
+        }
+
+        .rmo-table tbody tr.province-group-start td {
+            border-top: 2px solid rgb(0, 51, 4);
+        }
+
+        .rmo-table tbody tr.province-group-start td:first-child {
+            background-color: #f8f9fa;
+            font-weight: 700;
+        }
+
+        .province-name {
+            font-weight: 600;
+            color: rgb(0, 51, 4);
+            font-size: 1.1rem;
+        }
+
+        .officer-info {
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .district-name {
+            font-weight: 500;
+            color: #666;
+        }
+
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .content-section {
@@ -123,6 +195,19 @@
             
             .content-container h3 {
                 font-size: 1.2rem;
+            }
+
+            .rmo-table {
+                font-size: 0.9rem;
+            }
+
+            .rmo-table th,
+            .rmo-table td {
+                padding: 0.75rem 0.5rem;
+            }
+
+            .province-name {
+                font-size: 1rem;
             }
         }
 
@@ -225,70 +310,141 @@
 
 <section class="content-section">
     <div class="content-container">
-        <h2>Role of Regional Medical/Malaria Officers (RMO/RMOO)</h2>
-        
-        <p>Regional Medical/Malaria Officers (RMO/RMOO) play a key role in malaria control, elimination, and prevention of re-establishment programs in Sri Lanka.</p>
-
-        <h3>Historical Context</h3>
+        <h2>Regional Malaria Medical Officers (RMOs)</h2>
         
         <div class="highlight-box">
-            <h4>Before 1989 (Decentralization)</h4>
-            <p>Regional Medical/Malaria Officers implemented district-level malaria control under the Director, Anti-Malaria Campaign.</p>
+            <p><strong>Regional Malaria Medical Officers (RMOs) play a pivotal role in sustaining Sri Lanka's malaria-free status and strengthening surveillance for leishmaniasis.</strong> They lead regional implementation of prevention, surveillance, case management, and vector control activities under the guidance of the Anti Malaria Campaign (AMC). RMOs coordinate case-based surveillance, ensure early detection and prompt treatment of malaria—particularly imported cases—and oversee entomological monitoring, outbreak preparedness, and response activities. They work closely with hospitals, laboratories, and public health teams to maintain high vigilance against re-establishment of transmission. In addition, RMOs direct regional leishmaniasis control efforts, including case detection, patient follow-up, vector surveillance, and coordination with dermatologists and regional health authorities. They also conduct training, awareness, and capacity-building programs for health workers and communities. Through their leadership and continuous engagement, RMOs ensure that malaria and leishmaniasis surveillance and control remain strong, integrated, and responsive to evolving public health challenges in Sri Lanka.</p>
         </div>
+
+        <h3>Regional Malaria Officers by Province</h3>
+        
+        <table class="rmo-table">
+            <thead>
+                <tr>
+                    <th>Province</th>
+                    <th>Regional Malaria Officer</th>
+                    <th>District/Area</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="province-group-start">
+                    <td class="province-name">Western Province</td>
+                    <td class="officer-info"><strong>Dr. XXX</strong><br>Regional Malaria Officer</td>
+                    <td class="district-name">Colombo</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="officer-info"><strong>Dr. XXX</strong><br>Regional Malaria Officer</td>
+                    <td class="district-name">Kalutara</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="officer-info"><strong>Dr. XXX</strong><br>Regional Malaria Officer</td>
+                    <td class="district-name">Gampaha</td>
+                </tr>
+                
+                <tr class="province-group-start">
+                    <td class="province-name">Central Province</td>
+                    <td class="officer-info"><strong>Dr. XXX</strong><br>Regional Malaria Officer</td>
+                    <td class="district-name">Kandy and Nuwara Eliya</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="officer-info"><strong>Dr. XXX</strong><br>Regional Malaria Officer</td>
+                    <td class="district-name">Matale</td>
+                </tr>
+                
+                <tr class="province-group-start">
+                    <td class="province-name">North Central Province</td>
+                    <td class="officer-info"><strong>Dr. XXX</strong><br>Regional Malaria Officer</td>
+                    <td class="district-name">Anuradhapura</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="officer-info"><strong>Dr. XXX</strong><br>Regional Malaria Officer</td>
+                    <td class="district-name">Polonnaruwa</td>
+                </tr>
+                
+                <tr class="province-group-start">
+                    <td class="province-name">Northern Province</td>
+                    <td class="officer-info"><strong>Dr. XXX</strong><br>Regional Malaria Officer</td>
+                    <td class="district-name">Jaffna</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="officer-info"><strong>Dr. XXX</strong><br>Regional Malaria Officer</td>
+                    <td class="district-name">Kilinochchi</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="officer-info"><strong>Dr. XXX</strong><br>Regional Malaria Officer</td>
+                    <td class="district-name">Mannar</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="officer-info"><strong>Dr. XXX</strong><br>Regional Malaria Officer</td>
+                    <td class="district-name">Vavuniya</td>
+                </tr>
+                
+                <tr class="province-group-start">
+                    <td class="province-name">North Western Province</td>
+                    <td class="officer-info"><strong>Dr. XXX</strong><br>Regional Malaria Officer</td>
+                    <td class="district-name">Kurunegala</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="officer-info"><strong>Dr. XXX</strong><br>Regional Malaria Officer</td>
+                    <td class="district-name">Maho</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="officer-info"><strong>Dr. XXX</strong><br>Regional Malaria Officer</td>
+                    <td class="district-name">Puttalam</td>
+                </tr>
+                
+                <tr class="province-group-start">
+                    <td class="province-name">Sabaragamuwa Province</td>
+                    <td class="officer-info"><strong>Dr. XXX</strong><br>Regional Malaria Officer</td>
+                    <td class="district-name">Kegalle</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="officer-info"><strong>Dr. XXX</strong><br>Regional Malaria Officer</td>
+                    <td class="district-name">Ratnapura</td>
+                </tr>
+                
+                <tr class="province-group-start">
+                    <td class="province-name">Southern Province</td>
+                    <td class="officer-info"><strong>Dr. XXX</strong><br>Regional Malaria Officer</td>
+                    <td class="district-name">Galle</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="officer-info"><strong>Dr. XXX</strong><br>Regional Malaria Officer</td>
+                    <td class="district-name">Matara</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="officer-info"><strong>Dr. XXX</strong><br>Regional Malaria Officer</td>
+                    <td class="district-name">Hambantota</td>
+                </tr>
+                
+                <tr class="province-group-start">
+                    <td class="province-name">Uva Province</td>
+                    <td class="officer-info"><strong>Dr. XXX</strong><br>Regional Malaria Officer</td>
+                    <td class="district-name">Badulla</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="officer-info"><strong>Dr. XXX</strong><br>Regional Malaria Officer</td>
+                    <td class="district-name">Monaragala</td>
+                </tr>
+            </tbody>
+        </table>
 
         <div class="highlight-box">
-            <h4>After 1989 (Devolution of Health Administration)</h4>
-            <p>Following the devolution of health administration to Provincial Councils, their role shifted to technical advisors to Regional Directors of Health Services and Medical Officers of Health, who were then entrusted with control/elimination/POR activities.</p>
+            <p><strong>Through their leadership and continuous engagement, RMOs ensure that malaria and leishmaniasis surveillance and control remain strong, integrated, and responsive to evolving public health challenges in Sri Lanka.</strong></p>
         </div>
-
-        <h3>Regional Structure</h3>
-        
-        <ul>
-            <li>A "region" is generally a district, but some districts (e.g., Kurunegala, Ampara) are divided into several RMO regions.</li>
-            <li>Before decentralization, regions didn't always align with administrative districts.</li>
-            <li>Malarious areas were sub-divided into sub-regional offices managed by a senior PHI.</li>
-        </ul>
-
-        <h3>Officer Recruitment and Qualifications</h3>
-        
-        <h4>Original Recruitment Policy</h4>
-        <p>Originally, the post was "Regional Medical Officer (Anti-Malaria Campaign)" filled by medical officers with a medical degree.</p>
-
-        <h4>Policy Change in Early 1980s</h4>
-        <p>Due to a shortage of medical officers, a policy was introduced to recruit biological science graduates with:</p>
-        <ul>
-            <li>Four-year Zoology special degree with entomology and/or parasitology</li>
-            <li>Recruitment through the Sri Lanka Scientific Service (SLSS)</li>
-            <li>Official designation: "Regional Officers (Anti-Malaria Campaign)"</li>
-            <li>Commonly referred to as "Regional Malaria Officers (RMOO)"</li>
-        </ul>
-
-        <div class="highlight-box">
-            <h4>Career Development Requirements</h4>
-            <p>SLSS RMOO are required to obtain a Masters or Ph.D. in entomology or parasitology at a certain career point as an "efficiency bar." This approach strengthened the campaign by incorporating academically qualified and experienced officers.</p>
-        </div>
-
-        <h3>Current Responsibilities</h3>
-        
-        <p>RMOO are currently responsible for the "prevention of reintroduction of malaria (PORM) programme" at the district level, under the technical guidance of the National Directorate of Anti-Malaria Campaign.</p>
-
-        <div class="highlight-box">
-            <h4>Challenges of PORM</h4>
-            <p>This task is described as more challenging than malaria control, requiring innovative approaches for:</p>
-            <ul>
-                <li>Tracking risk populations</li>
-                <li>Assessing local receptivity and vulnerability</li>
-                <li>Ensuring local preparedness to prevent transmission</li>
-            </ul>
-        </div>
-
-        <h3>Additional Contributions</h3>
-        
-        <p>Beyond malaria, RMOO also contribute to controlling other vector-borne diseases in their regions, such as:</p>
-        <ul>
-            <li>Dengue</li>
-            <li>Leishmaniasis</li>
-        </ul>
     </div>
 </section>
 

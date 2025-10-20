@@ -99,7 +99,7 @@
 
     .hero-content h1 {
         color:rgb(255, 255, 255);
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         font-weight: 700;
         margin-bottom: 1rem;
     }
@@ -165,11 +165,11 @@
 
 <section class="hero-section">
     <div class="hero-content">
-        <h1>Protect Your Family. Fight Malaria.</h1>
-        <p>Sleep under a mosquito net. Stay safe. Stay healthy.</p>
+        <h1>Protect our country.<br>Prevent re-introduction of malaria.</h1>
+        <p>Travel Smart. Stay Safe.</p>
         <a href="contactUs.php" class="hero-cta-btn">Contact Us</a>
         <div class="hero-contact-info">
-            <div><i class="fas fa-phone-alt"></i><span>+94 11 7 626 626</span></div>
+            <div><i class="fas fa-phone-alt"></i><span>+94 712841767</span></div>
             <div><i class="fas fa-envelope"></i><span>antimalariacampaign@gmail.com</span></div>
         </div>
     </div>
@@ -200,14 +200,14 @@
             'asset/hero/hero3.png'
         ];
         var titles = [
-            'Protect Your Family. Fight Malaria.',
-            'Malaria Distribution by Districts',
-            'Malaria Distribution by Region.'
+            'Protect our country.<br>Prevent re-introduction of Malaria',
+            'District-wise distribution of <br>Imported malaria cases 2013-2024',
+            'Countries with malaria in 2024.'
         ];
         var subtitles = [
-            'Sleep under a mosquito net. Stay safe. Stay healthy.',
-            'Percentage of Cases, 2025 WHO Report',
-            'Percentage of Cases, 2025 WHO Report.'
+            'Travel smart. Stay safe.',
+            'Every case counts. Stop Malaria at the Border',
+            'Malaria still exists. Know before you go..'
         ];
         var current = 0;
         var intervalMs = 5000;
@@ -221,7 +221,7 @@
             var h1El = document.querySelector('.hero-content h1');
             var pEl = document.querySelector('.hero-content p');
             if (h1El && titles[index] !== undefined) {
-                h1El.textContent = titles[index];
+                h1El.innerHTML = titles[index];
             }
             if (pEl && subtitles[index] !== undefined) {
                 pEl.textContent = subtitles[index];

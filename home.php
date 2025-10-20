@@ -34,7 +34,7 @@
             align-items: flex-start;
             gap: 2rem;
             max-width: 1200px;
-            margin: 0 auto 4rem auto;
+            margin: 0 auto 0rem auto;
         }
 
         .welcome-logo {
@@ -79,13 +79,114 @@
             background-color:rgb(1, 97, 30);
         }
 
+        /* --- Objectives Section --- */
+        .objectives-section {
+            padding: 2rem 2rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .objectives-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23000" opacity="0.02"/><circle cx="75" cy="75" r="1" fill="%23000" opacity="0.02"/><circle cx="50" cy="10" r="1" fill="%23000" opacity="0.02"/><circle cx="10" cy="60" r="1" fill="%23000" opacity="0.02"/><circle cx="90" cy="40" r="1" fill="%23000" opacity="0.02"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .objectives-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .objectives-container h2 {
+            font-size: 2.5rem;
+            color: rgb(1, 59, 18);
+            margin-bottom: 1rem;
+            font-weight: 700;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .objectives-container h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, rgb(1, 59, 18), rgb(0, 117, 35));
+            margin: 1rem auto;
+            border-radius: 2px;
+        }
+
+        .objectives-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .objective-item {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid rgb(1, 59, 18);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .objective-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, rgb(1, 59, 18), rgb(0, 117, 35));
+        }
+
+        .objective-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .objective-number {
+            background: linear-gradient(135deg, rgb(1, 59, 18), rgb(0, 117, 35));
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.4rem;
+            margin: 0 auto 1rem auto;
+            box-shadow: 0 4px 15px rgba(1, 59, 18, 0.3);
+        }
+
+        .objective-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #333;
+            text-align: center;
+            font-weight: 500;
+        }
+
         /* --- Info Cards --- */
         .info-cards-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 0 auto 0rem auto;
         }
 
         .info-card {
@@ -254,8 +355,8 @@
         }
 
         .surveillance-icon img {
-            width: 98px;
-            height: 98px;
+            width: 70px;
+            height: 70px;
             object-fit: contain;
             display: block;
         }
@@ -684,6 +785,10 @@
             .info-cards-container, .cards-grid {
                 grid-template-columns: 1fr;
             }
+            .objectives-list {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
             .welcome-intro {
                 flex-direction: column;
                 align-items: center;
@@ -766,15 +871,15 @@
                 <img src="asset/image/gov-logo.png" alt="Campaign Logo" class="welcome-logo">
                 <div class="welcome-text">
                     <span>Welcome to</span>
-                    <h2>Malaria Control Campaign</h2>
-                    <p>We are a dedicated public health initiative committed to eliminating malaria in Sri Lanka and protecting every citizen from mosquito-borne diseases. Through community education, mosquito control, and access to preventive tools like treated bed nets, we work hand in hand with families, health workers, and local authorities to build a healthier nation.</p>
+                    <h2>Anti Malaria Campaign</h2>
+                    <p>We are a national public health government organization in Sri Lanka responsible for preventing the re-establishment of malaria and control of leishmaniasis. We are committed to sustain the country’s malaria-free status, which was certified by the World Health Organization in 2016. We provide leadership, technical guidance, and coordination for surveillance, vector control, diagnosis, treatment, and health education across all regions of the country.</p>
                 </div>
                 <a href="aboutUs.php" class="read-more-btn">READ MORE ❯</a>
             </div>
             <div class="info-cards-container">
                 <div class="info-card vision-card">
                     <h3>Our Vision</h3>
-                    <p>To create a healthier Sri Lanka where every individual has access to compassionate, reliable, and preventive healthcare, empowering communities to thrive free from disease.</p>
+                    <p>A malaria-free Sri Lanka </p>
                 </div>
                 <div class="info-card doctor-card">
                     <img src="asset/image/drpic1.png" alt="Dr. M. P. P. U Chulasiri">
@@ -785,21 +890,43 @@
                 </div>
                 <div class="info-card mission-card">
                     <h3>Our Mission</h3>
-                    <p>To deliver patient-centered healthcare through dedicated service, modern medical practices, and community outreach — with a focus on disease prevention, early detection, and education, especially in vulnerable rural areas.</p>
+                    <p>Plan and implement a comprehensive programme to sustain intensive surveillance,
+                        comprehensive case management, outbreak preparedness, providing information to
+                        travellers and high-risk groups, and rapid response for prevention of re-establishment of
+                        malaria in Sri Lanka. </p>
                 </div>
             </div>
         </section>
+
+        <!-- Objectives Section -->
+        <section class="objectives-section">
+            <div class="objectives-container">
+                <h2>Our Objectives</h2>
+                <div class="objectives-list">
+                    <div class="objective-item">
+                        <div class="objective-number">1</div>
+                        <div class="objective-text">To prevent re-establishment of malaria in Sri Lanka.</div>
+                    </div>
+                    <div class="objective-item">
+                        <div class="objective-number">2</div>
+                        <div class="objective-text">To maintain zero mortality due to malaria in Sri Lanka</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="protect-family-section">
             <div class="protect-family-content">
                 <h2>PROTECT <br>YOUR FAMILY <br>FIGHT MALARIA.</h2>
                 <p>sleep under a mosquito net. stay safe. stay healthy</p>
+                <p class="protect-family-content-p" style="color: #fff; font-size: 1rem; font-weight: 300;">Early detection of malaria cases save life, and prevent spread.</p>
             </div>
             <div class="surveillance-card">
                 <div class="surveillance-header">
-                    <div class="surveillance-icon"><img src="asset/image/mosq.png" alt="Mosquito"></div>
+                    <div class="surveillance-icon"><img src="asset/image/logoMos.png" alt="Mosquito"></div>
                     <div>
-                        <h3>Malaria Surveillance</h3>
-                        <p>Prevention of-Establishmint Pase</p>
+                        <h3>Malaria Surveillance 2025</h3>
+                        <p>Prevention of reestablishment phase</p>
                     </div>
                 </div>
                 <div class="surveillance-stats">
@@ -908,7 +1035,7 @@
             <div class="event-calendar-container">
                 <div class="event-calendar-info">
                     <h2>Event Calendar</h2>
-                    <p>Stay updated on key dates for awareness drives, medical camps, and educational sessions designed to strengthen our fight against malaria.</p>
+                    <p>Stay updated on key dates for reviews, in-service training, awareness programmes and special events designed to strengthen our fight against malaria and leishmaniasis.</p>
                     <div class="calendar">
                         <div class="calendar-header">
                             <span>❮</span>
