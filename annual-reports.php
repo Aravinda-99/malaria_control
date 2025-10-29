@@ -389,87 +389,87 @@
 
         <!-- Reports Grid -->
         <div class="reports-grid">
-            <!-- Report 1 - 2006 -->
+            <!-- Report 1 - 2023 -->
             <div class="report-card">
                 <div class="report-thumbnail" id="pdfThumbnailContainer1">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail1" class="pdf-thumbnail-canvas"></canvas>
                 </div>
-                <h3 class="report-title">Annual Report 2006</h3>
-                <p class="report-date">01 January 2006</p>
+                <h3 class="report-title">Annual Report 2023</h3>
+                <p class="report-date">01 January 2023</p>
                 <div class="report-actions">
-                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual Report 2006.pdf')">View</a>
-                    <a href="asset/docs/annual_reports/Annual Report 2006.pdf" class="btn btn-download" download>Download</a>
+                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual-Report-2023.pdf')">View</a>
+                    <a href="asset/docs/annual_reports/Annual-Report-2023.pdf" class="btn btn-download" download>Download</a>
                 </div>
             </div>
 
-            <!-- Report 2 - 2007 -->
+            <!-- Report 2 - 2019 -->
             <div class="report-card">
                 <div class="report-thumbnail" id="pdfThumbnailContainer2">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail2" class="pdf-thumbnail-canvas"></canvas>
                 </div>
-                <h3 class="report-title">Annual Report 2007</h3>
-                <p class="report-date">01 January 2007</p>
+                <h3 class="report-title">Annual Report 2019</h3>
+                <p class="report-date">01 January 2019</p>
                 <div class="report-actions">
-                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual Report 2007.pdf')">View</a>
-                    <a href="asset/docs/annual_reports/Annual Report 2007.pdf" class="btn btn-download" download>Download</a>
+                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual-Report-2019.pdf')">View</a>
+                    <a href="asset/docs/annual_reports/Annual-Report-2019.pdf" class="btn btn-download" download>Download</a>
                 </div>
             </div>
 
-            <!-- Report 3 - 2008 -->
+            <!-- Report 3 - 2018 -->
             <div class="report-card">
                 <div class="report-thumbnail" id="pdfThumbnailContainer3">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail3" class="pdf-thumbnail-canvas"></canvas>
                 </div>
-                <h3 class="report-title">Annual Report 2008</h3>
-                <p class="report-date">01 January 2008</p>
+                <h3 class="report-title">Annual Report 2018</h3>
+                <p class="report-date">01 January 2018</p>
                 <div class="report-actions">
-                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual Report 2008.pdf')">View</a>
-                    <a href="asset/docs/annual_reports/Annual Report 2008.pdf" class="btn btn-download" download>Download</a>
+                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual-Report-2018.pdf')">View</a>
+                    <a href="asset/docs/annual_reports/Annual-Report-2018.pdf" class="btn btn-download" download>Download</a>
                 </div>
             </div>
 
-            <!-- Report 4 - 2009 -->
+            <!-- Report 4 - 2016 -->
             <div class="report-card">
                 <div class="report-thumbnail" id="pdfThumbnailContainer4">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail4" class="pdf-thumbnail-canvas"></canvas>
                 </div>
-                <h3 class="report-title">Annual Report 2009</h3>
-                <p class="report-date">01 January 2009</p>
+                <h3 class="report-title">Annual Report 2016</h3>
+                <p class="report-date">01 January 2016</p>
                 <div class="report-actions">
-                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual Report 2009.pdf')">View</a>
-                    <a href="asset/docs/annual_reports/Annual Report 2009.pdf" class="btn btn-download" download>Download</a>
+                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual-Report-2016.pdf')">View</a>
+                    <a href="asset/docs/annual_reports/Annual-Report-2016.pdf" class="btn btn-download" download>Download</a>
                 </div>
             </div>
 
-            <!-- Report 5 - 2011 -->
+            <!-- Report 5 - 2015 -->
             <div class="report-card">
                 <div class="report-thumbnail" id="pdfThumbnailContainer5">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail5" class="pdf-thumbnail-canvas"></canvas>
                 </div>
-                <h3 class="report-title">Annual Report 2011</h3>
-                <p class="report-date">01 January 2011</p>
+                <h3 class="report-title">Annual Report 2015</h3>
+                <p class="report-date">01 January 2015</p>
                 <div class="report-actions">
-                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual Report 2011.pdf')">View</a>
-                    <a href="asset/docs/annual_reports/Annual Report 2011.pdf" class="btn btn-download" download>Download</a>
+                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual Report 2015.pdf')">View</a>
+                    <a href="asset/docs/annual_reports/Annual Report 2015.pdf" class="btn btn-download" download>Download</a>
                 </div>
             </div>
 
-            <!-- Report 6 - 2012 -->
+            <!-- Report 6 - 2014 -->
             <div class="report-card">
                 <div class="report-thumbnail" id="pdfThumbnailContainer6">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail6" class="pdf-thumbnail-canvas"></canvas>
                 </div>
-                <h3 class="report-title">Annual Report 2012</h3>
-                <p class="report-date">01 January 2012</p>
+                <h3 class="report-title">Annual Report 2014</h3>
+                <p class="report-date">01 January 2014</p>
                 <div class="report-actions">
-                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual Report 2012.pdf')">View</a>
-                    <a href="asset/docs/annual_reports/Annual Report 2012.pdf" class="btn btn-download" download>Download</a>
+                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual Report 2014.pdf')">View</a>
+                    <a href="asset/docs/annual_reports/Annual Report 2014.pdf" class="btn btn-download" download>Download</a>
                 </div>
             </div>
 
@@ -487,87 +487,87 @@
                 </div>
             </div>
 
-            <!-- Report 8 - 2014 -->
+            <!-- Report 8 - 2012 -->
             <div class="report-card">
                 <div class="report-thumbnail" id="pdfThumbnailContainer8">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail8" class="pdf-thumbnail-canvas"></canvas>
                 </div>
-                <h3 class="report-title">Annual Report 2014</h3>
-                <p class="report-date">01 January 2014</p>
+                <h3 class="report-title">Annual Report 2012</h3>
+                <p class="report-date">01 January 2012</p>
                 <div class="report-actions">
-                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual Report 2014.pdf')">View</a>
-                    <a href="asset/docs/annual_reports/Annual Report 2014.pdf" class="btn btn-download" download>Download</a>
+                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual Report 2012.pdf')">View</a>
+                    <a href="asset/docs/annual_reports/Annual Report 2012.pdf" class="btn btn-download" download>Download</a>
                 </div>
             </div>
 
-            <!-- Report 9 - 2015 -->
+            <!-- Report 9 - 2011 -->
             <div class="report-card">
                 <div class="report-thumbnail" id="pdfThumbnailContainer9">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail9" class="pdf-thumbnail-canvas"></canvas>
                 </div>
-                <h3 class="report-title">Annual Report 2015</h3>
-                <p class="report-date">01 January 2015</p>
+                <h3 class="report-title">Annual Report 2011</h3>
+                <p class="report-date">01 January 2011</p>
                 <div class="report-actions">
-                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual Report 2015.pdf')">View</a>
-                    <a href="asset/docs/annual_reports/Annual Report 2015.pdf" class="btn btn-download" download>Download</a>
+                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual Report 2011.pdf')">View</a>
+                    <a href="asset/docs/annual_reports/Annual Report 2011.pdf" class="btn btn-download" download>Download</a>
                 </div>
             </div>
 
-            <!-- Report 10 - 2016 -->
+            <!-- Report 10 - 2009 -->
             <div class="report-card">
                 <div class="report-thumbnail" id="pdfThumbnailContainer10">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail10" class="pdf-thumbnail-canvas"></canvas>
                 </div>
-                <h3 class="report-title">Annual Report 2016</h3>
-                <p class="report-date">01 January 2016</p>
+                <h3 class="report-title">Annual Report 2009</h3>
+                <p class="report-date">01 January 2009</p>
                 <div class="report-actions">
-                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual-Report-2016.pdf')">View</a>
-                    <a href="asset/docs/annual_reports/Annual-Report-2016.pdf" class="btn btn-download" download>Download</a>
+                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual Report 2009.pdf')">View</a>
+                    <a href="asset/docs/annual_reports/Annual Report 2009.pdf" class="btn btn-download" download>Download</a>
                 </div>
             </div>
 
-            <!-- Report 11 - 2018 -->
+            <!-- Report 11 - 2008 -->
             <div class="report-card">
                 <div class="report-thumbnail" id="pdfThumbnailContainer11">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail11" class="pdf-thumbnail-canvas"></canvas>
                 </div>
-                <h3 class="report-title">Annual Report 2018</h3>
-                <p class="report-date">01 January 2018</p>
+                <h3 class="report-title">Annual Report 2008</h3>
+                <p class="report-date">01 January 2008</p>
                 <div class="report-actions">
-                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual-Report-2018.pdf')">View</a>
-                    <a href="asset/docs/annual_reports/Annual-Report-2018.pdf" class="btn btn-download" download>Download</a>
+                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual Report 2008.pdf')">View</a>
+                    <a href="asset/docs/annual_reports/Annual Report 2008.pdf" class="btn btn-download" download>Download</a>
                 </div>
             </div>
 
-            <!-- Report 12 - 2019 -->
+            <!-- Report 12 - 2007 -->
             <div class="report-card">
                 <div class="report-thumbnail" id="pdfThumbnailContainer12">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail12" class="pdf-thumbnail-canvas"></canvas>
                 </div>
-                <h3 class="report-title">Annual Report 2019</h3>
-                <p class="report-date">01 January 2019</p>
+                <h3 class="report-title">Annual Report 2007</h3>
+                <p class="report-date">01 January 2007</p>
                 <div class="report-actions">
-                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual-Report-2019.pdf')">View</a>
-                    <a href="asset/docs/annual_reports/Annual-Report-2019.pdf" class="btn btn-download" download>Download</a>
+                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual Report 2007.pdf')">View</a>
+                    <a href="asset/docs/annual_reports/Annual Report 2007.pdf" class="btn btn-download" download>Download</a>
                 </div>
             </div>
 
-            <!-- Report 13 - 2023 -->
+            <!-- Report 13 - 2006 -->
             <div class="report-card">
                 <div class="report-thumbnail" id="pdfThumbnailContainer13">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail13" class="pdf-thumbnail-canvas"></canvas>
                 </div>
-                <h3 class="report-title">Annual Report 2023</h3>
-                <p class="report-date">01 January 2023</p>
+                <h3 class="report-title">Annual Report 2006</h3>
+                <p class="report-date">01 January 2006</p>
                 <div class="report-actions">
-                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual-Report-2023.pdf')">View</a>
-                    <a href="asset/docs/annual_reports/Annual-Report-2023.pdf" class="btn btn-download" download>Download</a>
+                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual Report 2006.pdf')">View</a>
+                    <a href="asset/docs/annual_reports/Annual Report 2006.pdf" class="btn btn-download" download>Download</a>
                 </div>
             </div>
         </div>
@@ -654,19 +654,19 @@
         document.addEventListener('DOMContentLoaded', function() {
             // Generate thumbnails for each PDF based on the file names from the image
             const pdfFiles = [
-                'asset/docs/annual_reports/Annual Report 2006.pdf',
-                'asset/docs/annual_reports/Annual Report 2007.pdf',
-                'asset/docs/annual_reports/Annual Report 2008.pdf',
-                'asset/docs/annual_reports/Annual Report 2009.pdf',
-                'asset/docs/annual_reports/Annual Report 2011.pdf',
-                'asset/docs/annual_reports/Annual Report 2012.pdf',
-                'asset/docs/annual_reports/Annual Report 2013.pdf',
-                'asset/docs/annual_reports/Annual Report 2014.pdf',
-                'asset/docs/annual_reports/Annual Report 2015.pdf',
-                'asset/docs/annual_reports/Annual-Report-2016.pdf',
-                'asset/docs/annual_reports/Annual-Report-2018.pdf',
+                'asset/docs/annual_reports/Annual-Report-2023.pdf',
                 'asset/docs/annual_reports/Annual-Report-2019.pdf',
-                'asset/docs/annual_reports/Annual-Report-2023.pdf'
+                'asset/docs/annual_reports/Annual-Report-2018.pdf',
+                'asset/docs/annual_reports/Annual-Report-2016.pdf',
+                'asset/docs/annual_reports/Annual Report 2015.pdf',
+                'asset/docs/annual_reports/Annual Report 2014.pdf',
+                'asset/docs/annual_reports/Annual Report 2013.pdf',
+                'asset/docs/annual_reports/Annual Report 2012.pdf',
+                'asset/docs/annual_reports/Annual Report 2011.pdf',
+                'asset/docs/annual_reports/Annual Report 2009.pdf',
+                'asset/docs/annual_reports/Annual Report 2008.pdf',
+                'asset/docs/annual_reports/Annual Report 2007.pdf',
+                'asset/docs/annual_reports/Annual Report 2006.pdf'
             ];
 
             pdfFiles.forEach((pdfFile, index) => {

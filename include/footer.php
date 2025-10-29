@@ -132,7 +132,7 @@
         <div class="footer-col">
             <div class="footer-logo-container">
                 
-                <img src="asset/image/AMC_logo1.png" alt="Malaria Control Campaign Logo">
+                <img src="asset/image/AMC_logo_white.png" alt="Malaria Control Campaign Logo">
             </div>
             <p>The need for an effective response to malaria was recognized prior to independence in 1948. Organized malaria control activities commenced in 1911 with the establishment of the Anti Malaria Campaign in Kurunegala when Sri Lanka was still a British colony.</p>
         </div>
