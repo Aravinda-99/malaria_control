@@ -38,7 +38,7 @@
         }
 
         .welcome-logo {
-            width: 100px;
+            width: 200px;
             height: auto;
         }
 
@@ -183,10 +183,11 @@
         /* --- Info Cards --- */
         .info-cards-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2rem;
             max-width: 1200px;
-            margin: 0 auto 0rem auto;
+            margin: 0 auto 0rem auto; /* centers the container */
+            margin-top: 2rem;
         }
 
         .info-card {
@@ -452,7 +453,7 @@
     color: #fff;
 }
 
-/* Card Grid Layout (Unchanged) */
+        /* Card Grid Layout (Unchanged) */
 .cards-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -462,6 +463,23 @@
 }
 
 /* --- MODIFIED CARD STYLES --- */
+        /* --- Services slider overrides --- */
+        .services-section .services-slider { position: relative; max-width: 1200px; margin: 0 auto; overflow: hidden; }
+        .services-section .cards-grid { display: flex; gap: 2rem; grid-template-columns: none; transition: transform 0.3s ease; will-change: transform; }
+        .services-section .service-card { flex: 0 0 calc(33.333% - 1.333rem); }
+        /* arrows removed */
+        .services-slider .slider-dots { text-align: center; margin-top: 1rem; }
+        .services-slider .slider-dots span { display: inline-block; height: 10px; width: 10px; margin: 0 3px; background-color: #ccc; border-radius: 50%; cursor: pointer; transition: background-color 0.3s; }
+        .services-slider .slider-dots span.active { background-color: rgb(0, 219, 66); }
+        /* Secondary slider dots in red */
+        .services-secondary-slider .slider-dots span.active { background-color: rgb(95, 20, 20); }
+
+        /* Secondary services list under slider dots */
+        .services-secondary-grid { margin-top: 1.5rem; }
+        .services-secondary-grid .service-card { background: transparent; box-shadow: none; border: none; }
+        .services-secondary-grid .service-card-content { background-color:rgb(95, 20, 20); /* red */ }
+        .services-secondary-grid .service-card.meroon .service-card-content { background-color: rgb(95, 20, 20); /* maroon */ }
+
 .news-card {
     background: #fff;
     border-radius: 10px;
@@ -478,6 +496,24 @@
 .news-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Match services to news card look */
+.service-card {
+    background: transparent; /* remove white card background around image */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: none; /* remove outer glow that can look like a border */
+    border: none;
+    text-decoration: none;
+    color: inherit;
+    display: block; /* let image define height; content overlays */
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
 }
 
 /* ADDED: Style for the active card's blue border */
@@ -500,6 +536,15 @@
     width: 100%;
     height: 200px;
     object-fit: cover;
+    display: block;
+}
+
+/* Service specific image sizing (isolated from news cards) */
+.service-card-image {
+    width: 100%;
+    height: 260px; /* image now fills the whole card area */
+    object-fit: cover;
+    display: block;
 }
 
 .news-card-content {
@@ -566,16 +611,33 @@
     background-color: rgb(0, 219, 66);
 }
         
-        .service-card-content {
-            padding: 1rem;
-            text-align: center;
-            font-weight: 600;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-grow: 1;
-            gap: 0.5rem;
-        }
+.service-card-content {
+    background-color: rgb(1, 59, 18);
+    color: #fff;
+    padding: 1rem 1.4rem;
+    position: static; /* place below image so full image is visible */
+    display: flex;
+    align-items: center;
+    min-height: 72px;
+    margin-top: -24px; /* pull up to remove any sub-pixel gap under image */
+}
+
+.service-card-content h3 {
+    margin: 0;
+}
+
+.service-card-content span:first-child {
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.service-card-content span:last-child {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
         /* --- Event Calendar Section --- */
         .event-calendar-section {
@@ -868,7 +930,7 @@
         <?php include 'home/hero.php'; ?>
         <section class="welcome-section">
             <div class="welcome-intro">
-                <img src="asset/image/gov-logo.png" alt="Campaign Logo" class="welcome-logo">
+                <img src="asset/image/mal_logo.png" alt="Campaign Logo" class="welcome-logo">
                 <div class="welcome-text">
                     <span>Welcome to</span>
                     <h2>Anti Malaria Campaign</h2>
@@ -881,13 +943,13 @@
                     <h3>Our Vision</h3>
                     <p>A malaria-free Sri Lanka </p>
                 </div>
-                <div class="info-card doctor-card">
+                <!-- <div class="info-card doctor-card">
                     <img src="asset/image/drpic1.png" alt="Dr. M. P. P. U Chulasiri">
                     <h4>Consultant Community Physician</h4>
                     <h5>DR. M. P. P. U CHULASIRI</h5>
                     <p>MBBS Colombo, MSc,<br>MD (Community Medicine)</p>
                     <div class="slider-dots"><span class="active"></span><span></span><span></span><span></span></div>
-                </div>
+                </div> -->
                 <div class="info-card mission-card">
                     <h3>Our Mission</h3>
                     <p>Plan and implement a comprehensive programme to sustain intensive surveillance,
@@ -998,37 +1060,239 @@
                 <h2>Our Services</h2>
                 <a href="service.php" class="read-more-link">SEE MORE SERVICES ❯</a>
             </div>
-            <div class="cards-grid">
+            <div class="services-slider">
+                <div class="cards-grid" id="servicesTrack">
                  <a href="#" class="service-card">
-                    <img src="asset/image/s1.png" alt="Doctors consulting" class="card-image">
+                    <img src="asset/image/s1.png" alt="Doctors consulting" class="card-image service-card-image">
                     <div class="service-card-content">
-                        <span>Diagnosis & Treatment</span>
-                        <span>❯</span>
+                        <h4>Provision of prophylaxis</h4>   
                     </div>
                 </a>
                  <a href="#" class="service-card">
-                    <img src="asset/image/s2.png" alt="Scientist with petri dish" class="card-image">
+                    <img src="asset/image/s2.png" alt="Scientist with petri dish" class="card-image service-card-image">
                     <div class="service-card-content">
-                        <span>Parasitological Surveillance</span>
-                        <span>❯</span>
+                        <h4>Screening of returnees from endemic countries</h4>   
                     </div>
                 </a>
                  <a href="#" class="service-card">
-                    <img src="asset/image/s3.png" alt="Scientist with microscope" class="card-image">
+                    <img src="asset/image/s3.png" alt="Scientist with microscope" class="card-image service-card-image">
                     <div class="service-card-content">
-                        <span>Entomological Surveillance</span>
-                        <span>❯</span>
+                        <h4>24/ 365 hotline service</h4>   
                     </div>
                 </a>
+                <a href="#" class="service-card">
+                    <img src="asset/image/noimages2.jpg" alt="Scientist with microscope" class="card-image service-card-image">
+                    <div class="service-card-content">
+                        <h4>Case detection, treatment and follow-up</h4>   
+                    </div>
+                </a>
+                <a href="#" class="service-card">
+                    <img src="asset/image/noimages2.jpg" alt="Scientist with microscope" class="card-image service-card-image">
+                    <div class="service-card-content">
+                        <h4>Case-based reactive response</h4>   
+                    </div>
+                </a>
+                <a href="#" class="service-card">
+                    <img src="asset/image/noimages2.jpg" alt="Scientist with microscope" class="card-image service-card-image">
+                    <div class="service-card-content">
+                        <h4>Risk-group surveillance</h4>   
+                    </div>
+                </a>
+                <a href="#" class="service-card">
+                    <img src="asset/image/noimages2.jpg" alt="Scientist with microscope" class="card-image service-card-image">
+                    <div class="service-card-content">
+                        <h4>Mosquito surveillance and vector control</h4>   
+                    </div>
+                </a>
+                <a href="#" class="service-card">
+                    <img src="asset/image/noimages2.jpg" alt="Scientist with microscope" class="card-image service-card-image">
+                    <div class="service-card-content">
+                        <h4>Community engagement</h4>   
+                    </div>
+                </a>
+                </div>
+                <div class="slider-dots" id="servicesDots"></div>
             </div>
-            <!-- Mobile-only read more button for Services -->
-            <div style="text-align:center;">
-                <a href="#" class="read-more-link read-more-mobile">READ MORE NEWS ❯</a>
+
+            <!-- Secondary list below dots (with its own slider) -->
+            <div class="services-slider services-secondary-slider">
+                <div class="cards-grid services-secondary-grid">
+                <a href="#" class="service-card meroon">
+                    <img src="asset/image/noimages2.jpg" alt="Leishmaniasis" class="card-image service-card-image">
+                    <div class="service-card-content">
+                        <h4>Leishmaniasis</h4>
+                    </div>
+                </a>
+                <a href="#" class="service-card">
+                    <img src="asset/image/noimages2.jpg" alt="Screening" class="card-image service-card-image">
+                    <div class="service-card-content">
+                        <h4>Screening</h4>
+                    </div>
+                </a>
+                <a href="#" class="service-card">
+                    <img src="asset/image/noimages2.jpg" alt="Risk group surveillance" class="card-image service-card-image">
+                    <div class="service-card-content">
+                        <h4>Risk group surveillance</h4>
+                    </div>
+                </a>
+                <a href="#" class="service-card">
+                    <img src="asset/image/noimages2.jpg" alt="Case detection, diagnosis, treatment and follow-up" class="card-image service-card-image">
+                    <div class="service-card-content">
+                        <h4>Case detection, diagnosis, treatment and follow-up</h4>
+                    </div>
+                </a>
+                <a href="#" class="service-card">
+                    <img src="asset/image/noimages2.jpg" alt="Sandfly surveillance and vector control" class="card-image service-card-image">
+                    <div class="service-card-content">
+                        <h4>Sandfly surveillance and vector control</h4>
+                    </div>
+                </a>
+                <a href="#" class="service-card">
+                    <img src="asset/image/noimages2.jpg" alt="Community engagement" class="card-image service-card-image">
+                    <div class="service-card-content">
+                        <h4>Community engagement</h4>
+                    </div>
+                </a>
+                </div>
+                <div class="slider-dots"></div>
             </div>
-             <div class="slider-dots">
-                <span class="active"></span><span></span><span></span><span></span>
             </div>
+            
         </section>
+
+        <script>
+            (function(){
+                var track = document.getElementById('servicesTrack');
+                if(!track) return;
+                var container = track.parentElement;
+                var dotsEl = document.getElementById('servicesDots');
+                var leftBtn = container.querySelector('.services-arrow.left');
+                var rightBtn = container.querySelector('.services-arrow.right');
+                var currentIndex = 0;
+                var timerId;
+                var intervalMs = 4000;
+
+                function cardWidth(){
+                    var card = track.querySelector('.service-card');
+                    if(!card) return 0;
+                    var style = getComputedStyle(card);
+                    var gap = 32; // equals 2rem gap in CSS
+                    return card.getBoundingClientRect().width + gap;
+                }
+                function maxIndex(){
+                    var total = track.children.length;
+                    return Math.max(0, total - 3);
+                }
+                function update(){
+                    var w = cardWidth();
+                    track.style.transform = 'translateX(' + (-currentIndex * w) + 'px)';
+                    updateDots();
+                }
+                function next(){
+                    if (currentIndex >= maxIndex()) {
+                        currentIndex = 0;
+                    } else {
+                        currentIndex += 1;
+                    }
+                    update();
+                }
+                function prev(){
+                    if (currentIndex <= 0) {
+                        currentIndex = maxIndex();
+                    } else {
+                        currentIndex -= 1;
+                    }
+                    update();
+                }
+                function start(){
+                    stop();
+                    timerId = setInterval(next, intervalMs);
+                }
+                function stop(){
+                    if (timerId) { clearInterval(timerId); timerId = undefined; }
+                }
+
+                // arrows removed; only dots and auto-slide control navigation
+
+                // Pause on hover of the slider area
+                container.addEventListener('mouseenter', stop);
+                container.addEventListener('mouseleave', start);
+
+                function buildDots(){
+                    if(!dotsEl) return;
+                    dotsEl.innerHTML = '';
+                    var total = Math.max(1, track.children.length - 2); // number of positions (3 visible)
+                    for (var i = 0; i < total; i++) {
+                        var s = document.createElement('span');
+                        (function(i){ s.addEventListener('click', function(){ currentIndex = i; update(); start(); }); })(i);
+                        dotsEl.appendChild(s);
+                    }
+                }
+                function updateDots(){
+                    if(!dotsEl) return;
+                    var spans = dotsEl.querySelectorAll('span');
+                    spans.forEach(function(el, idx){ el.classList.toggle('active', idx === currentIndex); });
+                }
+
+                window.addEventListener('resize', update);
+                buildDots();
+                update();
+                start();
+            })();
+
+            // Initialize secondary slider (below dots)
+            (function(){
+                var slider = document.querySelector('.services-secondary-slider');
+                if(!slider) return;
+                var track = slider.querySelector('.services-secondary-grid');
+                var dotsEl = slider.querySelector('.slider-dots');
+                var currentIndex = 0;
+                var timerId;
+                var intervalMs = 4000;
+
+                function cardWidth(){
+                    var card = track.querySelector('.service-card');
+                    if(!card) return 0;
+                    var gap = 32; // 2rem
+                    return card.getBoundingClientRect().width + gap;
+                }
+                function maxIndex(){
+                    var total = track.children.length;
+                    return Math.max(0, total - 3);
+                }
+                function update(){
+                    var w = cardWidth();
+                    track.style.transform = 'translateX(' + (-currentIndex * w) + 'px)';
+                    updateDots();
+                }
+                function next(){ currentIndex = (currentIndex >= maxIndex()) ? 0 : currentIndex + 1; update(); }
+                function start(){ stop(); timerId = setInterval(next, intervalMs); }
+                function stop(){ if (timerId) { clearInterval(timerId); timerId = undefined; } }
+
+                function buildDots(){
+                    if(!dotsEl) return;
+                    dotsEl.innerHTML = '';
+                    var total = Math.max(1, track.children.length - 2);
+                    for (var i = 0; i < total; i++) {
+                        var s = document.createElement('span');
+                        (function(i){ s.addEventListener('click', function(){ currentIndex = i; update(); start(); }); })(i);
+                        dotsEl.appendChild(s);
+                    }
+                }
+                function updateDots(){
+                    if(!dotsEl) return;
+                    var spans = dotsEl.querySelectorAll('span');
+                    spans.forEach(function(el, idx){ el.classList.toggle('active', idx === currentIndex); });
+                }
+
+                slider.addEventListener('mouseenter', stop);
+                slider.addEventListener('mouseleave', start);
+                window.addEventListener('resize', update);
+                buildDots();
+                update();
+                start();
+            })();
+        </script>
 
         <!-- Section 9: Event Calendar -->
         <section class="event-calendar-section">

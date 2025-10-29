@@ -168,7 +168,7 @@
         <header class="header">
             <div class="logos">
                 <!-- Placeholder for the second logo -->
-                <img src="asset/image/AMC_logo1.png" alt="Campaign Logo 2">
+                <img src="asset/image/AMC_logo_white.png" alt="Campaign Logo 2">
             </div>
             <!-- <div class="title">
                 <p>මැලේරියා මර්දන ව්‍යාපාරය</p>

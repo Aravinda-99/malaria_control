@@ -195,9 +195,9 @@
         var heroSection = document.querySelector('.hero-section');
         var dots = Array.prototype.slice.call(document.querySelectorAll('.hero-dot'));
         var images = [
-            'asset/hero/hero1.png',
-            'asset/hero/hero2.png',
-            'asset/hero/hero3.png'
+            'asset/hero/hero11.jpg',
+            'asset/hero/Frame3.png',
+            'asset/hero/Frame4.png'
         ];
         var titles = [
             'Protect our country.<br>Prevent re-introduction of Malaria',

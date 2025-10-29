@@ -270,7 +270,7 @@
 <?php include 'include/header.php'; ?>
 
 <section class="staff-hero-section">
-    <h1>Case Review Committee</h1>
+    <h1>Case Review Community</h1>
     <p>Anti Malaria Campaign - Sri Lanka</p>
 </section>
 <nav class="about-nav">
@@ -288,13 +288,13 @@
 
 <section class="content-section">
     <div class="content-container">
-        <h2>The Case Review Committee (CRC)</h2>
+        <h2>The Case Review Community (CRC)</h2>
         
         <div class="highlight-box">
-            <p><strong>The Case Review Committee (CRC), a subcommittee of the Technical Support Group (TSG), reviews activities carried out when a case is reported and classifies all cases as per WHO classification.</strong> CRC consists of academic specialists in the fields of clinical medicine, parasitology, pharmacology, public health and a former WHO consultant for malaria control as external members. From Anti Malaria Campaign, the director, consultant community physicians, entomologists, parasitologists, medical officer in charge of case surveillance and other medical officers will participate in CRC meetings. The CRC meets once a month and reviews technical details of each and every case reported up to that particular date and the response. The committee identifies any lapses of the response and advises accordingly.</p>
+            <p><strong>The Case Review Community (CRC), a Sub Community of the Technical Support Group (TSG), reviews activities carried out when a case is reported and classifies all cases as per WHO classification.</strong> CRC consists of academic specialists in the fields of clinical medicine, parasitology, pharmacology, public health and a former WHO consultant for malaria control as external members. From Anti Malaria Campaign, the director, consultant community physicians, entomologists, parasitologists, medical officer in charge of case surveillance and other medical officers will participate in CRC meetings. The CRC meets once a month and reviews technical details of each and every case reported up to that particular date and the response. The community identifies any lapses of the response and advises accordingly.</p>
         </div>
 
-        <h3>Members of the Case Review Committee</h3>
+        <h3>Members of the Case Review Community</h3>
         
         <table class="crc-table">
             <thead>

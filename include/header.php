@@ -450,7 +450,7 @@
         <div class="header-logo-container">
             <!-- Using placeholder images for logos -->
             
-            <img src="asset/image/AMC_logo2.png" alt="Malaria Control Campaign Logo">
+            <img src="asset/image/AMC_logo_black.png" alt="Malaria Control Campaign Logo">
         </div>
 
         <div class="header-right-content">
@@ -522,7 +522,7 @@
                 </li>
                 <li><a href="traveler.php" <?php echo ($current_page == 'traveler.php') ? 'class="active"' : ''; ?>>Travelers</a></li>
                 <li onclick="if(window.innerWidth<=768){this.classList.toggle('open');}">
-                    <a href="downloadn.php" <?php echo ($current_page == 'download.php' || $current_page == 'case-management.php' || $current_page == 'parasitology.php' || $current_page == 'entomology.php' || $current_page == 'vector-control.php' || $current_page == 'human-resource.php' || $current_page == 'rdt-distribution.php') ? 'class="active"' : ''; ?>>Downloads <span class="dropdown-arrow">▼</span></a>
+                    <a href="#" <?php echo ($current_page == 'download.php' || $current_page == 'case-management.php' || $current_page == 'parasitology.php' || $current_page == 'entomology.php' || $current_page == 'vector-control.php' || $current_page == 'human-resource.php' || $current_page == 'rdt-distribution.php') ? 'class="active"' : ''; ?>>Downloads <span class="dropdown-arrow">▼</span></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="download.php#statistics">Statistics <span class="dropdown-arrow">▶</span></a>

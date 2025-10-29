@@ -65,12 +65,31 @@
         /* Main Section Container */
         .staff-team-showcase {
             display: flex;
-            justify-content: center;
-            flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
-            gap: 30px; /* Space between the cards */
+            flex-direction: column;
             max-width: 1200px;
             margin: 40px auto;
             padding: 20px;
+            gap: 40px; /* Space between rows */
+        }
+
+        /* Each row group */
+        .staff-row-group {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px; /* Space between the cards */
+        }
+
+        /* Row title */
+        .staff-row-title {
+            width: 100%;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #4a7c59;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #4a7c59;
         }
 
         /* Individual Member Card */
@@ -129,8 +148,14 @@
         /* --- Responsive Design for Mobile --- */
         @media (max-width: 768px) {
             .staff-team-showcase {
-                flex-direction: column; /* Stack the cards vertically */
-                align-items: center; /* Center the stacked cards */
+                gap: 30px;
+            }
+            .staff-row-group {
+                flex-direction: column;
+                align-items: center;
+            }
+            .staff-row-title {
+                font-size: 1.5rem;
             }
         }
 
@@ -234,111 +259,123 @@
         </nav>
 
 <section class="staff-team-showcase">
-    <!-- Director -->
-    <div class="staff-team-member">
-        <img src="asset/image/staf/s11.jpg" alt="Photo of Dr. Champa Aluthweera">
-        <h3>Dr. Champa Aluthweera </h3>
-        <p class="staff-role">Director</p>
-        <p class="staff-qualifications">
-            
-        </p>
+    <!-- Row 1: Director -->
+    <div class="staff-row-group">
+        <h2 class="staff-row-title">Director</h2>
+        <div class="staff-team-member">
+            <img src="asset/image/staf/s11.jpg" alt="Photo of Dr. Champa Aluthweera">
+            <h3>Dr. Champa Aluthweera </h3>
+            <p class="staff-role">Director</p>
+            <p class="staff-qualifications">
+                
+            </p>
+        </div>
     </div>
 
-    <!-- Deputy Director -->
-    <!-- Note: No Deputy Director currently listed -->
+    <!-- Row 2: Consultant Community Physicians -->
+    <div class="staff-row-group">
+        <h2 class="staff-row-title">Consultant Community Physician</h2>
+        <div class="staff-team-member">
+            <img src="asset/image/staf/s9.jpg" alt="Photo of Dr.  M P P U Chulasiri">
+            <h3>Dr.  M P P U Chulasiri</h3>
+            <p class="staff-role">Consultant Community Physician</p>
+            <p class="staff-qualifications">
+            MBBS (Colombo), MSc., MD (Community Medicine)
+            </p>
+        </div>
 
-    <!-- Consultant Community Physicians -->
-    <div class="staff-team-member">
-        <img src="asset/image/staf/s9.jpg" alt="Photo of Dr.  M P P U Chulasiri">
-        <h3>Dr.  M P P U Chulasiri</h3>
-        <p class="staff-role">Consultant Community Physician</p>
-        <p class="staff-qualifications">
-        MBBS (Colombo), MSc., MD (Community Medicine)
-        </p>
+        <div class="staff-team-member">
+            <img src="asset/image/staf/s10.jpg" alt="Photo of Dr. Nethmini Thenuwara">
+            <h3>Dr. Nethmini Thenuwara</h3>
+            <p class="staff-role">Consultant Community Physician (Surveillance, Monitoring and Evaluation)</p>
+            <p class="staff-qualifications">
+            MBBS (Colombo), MSc, MD (Community Medicine)
+            </p>
+        </div>
     </div>
 
-    <div class="staff-team-member">
-        <img src="asset/image/staf/s10.jpg" alt="Photo of Dr. Nethmini Thenuwara">
-        <h3>Dr. Nethmini Thenuwara</h3>
-        <p class="staff-role">Consultant Community Physician (Surveillance, Monitoring and Evaluation)</p>
-        <p class="staff-qualifications">
-        MBBS (Colombo), MSc, MD (Community Medicine)
-        </p>
+    <!-- Row 3: Medical Officers -->
+    <div class="staff-row-group">
+        <h2 class="staff-row-title">Medical Officer</h2>
+        <div class="staff-team-member">
+            <img src="asset/image/staf/s5.jpg" alt="Photo of Dr. Gayani Ranasinghe">
+            <h3>Dr. Gayani Ranasinghe</h3>
+            <p class="staff-role">Medical Officer</p>
+            <p class="staff-qualifications">
+            MBBS, MSc (Com-Med)
+            </p>
+        </div>
+
+        <div class="staff-team-member">
+            <img src="asset/image/staf/s6.jpg" alt="Photo of Dr. S Jayasinghe">
+            <h3>Dr. S Jayasinghe</h3>
+            <p class="staff-role">Medical Officer</p>
+            <p class="staff-qualifications">
+            MBBS
+            </p>
+        </div>
+
+        <div class="staff-team-member">
+            <img src="asset/image/staf/s7.jpg" alt="Photo of Dr. A H N Maduranga">
+            <h3>Dr. A H N Maduranga</h3>
+            <p class="staff-role">Medical Officer</p>
+            <p class="staff-qualifications">
+            MBBS
+            </p>
+        </div>
     </div>
 
-    <!-- Medical Officers -->
-    <div class="staff-team-member">
-        <img src="asset/image/staf/s5.jpg" alt="Photo of Dr. Gayani Ranasinghe">
-        <h3>Dr. Gayani Ranasinghe</h3>
-        <p class="staff-role">Medical Officer</p>
-        <p class="staff-qualifications">
-        MBBS, MSc (Com-Med)
-        </p>
+    <!-- Row 4: Parasitologist -->
+    <div class="staff-row-group">
+        <h2 class="staff-row-title">Parasitologist</h2>
+        <div class="staff-team-member">
+            <img src="asset/image/staf/s4.jpg" alt="Photo of Ms. W M K Gunasekara">
+            <h3>Ms. W M K Gunasekara</h3>
+            <p class="staff-role">Parasitologist</p>
+            <p class="staff-qualifications">
+                MSc Reading for PhD
+            </p>
+        </div>
     </div>
 
-    <div class="staff-team-member">
-        <img src="asset/image/staf/s6.jpg" alt="Photo of Dr. S Jayasinghe">
-        <h3>Dr. S Jayasinghe</h3>
-        <p class="staff-role">Medical Officer</p>
-        <p class="staff-qualifications">
-        MBBS
-        </p>
-    </div>
+    <!-- Row 5: Entomologists -->
+    <div class="staff-row-group">
+        <h2 class="staff-row-title">Entomologist</h2>
+        <div class="staff-team-member">
+            <img src="asset/image/staf/s1.jpg" alt="Photo of Ms. P Somasekaran">
+            <h3>Ms. P Somasekaran</h3>
+            <p class="staff-role">Entomologist</p>
+            <p class="staff-qualifications">
+                B.Sc. sp. Zoology (Colombo),MSc in Medical Entomology and Applied Parasitology (reading)
+            </p>
+        </div>
 
-    <div class="staff-team-member">
-        <img src="asset/image/staf/s7.jpg" alt="Photo of Dr. A H N Maduranga">
-        <h3>Dr. A H N Maduranga</h3>
-        <p class="staff-role">Medical Officer</p>
-        <p class="staff-qualifications">
-        MBBS
-        </p>
-    </div>
+        <div class="staff-team-member">
+            <img src="asset/image/staf/s2.jpg" alt="Photo of Ms. R D J Harishchandra">
+            <h3><span class="staff-title-green">Ms. R D J</span> Harishchandra</h3>
+            <p class="staff-role">Entomologist</p>
+            <p class="staff-qualifications">
+                B.Sc. Special Degree in Zoology, M.Sc.
+            </p>
+        </div>
 
-    <!-- Parasitologist -->
-    <div class="staff-team-member">
-        <img src="asset/image/staf/s4.jpg" alt="Photo of Ms. W M K Gunasekara">
-        <h3>Ms. W M K Gunasekara</h3>
-        <p class="staff-role">Parasitologist</p>
-        <p class="staff-qualifications">
-            MSc Reading for PhD
-        </p>
-    </div>
+        <div class="staff-team-member">
+            <img src="asset/image/staf/s3.jpg" alt="Photo of Ms. H M P Hewavitharane">
+            <h3>Ms. H M P Hewavitharane</h3>
+            <p class="staff-role">Entomologist</p>
+            <p class="staff-qualifications">
+                B.Sc. Special Degree in Zoology, M.Sc.
+            </p>
+        </div>
 
-    <!-- Entomologists -->
-    <div class="staff-team-member">
-        <img src="asset/image/staf/s1.jpg" alt="Photo of Ms. P Somasekaran">
-        <h3>Ms. P Somasekaran</h3>
-        <p class="staff-role">Entomologist</p>
-        <p class="staff-qualifications">
-            B.Sc. sp. Zoology (Colombo),MSc in Medical Entomology and Applied Parasitology (reading)
-        </p>
-    </div>
-
-    <div class="staff-team-member">
-        <img src="asset/image/staf/s2.jpg" alt="Photo of Ms. R D J Harishchandra">
-        <h3><span class="staff-title-green">Ms. R D J</span> Harishchandra</h3>
-        <p class="staff-role">Entomologist</p>
-        <p class="staff-qualifications">
-            B.Sc. Special Degree in Zoology, M.Sc.
-        </p>
-    </div>
-
-    <div class="staff-team-member">
-        <img src="asset/image/staf/s3.jpg" alt="Photo of Ms. H M P Hewavitharane">
-        <h3>Ms. H M P Hewavitharane</h3>
-        <p class="staff-role">Entomologist</p>
-        <p class="staff-qualifications">
-            B.Sc. Special Degree in Zoology, M.Sc.
-        </p>
-    </div>
-
-    <div class="staff-team-member">
-        <img src="asset/image/staf/s8.jpg" alt="Photo of Mr M A S T Fernando">
-        <h3>Mr M A S T Fernando</h3>
-        <p class="staff-role">Entomologist</p>
-        <p class="staff-qualifications">
-        B.Sc. sp. Zoology (Kelaniya), M.Phil. (Kelaniya)
-        </p>
+        <div class="staff-team-member">
+            <img src="asset/image/staf/s8.jpg" alt="Photo of Mr M A S T Fernando">
+            <h3>Mr M A S T Fernando</h3>
+            <p class="staff-role">Entomologist</p>
+            <p class="staff-qualifications">
+            B.Sc. sp. Zoology (Kelaniya), M.Phil. (Kelaniya)
+            </p>
+        </div>
     </div>
 
 </section>
