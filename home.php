@@ -1062,50 +1062,50 @@
             </div>
             <div class="services-slider">
                 <div class="cards-grid" id="servicesTrack">
-                 <a href="#" class="service-card">
-                    <img src="asset/image/s1.png" alt="Doctors consulting" class="card-image service-card-image">
+                 <a href="Provisionofprophylaxis.php" class="service-card">
+                    <img src="asset/image/ProvisionofProphylaxis.png" alt="Doctors consulting" class="card-image service-card-image">
                     <div class="service-card-content">
                         <h4>Provision of prophylaxis</h4>   
                     </div>
                 </a>
-                 <a href="#" class="service-card">
-                    <img src="asset/image/s2.png" alt="Scientist with petri dish" class="card-image service-card-image">
+                 <a href="screeningOfReturnees.php" class="service-card">
+                    <img src="asset/image/Screening of returnees from malaria endemic countries.png" alt="Scientist with petri dish" class="card-image service-card-image">
                     <div class="service-card-content">
                         <h4>Screening of returnees from endemic countries</h4>   
                     </div>
                 </a>
-                 <a href="#" class="service-card">
-                    <img src="asset/image/s3.png" alt="Scientist with microscope" class="card-image service-card-image">
+                 <a href="hotlineService.php" class="service-card">
+                    <img src="asset/image/Hotline.png" alt="Scientist with microscope" class="card-image service-card-image">
                     <div class="service-card-content">
                         <h4>24/ 365 hotline service</h4>   
                     </div>
                 </a>
-                <a href="#" class="service-card">
-                    <img src="asset/image/noimages2.jpg" alt="Scientist with microscope" class="card-image service-card-image">
+                <a href="caseDetection.php" class="service-card">
+                    <img src="asset/image/Casedetection_Treatment_Followup_Malaria.png" alt="Scientist with microscope" class="card-image service-card-image">
                     <div class="service-card-content">
                         <h4>Case detection, treatment and follow-up</h4>   
                     </div>
                 </a>
-                <a href="#" class="service-card">
-                    <img src="asset/image/noimages2.jpg" alt="Scientist with microscope" class="card-image service-card-image">
+                <a href="caseBased.php" class="service-card">
+                    <img src="asset/image/Case basedreactiveresponse.png" alt="Scientist with microscope" class="card-image service-card-image">
                     <div class="service-card-content">
                         <h4>Case-based reactive response</h4>   
                     </div>
                 </a>
-                <a href="#" class="service-card">
-                    <img src="asset/image/noimages2.jpg" alt="Scientist with microscope" class="card-image service-card-image">
+                <a href="riskGroup.php" class="service-card">
+                    <img src="asset/image/Riskgroupsurveillance.png" alt="Scientist with microscope" class="card-image service-card-image">
                     <div class="service-card-content">
                         <h4>Risk-group surveillance</h4>   
                     </div>
                 </a>
-                <a href="#" class="service-card">
+                <a href="mosquitoSurveillance.php" class="service-card">
                     <img src="asset/image/noimages2.jpg" alt="Scientist with microscope" class="card-image service-card-image">
                     <div class="service-card-content">
                         <h4>Mosquito surveillance and vector control</h4>   
                     </div>
                 </a>
-                <a href="#" class="service-card">
-                    <img src="asset/image/noimages2.jpg" alt="Scientist with microscope" class="card-image service-card-image">
+                <a href="communityEngagement.php" class="service-card">
+                    <img src="asset/image/Communityengagement.png" alt="Scientist with microscope" class="card-image service-card-image">
                     <div class="service-card-content">
                         <h4>Community engagement</h4>   
                     </div>
