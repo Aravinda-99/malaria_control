@@ -513,14 +513,22 @@
                 <li onclick="if(window.innerWidth<=768){this.classList.toggle('open');}">
                     <a href="service.php" <?php echo ($current_page == 'service.php') ? 'class="active"' : ''; ?>>Our Services <span class="dropdown-arrow">▼</span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="service.php?service=diagnosis">Diagnosis & Treatment</a></li>
+                        <!-- <li><a href="service.php?service=diagnosis">Diagnosis & Treatment</a></li>
                         <li><a href="service.php?service=parasitological">Parasitological Surveillance</a></li>
                         <li><a href="service.php?service=entomological">Entomological Surveillance</a></li>
                         <li><a href="service.php?service=vector">Vector Control</a></li>
-                        <li><a href="service.php?service=riskgroup">Risk Group & Public Awareness</a></li>
+                        <li><a href="service.php?service=riskgroup">Risk Group & Public Awareness</a></li> -->
+                        <li><a href="provisionOfProphylaxis.php">Provision of Prophylaxis</a></li>
+                        <li><a href="screeningOfReturnees.php">Screening of Returnees</a></li>
+                        <li><a href="caseDetection.php">Case Detection & Follow-Up</a></li>
+                        <li><a href="caseBased.php">Case-Based Reactive Response</a></li>
+                        <li><a href="mosquitoSurveillance.php">Mosquito Surveillance & Vector Control</a></li>
+                        <li><a href="riskGroup.php">Risk-Group Surveillance</a></li>
+                        <li><a href="communityEngagement.php">Community Engagement</a></li>
+                        <li><a href="hotlineService.php">Hotline Service</a></li>
                     </ul>
                 </li>
-                <li><a href="traveler.php" <?php echo ($current_page == 'traveler.php') ? 'class="active"' : ''; ?>>Travelers</a></li>
+                <li><a href="travelLerN.php" <?php echo ($current_page == 'traveler.php') ? 'class="active"' : ''; ?>>Travelers</a></li>
                 <li onclick="if(window.innerWidth<=768){this.classList.toggle('open');}">
                     <a href="#" <?php echo ($current_page == 'download.php' || $current_page == 'case-management.php' || $current_page == 'parasitology.php' || $current_page == 'entomology.php' || $current_page == 'vector-control.php' || $current_page == 'human-resource.php' || $current_page == 'rdt-distribution.php') ? 'class="active"' : ''; ?>>Downloads <span class="dropdown-arrow">▼</span></a>
                     <ul class="dropdown-menu">
