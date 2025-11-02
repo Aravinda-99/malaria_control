@@ -390,25 +390,13 @@
             <input type="text" placeholder="Search guidelines">
             <select>
                 <option value="">Year</option>
+                <option value="2024">2024</option>
                 <option value="2023">2023</option>
                 <option value="2022">2022</option>
                 <option value="2021">2021</option>
                 <option value="2020">2020</option>
                 <option value="2019">2019</option>
-                <option value="2016">2016</option>
-                <option value="2015">2015</option>
-                <option value="2014">2014</option>
-                <option value="2010">2010</option>
-            </select>
-            <select>
-                <option value="">Category</option>
-                <option value="treatment">Treatment</option>
-                <option value="prevention">Prevention</option>
-                <option value="surveillance">Surveillance</option>
-                <option value="vector-control">Vector Control</option>
-                <option value="outbreak-management">Outbreak Management</option>
-                <option value="entomological">Entomological</option>
-                <option value="procedures">Procedures</option>
+                <
             </select>
             <button class="search-btn">Search</button>
         </div>
@@ -416,21 +404,21 @@
         <!-- Guidelines Grid -->
         <div class="guidelines-grid">
             <!-- Guideline 1 -->
-            <div class="guideline-card">
+            <div class="guideline-card" data-year="2024" data-category="surveillance">
                 <div class="guideline-cover" id="pdfThumbnailContainer1">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail1" class="pdf-thumbnail-canvas"></canvas>
                 </div>
                 <div class="guideline-content">
                     <div class="guideline-details">
-                        <h3 class="guideline-title">Guidelines for the Management and Treatment of Patients with Malaria</h3>
-                        <div class="guideline-date">28 June 2023</div>
+                        <h3 class="guideline-title">National Strategic Plan_Leishmaniasis_2024-2028</h3>
+                        <!-- <div class="guideline-date">28 June 2024</div> -->
                     </div>
                     <div class="guideline-actions">
-                        <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/guidelines/Treatment-guidelines-Third-Edition--2023.pdf')">
+                        <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/guidelines/National Strategic Plan_Leishmaniasis_2024-2028.pdf')">
                             View
                         </a>
-                        <a href="asset/docs/guidelines/Treatment-guidelines-Third-Edition--2023.pdf" download class="btn btn-download">
+                        <a href="asset/docs/guidelines/National Strategic Plan_Leishmaniasis_2024-2028.pdf" download class="btn btn-download">
                             Download
                         </a>
                     </div>
@@ -438,21 +426,21 @@
             </div>
 
             <!-- Guideline 2 -->
-            <div class="guideline-card">
+            <div class="guideline-card" data-year="2023" data-category="surveillance">
                 <div class="guideline-cover" id="pdfThumbnailContainer2">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail2" class="pdf-thumbnail-canvas"></canvas>
                 </div>
                 <div class="guideline-content">
                     <div class="guideline-details">
-                        <h3 class="guideline-title">Guidelines for Outbreak Management & Response (Updated 2020)</h3>
-                        <div class="guideline-date">14 November 2020</div>
+                        <h3 class="guideline-title">National Strategic Plan_Malaria_2023-2027</h3>
+                        <!-- <div class="guideline-date">14 November 2020</div> -->
                     </div>
                     <div class="guideline-actions">
-                        <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/guidelines/Draft-Guidelines-For-Malaria-Outbreak-Response-2020---5th-Version-.pdf')">
+                        <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/guidelines/National Strategic Plan_Malaria_2023-2027.pdf')">
                             View
                         </a>
-                        <a href="asset/docs/guidelines/Draft-Guidelines-For-Malaria-Outbreak-Response-2020---5th-Version-.pdf" download class="btn btn-download">
+                        <a href="asset/docs/guidelines/National Strategic Plan_Malaria_2023-2027.pdf" download class="btn btn-download">
                             Download
                         </a>
                     </div>
@@ -460,21 +448,21 @@
             </div>
 
             <!-- Guideline 3 -->
-            <div class="guideline-card">
+            <div class="guideline-card" data-year="2024" data-category="procedures">
                 <div class="guideline-cover" id="pdfThumbnailContainer3">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail3" class="pdf-thumbnail-canvas"></canvas>
                 </div>
                 <div class="guideline-content">
                     <div class="guideline-details">
-                        <h3 class="guideline-title">Vector Control Guidelines in Prevention of Reintroduction Phase of Malaria in Sri Lanka 2020</h3>
-                        <div class="guideline-date">09 October 2020</div>
+                        <h3 class="guideline-title">SCOPE OF WORK TO BE PERFORMED WHEN A MALARIA PATIENT IS REPORTED_2024.pdf</h3>
+                        <!-- <div class="guideline-date">09 October 2020</div> -->
                     </div>
                     <div class="guideline-actions">
-                        <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/guidelines/Vector_control_guidelines_in_Prevention_of_Reintroduction_phase_of_malaria_in_Sri_Lanka_2020.pdf')">
+                        <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/guidelines/SCOPE OF WORK TO BE PERFORMED WHEN A MALARIA PATIENT IS REPORTED_2024.pdf')">
                             View
                         </a>
-                        <a href="asset/docs/guidelines/Vector_control_guidelines_in_Prevention_of_Reintroduction_phase_of_malaria_in_Sri_Lanka_2020.pdf" download class="btn btn-download">
+                        <a href="asset/docs/guidelines/SCOPE OF WORK TO BE PERFORMED WHEN A MALARIA PATIENT IS REPORTED_2024.pdf" download class="btn btn-download">
                             Download
                         </a>
                     </div>
@@ -482,21 +470,21 @@
             </div>
 
             <!-- Guideline 4 -->
-            <div class="guideline-card">
+            <div class="guideline-card" data-year="2024" data-category="entomological">
                 <div class="guideline-cover" id="pdfThumbnailContainer4">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail4" class="pdf-thumbnail-canvas"></canvas>
                 </div>
                 <div class="guideline-content">
                     <div class="guideline-details">
-                        <h3 class="guideline-title">Interim Guideline for Malaria Prevention in COVID 19 Quarantine Centers 2020</h3>
-                        <div class="guideline-date">02 June 2020</div>
+                        <h3 class="guideline-title">Guidlines for Leismaniasis vector surveillance-2024_AMC</h3>
+                        <!-- <div class="guideline-date">02 June 2020</div> -->
                     </div>
                     <div class="guideline-actions">
-                        <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/guidelines/Interim_guideline_for_Malaria_Prevention_in_COVID_19_Quarantine_Centres_2020.pdf')">
+                        <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/guidelines/Guidlines for Leismaniasis vector surveillance-2024_AMC.pdf')">
                             View
                         </a>
-                        <a href="asset/docs/guidelines/Interim_guideline_for_Malaria_Prevention_in_COVID_19_Quarantine_Centres_2020.pdf" download class="btn btn-download">
+                        <a href="asset/docs/guidelines/Guidlines for Leismaniasis vector surveillance-2024_AMC.pdf" download class="btn btn-download">
                             Download
                         </a>
                     </div>
@@ -511,14 +499,14 @@
                 </div>
                 <div class="guideline-content">
                     <div class="guideline-details">
-                        <h3 class="guideline-title">Interim Guidelines on Parasitological Surveillance for Malaria During COVID-19 Pandemic</h3>
+                        <h3 class="guideline-title">Ento Surveillance Guide 2023 Edition</h3>
                         <div class="guideline-date">28 May 2020</div>
                     </div>
                     <div class="guideline-actions">
-                        <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/guidelines/Interim_Guidelines_on_Parasitological_Surveillance_for_malaria_during_the_COVID-19_Pandemic.pdf')">
+                        <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/guidelines/Ento Surveillance Guide 2023 Ed.pdf')">
                             View
                         </a>
-                        <a href="asset/docs/guidelines/Interim_Guidelines_on_Parasitological_Surveillance_for_malaria_during_the_COVID-19_Pandemic.pdf" download class="btn btn-download">
+                        <a href="asset/docs/guidelines/Ento Surveillance Guide 2023 Ed.pdf" download class="btn btn-download">
                             Download
                         </a>
                     </div>
@@ -533,14 +521,14 @@
                 </div>
                 <div class="guideline-content">
                     <div class="guideline-details">
-                        <h3 class="guideline-title">INTERIM RECOMMENDATIONS FOR MALARIA ENTOMOLOGICAL SURVEILLANCE AND VECTOR CONTROL DURING COVID 19 PANDEMIC</h3>
+                        <h3 class="guideline-title">Vector Control Guidelines 2020</h3>
                         <div class="guideline-date">14 May 2020</div>
                     </div>
                     <div class="guideline-actions">
-                        <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/guidelines/INTERIM_RECOMMENDATIONS_FOR_MALARIA_ENTOMOLOGICAL_SURVEILLANCE_AND_VECTOR_CONTROL_DURING.pdf')">
+                        <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/guidelines/Vector Control Guidelines 2020.pdf')">
                             View
                         </a>
-                        <a href="asset/docs/guidelines/INTERIM_RECOMMENDATIONS_FOR_MALARIA_ENTOMOLOGICAL_SURVEILLANCE_AND_VECTOR_CONTROL_DURING.pdf" download class="btn btn-download">
+                        <a href="asset/docs/guidelines/Vector Control Guidelines 2020.pdf" download class="btn btn-download">
                             Download
                         </a>
                     </div>
@@ -548,7 +536,7 @@
             </div>
 
             <!-- Guideline 7 -->
-            <div class="guideline-card">
+            <!-- <div class="guideline-card">
                 <div class="guideline-cover" id="pdfThumbnailContainer7">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail7" class="pdf-thumbnail-canvas"></canvas>
@@ -567,10 +555,10 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Guideline 8 -->
-            <div class="guideline-card">
+            <!-- <div class="guideline-card">
                 <div class="guideline-cover" id="pdfThumbnailContainer8">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail8" class="pdf-thumbnail-canvas"></canvas>
@@ -589,10 +577,10 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Guideline 9 -->
-            <div class="guideline-card">
+            <!-- <div class="guideline-card">
                 <div class="guideline-cover" id="pdfThumbnailContainer9">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail9" class="pdf-thumbnail-canvas"></canvas>
@@ -611,10 +599,10 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Guideline 10 -->
-            <div class="guideline-card">
+            <!-- <div class="guideline-card">
                 <div class="guideline-cover" id="pdfThumbnailContainer10">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail10" class="pdf-thumbnail-canvas"></canvas>
@@ -633,10 +621,10 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Guideline 11 -->
-            <div class="guideline-card">
+            <!-- <div class="guideline-card">
                 <div class="guideline-cover" id="pdfThumbnailContainer11">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail11" class="pdf-thumbnail-canvas"></canvas>
@@ -655,10 +643,10 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Guideline 12 -->
-            <div class="guideline-card">
+            <!-- <div class="guideline-card">
                 <div class="guideline-cover" id="pdfThumbnailContainer12">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail12" class="pdf-thumbnail-canvas"></canvas>
@@ -677,10 +665,10 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Guideline 13 -->
-            <div class="guideline-card">
+            <!-- <div class="guideline-card">
                 <div class="guideline-cover" id="pdfThumbnailContainer13">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail13" class="pdf-thumbnail-canvas"></canvas>
@@ -699,10 +687,10 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Guideline 14 -->
-            <div class="guideline-card">
+            <!-- <div class="guideline-card">
                 <div class="guideline-cover" id="pdfThumbnailContainer14">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail14" class="pdf-thumbnail-canvas"></canvas>
@@ -721,10 +709,10 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Guideline 15 -->
-            <div class="guideline-card">
+            <!-- <div class="guideline-card">
                 <div class="guideline-cover" id="pdfThumbnailContainer15">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail15" class="pdf-thumbnail-canvas"></canvas>
@@ -743,10 +731,10 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Guideline 16 -->
-            <div class="guideline-card">
+            <!-- <div class="guideline-card">
                 <div class="guideline-cover" id="pdfThumbnailContainer16">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail16" class="pdf-thumbnail-canvas"></canvas>
@@ -765,10 +753,10 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Guideline 17 -->
-            <div class="guideline-card">
+            <!-- <div class="guideline-card">
                 <div class="guideline-cover" id="pdfThumbnailContainer17">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail17" class="pdf-thumbnail-canvas"></canvas>
@@ -787,10 +775,10 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Guideline 18 -->
-            <div class="guideline-card">
+            <!-- <div class="guideline-card">
                 <div class="guideline-cover" id="pdfThumbnailContainer18">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail18" class="pdf-thumbnail-canvas"></canvas>
@@ -809,7 +797,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </main>
 
@@ -835,6 +823,44 @@
             document.getElementById('pdfViewer').style.display = 'none';
             document.getElementById('pdfViewerFrame').src = '';
             document.body.style.overflow = 'auto';
+        }
+
+        // Filtering logic for search, year, and category
+        function setupGuidelineFilters() {
+            const filterBar = document.querySelector('.filter-bar');
+            if (!filterBar) return;
+
+            const searchInput = filterBar.querySelector('input[type="text"]');
+            const yearSelect = filterBar.querySelector('select');
+            const searchButton = filterBar.querySelector('.search-btn');
+
+            const cards = Array.from(document.querySelectorAll('.guideline-card'));
+
+            const applyFilters = () => {
+                const query = (searchInput?.value || '').toLowerCase().trim();
+                const selectedYear = yearSelect?.value || '';
+
+                cards.forEach(card => {
+                    const titleEl = card.querySelector('.guideline-title');
+                    const titleText = (titleEl?.textContent || '').toLowerCase();
+                    const cardYear = card.getAttribute('data-year') || '';
+
+                    const matchesText = query === '' || titleText.includes(query);
+                    const matchesYear = selectedYear === '' || cardYear === selectedYear;
+                    const show = matchesText && matchesYear;
+                    card.style.display = show ? '' : 'none';
+                });
+            };
+
+            searchInput?.addEventListener('input', applyFilters);
+            yearSelect?.addEventListener('change', applyFilters);
+            searchButton?.addEventListener('click', (e) => {
+                e.preventDefault();
+                applyFilters();
+            });
+
+            // initial filter to normalize state
+            applyFilters();
         }
 
         // Close viewer when clicking outside the PDF container
@@ -883,12 +909,12 @@
         document.addEventListener('DOMContentLoaded', function() {
             // Generate thumbnails for each PDF
             const pdfFiles = [
-                'asset/docs/guidelines/Treatment-guidelines-Third-Edition--2023.pdf',
-                'asset/docs/guidelines/Draft-Guidelines-For-Malaria-Outbreak-Response-2020---5th-Version-.pdf',
-                'asset/docs/guidelines/Vector_control_guidelines_in_Prevention_of_Reintroduction_phase_of_malaria_in_Sri_Lanka_2020.pdf',
-                'asset/docs/guidelines/Interim_guideline_for_Malaria_Prevention_in_COVID_19_Quarantine_Centres_2020.pdf',
-                'asset/docs/guidelines/Interim_Guidelines_on_Parasitological_Surveillance_for_malaria_during_the_COVID-19_Pandemic.pdf',
-                'asset/docs/guidelines/INTERIM_RECOMMENDATIONS_FOR_MALARIA_ENTOMOLOGICAL_SURVEILLANCE_AND_VECTOR_CONTROL_DURING.pdf',
+                'asset/docs/guidelines/National Strategic Plan_Leishmaniasis_2024-2028.pdf',
+                'asset/docs/guidelines/National Strategic Plan_Malaria_2023-2027.pdf',
+                'asset/docs/guidelines/SCOPE OF WORK TO BE PERFORMED WHEN A MALARIA PATIENT IS REPORTED_2024.pdf',
+                'asset/docs/guidelines/Guidlines for Leismaniasis vector surveillance-2024_AMC.pdf',
+                'asset/docs/guidelines/Ento Surveillance Guide 2023 Ed.pdf',
+                'asset/docs/guidelines/Vector Control Guidelines 2020.pdf',
                 'asset/docs/guidelines/Instructions_on_sample_collection_for_laboratory_diagnosis_of_malaria_during_Covid_19_pandemic.pdf',
                 'asset/docs/guidelines/Ento_surveillance_guide_2019.pdf',
                 'asset/docs/guidelines/PROCEDURE_FOR_THE_PROCUREMENT_OF_ESSENTIAL_ANTI_MALARIAL_DRUGS_COMMODITIES_AND_SERVICES_FOR_ANTI_MALARIA_CAMPAIGN_OF_SRI_LANKA_IN_PREVENTION_OF_RE_INTRODUCTION_PHASE_OF_MALARIA.pdf',
@@ -908,6 +934,9 @@
                 const loadingSelector = `#pdfThumbnailContainer${index + 1} .thumbnail-loading`;
                 generatePdfThumbnail(pdfFile, canvasId, loadingSelector);
             });
+
+            // Initialize filters
+            setupGuidelineFilters();
         });
     </script>
 

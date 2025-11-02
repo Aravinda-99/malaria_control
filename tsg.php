@@ -19,7 +19,7 @@
 
         /* Hero Section with Background Image */
         .staff-hero-section {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('asset/image/Container.png');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('asset/image/caseReview.png');
             height: 60vh;
             background-position: center;
             background-repeat: no-repeat;

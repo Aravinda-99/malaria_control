@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us & Malaria Info</title>
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="asset/image/fav.png">
     <link rel="shortcut icon" type="image/png" href="asset/image/fav.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Basic Resets and Font Styles */
+        /* =============================================== */
+        /* Basic Resets and Font Styles      */
+        /* =============================================== */
         * {
             margin: 0;
             padding: 0;
@@ -22,17 +23,18 @@
             font-family: Arial, sans-serif;
         }
 
-        /* Main Header Container */
+        /* =============================================== */
+        /* Header, Hero, and Navigation     */
+        /* =============================================== */
         .about-header-container {
             width: 100%;
             border-bottom: none;
             margin: 0;
         }
 
-        /* Top decorative red bar */
         .about-top-bar {
             height: 5px;
-            background-color:rgb(0, 73, 0); /* Dark red */
+            background-color:rgb(0, 73, 0);
         }
 
         /* Hero Section with Background Image */
@@ -73,7 +75,7 @@
             display: flex;
             justify-content: center;
             padding: 0rem 2rem;
-            overflow-x: auto;
+            overflow-x: auto; /* Allows horizontal scroll on desktop if items overflow */
             overflow-y: hidden;
         }
 
@@ -87,13 +89,13 @@
             display: flex;
             justify-content: center;
             width: 100%;
-            flex-wrap: nowrap;
+            flex-wrap: nowrap; /* Prevents wrapping on desktop */
             align-items: center;
         }
 
         .about-nav ul li {
             display: inline-block;
-            white-space: nowrap;
+            white-space: nowrap; /* Keeps link text on one line */
             margin: 0;
         }
 
@@ -121,33 +123,9 @@
             background-color: rgb(0, 59, 5);
         }
 
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            .about-hero-section {
-                height: 40vh;
-            }
-            .about-hero-section h1 {
-                font-size: 2rem;
-            }
-            .about-hero-section p {
-                font-size: 1rem;
-            }
-            .about-nav {
-                padding: 0.5rem 0;
-            }
-            .about-nav ul {
-                flex-direction: column;
-                align-items: center;
-                flex-wrap: wrap;
-            }
-            .about-nav ul li a {
-                padding: 0.75rem 1rem;
-                width: 100vw;
-                text-align: center;
-            }
-        }
-
-        /* Vision and Mission Section Styles */
+        /* =============================================== */
+        /* Vision and Mission Section Styles  */
+        /* =============================================== */
         .about-vision-mission-container {
             width: 100%;
             display: flex;
@@ -192,29 +170,10 @@
         #mission {
             flex-direction: row-reverse;
         }
-
-        /* Responsive adjustments for vision and mission */
-        @media (max-width: 992px) {
-            .about-vision-mission-container {
-                flex-direction: column;
-            }
-            #mission {
-                flex-direction: column;
-            }
-            .about-vision-mission-container .text-content,
-            .about-vision-mission-container .image-content {
-                width: 100%;
-            }
-            .about-vision-mission-container .text-content {
-                padding: 2rem;
-            }
-            .about-vision-mission-container .text-content h2 {
-                font-size: 2rem;
-            }
-        }
         
         /* =============================================== */
-        /* Styles for the Guiding Principles Section      */
+        /* Styles for the Guiding Principles Section (UNUSED) */
+        /* These styles are present but not used in the HTML */
         /* =============================================== */
         .guiding-principles-container {
             width: 100%;
@@ -271,27 +230,9 @@
             display: block;
         }
 
-        @media (max-width: 992px) {
-            .guiding-principles-container {
-                flex-direction: column-reverse;
-                padding: 2rem 0;
-            }
-            .guiding-principles-container .principles-text,
-            .guiding-principles-container .principles-image {
-                width: 100%;
-            }
-            .guiding-principles-container .principles-text {
-                padding: 2rem;
-            }
-            .guiding-principles-container .principles-image {
-                padding: 1rem;
-            }
-            .guiding-principles-container .principles-text h2 {
-                font-size: 2rem;
-            }
-        }
-
-        /* New styles for the principles section */
+        /* =============================================== */
+        /* New styles for the principles section (ACTIVE)  */
+        /* =============================================== */
         .principles-container {
             width: 100%;
             display: flex;
@@ -331,7 +272,6 @@
         }
 
         .principles-text-content p {
-            
             color:rgb(5, 5, 5);
             font-weight: 400;
             margin-bottom: 1.5rem;
@@ -366,10 +306,81 @@
             border-radius: 5px;
         }
 
-        @media (max-width: 992px) {
+        /* =============================================== */
+        /* == MAIN RESPONSIVE BREAKPOINT (Mobile) == 
+        /* Targets all screens 768px and smaller
+        /* =============================================== */
+        @media (max-width: 768px) {
+            /* Hero adjustments */
+            .about-hero-section {
+                height: 40vh; /* Shorter hero for mobile */
+            }
+            .about-hero-section h1 {
+                font-size: 2rem; /* More readable H1 */
+            }
+            .about-hero-section p {
+                font-size: 1rem; /* More readable subtitle */
+            }
+
+            /* Main navigation stacking */
+            .about-nav {
+                padding: 0.5rem 0;
+                overflow-x: hidden; /* Disable horizontal scroll on mobile nav */
+            }
+            .about-nav ul {
+                flex-direction: column; /* Stack nav items vertically */
+                align-items: center;
+                flex-wrap: wrap; /* Not strictly needed with column, but harmless */
+            }
+            .about-nav ul li a {
+                padding: 0.75rem 1rem;
+                width: 100vw; /* Make each link full-width */
+                text-align: center;
+            }
+
+            /* Stack Vision & Mission sections vertically */
+            .about-vision-mission-container {
+                flex-direction: column;
+            }
+            #mission {
+                flex-direction: column; /* Ensure mission stacks correctly too */
+            }
+            .about-vision-mission-container .text-content,
+            .about-vision-mission-container .image-content {
+                width: 100%; /* Make sections full-width */
+            }
+            .about-vision-mission-container .text-content {
+                padding: 2rem;
+            }
+            .about-vision-mission-container .text-content h2 {
+                font-size: 1.8rem; /* Slightly smaller heading for mobile */
+            }
+
+            /* Stack unused guiding principles section */
+            .guiding-principles-container {
+                flex-direction: column-reverse;
+                padding: 2rem 0;
+            }
+            .guiding-principles-container .principles-text,
+            .guiding-principles-container .principles-image {
+                width: 100%;
+            }
+            .guiding-principles-container .principles-text {
+                padding: 2rem;
+            }
+            .guiding-principles-container .principles-image {
+                padding: 1rem;
+            }
+            .guiding-principles-container .principles-text h2 {
+                font-size: 2rem;
+            }
+
+            /* Stack ACTIVE principles section */
             .principles-section {
                 flex-direction: column;
                 align-items: flex-start;
+                width: 100%; /* Use full width for mobile */
+                padding: 0 1rem; /* Add some side padding */
             }
             .principles-content-wrapper {
                 flex-direction: column;
@@ -381,24 +392,23 @@
                 width: 100%;
             }
             .principles-text-content h2 {
-                font-size: 2rem;
+                font-size: 1.8rem; /* Adjust heading size */
             }
             .principles-image-content {
                 width: 100%;
-                padding: 1rem;
+                padding: 1rem 0; /* Adjust padding */
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
             .principles-image {
-                margin: 0;
+                margin: 0; /* Remove desktop margins */
                 width: 100%;
                 height: auto;
                 max-width: 700px;
                 border-radius: 5px;
             }
         }
-
 
     </style>
 </head>
@@ -456,19 +466,19 @@ malaria in Sri Lanka. .
             <div class="principles-section">
                 <div class="principles-content-wrapper">
                         <div class="principles-text-content">
-                         <h2>Guiding Principles</h2>
-                         <p>The National Malaria Strategy is based on the following guiding principles:</p>
-                         <ul>
-                             <li>Using locally appropriate, evidence based, environmentally friendly policies and strategies conforming to recommendations of WHO's Global Malaria Programme and the SEA Regional strategy for prevention of re-establishment of malaria</li>
-                             <li>Equity</li>
-                             <li>Universal access to quality malaria diagnosis, treatment and prevention</li>
-                             <li>Emphasis on coverage of vulnerable populations</li>
-                             <li>Value for money</li>
-                             <li>Good governance</li>
-                             <li>Being sensitive to rights of people</li>
-                             <li>Being gender responsive</li>
-                         </ul>
-                     </div>
+                          <h2>Guiding Principles</h2>
+                          <p>The National Malaria Strategy is based on the following guiding principles:</p>
+                          <ul>
+                                <li>Using locally appropriate, evidence based, environmentally friendly policies and strategies conforming to recommendations of WHO's Global Malaria Programme and the SEA Regional strategy for prevention of re-establishment of malaria</li>
+                                <li>Equity</li>
+                                <li>Universal access to quality malaria diagnosis, treatment and prevention</li>
+                                <li>Emphasis on coverage of vulnerable populations</li>
+                                <li>Value for money</li>
+                                <li>Good governance</li>
+                                <li>Being sensitive to rights of people</li>
+                                <li>Being gender responsive</li>
+                          </ul>
+                      </div>
                     <div class="principles-image-content">
                         <img src="asset/image/p1.png" alt="Team looking over a map with a magnifying glass" class="principles-image">
                     </div>
@@ -484,4 +494,3 @@ malaria in Sri Lanka. .
 
 </body>
 </html>
-

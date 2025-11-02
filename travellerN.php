@@ -395,7 +395,7 @@
             </ul>
             
             <div class="alert-box-warning">
-                <p><strong>💊 Important:</strong> Prophylaxis must be started <strong>before</strong> travel, continued <strong>during</strong> the stay,
+                <p><strong>Important:</strong> Prophylaxis must be started <strong>before</strong> travel, continued <strong>during</strong> the stay,
                 and for up to <strong>4 weeks after</strong> leaving the endemic area (depending on the
                 drug type).</p>
                 <p style="margin-top: 0.5rem;">Prophylaxis is safe for most travellers, including adults and
@@ -463,14 +463,14 @@
 
         <div class="alert-box-danger">
             <h2><i class="fas fa-exclamation-triangle"></i> In Case of Suspected Malaria</h2>
-            <p>If you suspect you have malaria or have been exposed:</p>
+            <p style="margin-top: 0.5rem;">If you suspect you have malaria or have been exposed:</p>
             <p>Call the <strong>AMC 24-Hour Hotline:</strong></p>
             <span class="hotline">📞 071 284 1767</span>
             <ul>
                 <li>Visit the nearest government hospital or RMO <strong>immediately.</strong></li>
                 <li>Do not self-medicate — treatment requires expert supervision.</li>
             </ul>
-            <p>All diagnostic testing and anti-malarial treatment are provided
+            <p style="margin-top: 0.5rem;">All diagnostic testing and anti-malarial treatment are provided
             <strong>free of charge</strong> in Sri Lanka.</p>
         </div>
 

@@ -33,7 +33,7 @@
 
             /* Background Image & Overlay */
             position: relative;
-            background-image: url('asset/image/servicebanner.png');
+            background-image: url('asset/image/servicebanner2.jpg');
             background-size: cover;
             background-position: center;
             color: white;

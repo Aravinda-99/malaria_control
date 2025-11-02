@@ -21,6 +21,20 @@
 
         body {
             background-color: #f8f9fa;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        /* --- Responsive Images --- */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* --- Prevent Horizontal Overflow --- */
+        main {
+            overflow-x: hidden;
+            width: 100%;
         }
 
         /* --- Welcome Section --- */
@@ -282,10 +296,12 @@
             align-items: flex-start;
             justify-content: space-between;
             background: url('asset/image/24.png') no-repeat left center/cover;
+            background-size: cover;
             border-radius: 15px;
             margin: 1rem 4.5rem;
             overflow: hidden;
             min-height: 490px;
+            box-sizing: border-box;
         }
 
         .protect-family-section::before {
@@ -328,7 +344,10 @@
             padding: 2rem;
             border-radius: 10px;
             min-width: 270px;
+            max-width: 100%;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            box-sizing: border-box;
+            overflow: hidden; /* Prevent content overflow */
         }
 
         .surveillance-header {
@@ -373,19 +392,31 @@
         .surveillance-stats li {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             padding: 0.75rem 0;
             border-bottom: 1px solid #ddd;
             font-weight: 500;
+            gap: 1rem; /* Space between label and number */
         }
         
         .surveillance-stats li:last-child {
             border-bottom: none;
         }
         
+        .surveillance-stats li > span:first-child {
+            flex: 1; /* Allow label to take available space */
+            min-width: 0; /* Allow text to wrap if needed */
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+        
         .surveillance-stats .stat-number {
             font-weight: 700;
             color: #d9534f;
             font-size: 1.2rem;
+            flex-shrink: 0; /* Prevent number from shrinking */
+            white-space: nowrap; /* Keep number on one line */
+            min-width: fit-content; /* Ensure number is fully visible */
         }
         
         .surveillance-footer {
@@ -395,6 +426,16 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            flex-wrap: wrap; /* Allow wrapping on small screens */
+        }
+        
+        .surveillance-footer i {
+            flex-shrink: 0; /* Prevent icon from shrinking */
+        }
+        
+        .surveillance-footer span {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
 
         /* --- Generic Section Styling --- */
@@ -448,10 +489,39 @@
     letter-spacing: 0.5px;
 }
 
-.read-more-mobile:hover {
-    background-color: #8b0000;
-    color: #fff;
-}
+        .read-more-mobile:hover {
+            background-color: #8b0000;
+            color: #fff;
+        }
+
+        /* --- Touch-Friendly Interactions for Mobile --- */
+        @media (max-width: 768px) {
+            /* Increase touch target sizes */
+            .read-more-btn,
+            .read-more-link,
+            .read-more-mobile,
+            .section-header .read-more-link,
+            button,
+            a {
+                min-height: 44px; /* iOS recommended touch target */
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            /* Ensure buttons are easily tappable */
+            .contact-form button {
+                min-height: 48px;
+            }
+            
+            /* Prevent text selection on interactive elements during touch */
+            .slider-dots span,
+            .hero-dot,
+            .event-item,
+            .calendar-grid .day {
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+            }
+        }
 
         /* Card Grid Layout (Unchanged) */
 .cards-grid {
@@ -462,17 +532,47 @@
     margin: 0 auto;
 }
 
-/* --- MODIFIED CARD STYLES --- */
+        /* --- MODIFIED CARD STYLES --- */
         /* --- Services slider overrides --- */
-        .services-section .services-slider { position: relative; max-width: 1200px; margin: 0 auto; overflow: hidden; }
-        .services-section .cards-grid { display: flex; gap: 2rem; grid-template-columns: none; transition: transform 0.3s ease; will-change: transform; }
-        .services-section .service-card { flex: 0 0 calc(33.333% - 1.333rem); }
+        .services-section .services-slider { 
+            position: relative; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            overflow: hidden; 
+        }
+        .services-section .cards-grid { 
+            display: flex; 
+            gap: 2rem; 
+            grid-template-columns: none; 
+            transition: transform 0.3s ease; 
+            will-change: transform; 
+            -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        }
+        .services-section .service-card { 
+            flex: 0 0 calc(33.333% - 1.333rem); 
+        }
         /* arrows removed */
-        .services-slider .slider-dots { text-align: center; margin-top: 1rem; }
-        .services-slider .slider-dots span { display: inline-block; height: 10px; width: 10px; margin: 0 3px; background-color: #ccc; border-radius: 50%; cursor: pointer; transition: background-color 0.3s; }
-        .services-slider .slider-dots span.active { background-color: rgb(0, 219, 66); }
+        .services-slider .slider-dots { 
+            text-align: center; 
+            margin-top: 1rem; 
+        }
+        .services-slider .slider-dots span { 
+            display: inline-block; 
+            height: 10px; 
+            width: 10px; 
+            margin: 0 3px; 
+            background-color: #ccc; 
+            border-radius: 50%; 
+            cursor: pointer; 
+            transition: background-color 0.3s; 
+        }
+        .services-slider .slider-dots span.active { 
+            background-color: rgb(0, 219, 66); 
+        }
         /* Secondary slider dots in red */
-        .services-secondary-slider .slider-dots span.active { background-color: rgb(95, 20, 20); }
+        .services-secondary-slider .slider-dots span.active { 
+            background-color: rgb(95, 20, 20); 
+        }
 
         /* Secondary services list under slider dots */
         .services-secondary-grid { margin-top: 1.5rem; }
@@ -540,12 +640,12 @@
 }
 
 /* Service specific image sizing (isolated from news cards) */
-.service-card-image {
-    width: 100%;
-    height: 260px; /* image now fills the whole card area */
-    object-fit: cover;
-    display: block;
-}
+        .service-card-image {
+            width: 100%;
+            height: 240px; /* Reduced from 260px for smaller cards */
+            object-fit: cover;
+            display: block;
+        }
 
 .news-card-content {
     /* CHANGED: Replaced border with a background color */
@@ -611,20 +711,30 @@
     background-color: rgb(0, 219, 66);
 }
         
-.service-card-content {
-    background-color: rgb(1, 59, 18);
-    color: #fff;
-    padding: 1rem 1.4rem;
-    position: static; /* place below image so full image is visible */
-    display: flex;
-    align-items: center;
-    min-height: 72px;
-    margin-top: -24px; /* pull up to remove any sub-pixel gap under image */
-}
+        .service-card-content {
+            background-color: rgb(1, 59, 18);
+            color: #fff;
+            padding: 0.9rem 1.2rem; /* Reduced padding for smaller cards */
+            position: static; /* place below image so full image is visible */
+            display: flex;
+            align-items: center;
+            min-height: 68px; /* Reduced from 72px */
+            margin-top: -24px; /* pull up to remove any sub-pixel gap under image */
+        }
 
 .service-card-content h3 {
     margin: 0;
 }
+
+        /* RESPONSIVE: Ensure service titles wrap cleanly and don't overflow */
+        .service-card-content h4 {
+            margin: 0;
+            font-weight: 600;
+            overflow-wrap: anywhere; /* allow long words to wrap */
+            word-break: break-word;  /* fallback for older browsers */
+            hyphens: auto;           /* enable hyphenation where supported */
+            text-align: left;        /* keep desktop alignment unchanged */
+        }
 
 .service-card-content span:first-child {
     font-weight: 600;
@@ -842,82 +952,736 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
 
-        /* --- Responsive Design --- */
+        /* ============================================================
+           RESPONSIVE DESIGN - Mobile & Tablet Optimizations
+           ============================================================
+           This section contains comprehensive responsive styles for:
+           - Tablet devices (992px and below)
+           - Mobile devices (768px and below)  
+           - Small mobile devices (480px and below)
+           
+           Key improvements:
+           1. Grid layouts stack to single column on mobile
+           2. Font sizes scale appropriately for readability
+           3. Padding and margins reduced for mobile screens
+           4. Touch-friendly button sizes (44px minimum)
+           5. Images are fully responsive
+           6. Forms stack vertically on mobile
+           7. Navigation adapts to mobile menu
+           8. All sections maintain visual hierarchy
+           
+           Desktop design remains unchanged above 992px.
+           ============================================================ */
+        
+        /* Tablet and smaller desktop (992px and below) */
         @media (max-width: 992px) {
-            .info-cards-container, .cards-grid {
-                grid-template-columns: 1fr;
+            /* Welcome Section - Stack layout on tablet */
+            .welcome-section {
+                padding: 3rem 1.5rem;
             }
-            .objectives-list {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
+            
             .welcome-intro {
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
+                gap: 1.5rem;
             }
+            
+            .welcome-logo {
+                width: 150px;
+            }
+            
+            .welcome-text h2 {
+                font-size: 1.75rem;
+            }
+            
+            .read-more-btn {
+                margin-top: 1rem;
+                padding: 0.7rem 1.5rem;
+            }
+            
+            /* Info Cards - Stack on tablet */
+            .info-cards-container {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                margin-top: 2rem;
+            }
+            
+            /* Objectives - Stack on tablet */
+            .objectives-section {
+                padding: 2rem 1.5rem;
+            }
+            
+            .objectives-list {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .objectives-container h2 {
+                font-size: 2rem;
+            }
+            
+            /* Protect Family Section - Stack on tablet */
             .protect-family-section {
                 flex-direction: column;
                 gap: 1.5rem;
                 text-align: center;
-                padding: 2rem 1.25rem;
-                margin: 1rem;
+                padding: 3rem 2rem;
+                margin: 1rem 1.5rem;
                 min-height: auto;
                 background-position: center top;
             }
+            
             .protect-family-content {
                 max-width: 100%;
             }
+            
+            .protect-family-content h2 {
+                font-size: 2.5rem;
+            }
+            
             .surveillance-card {
                 width: 100%;
                 max-width: 520px;
                 margin: 0 auto;
+                min-width: auto; /* Remove fixed min-width on tablet */
             }
-            .event-calendar-container, .contact-container {
+            
+            /* Content Sections - Reduce padding */
+            .content-section {
+                padding: 3rem 1.5rem;
+            }
+            
+            /* Cards Grid - Show 2 columns on tablet */
+            .cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+            
+            /* Services slider adjustments for tablet */
+            .services-section .service-card {
+                flex: 0 0 calc(50% - 0.75rem);
+            }
+            
+            /* Slightly reduce service card size on tablet */
+            .service-card-image {
+                height: 230px; /* Reduced from default 240px */
+            }
+            
+            .service-card-content {
+                padding: 0.95rem 1.1rem;
+                min-height: 70px;
+            }
+            
+            /* Event Calendar - Stack on tablet */
+            .event-calendar-section {
+                padding: 2.5rem 1.5rem;
+            }
+            
+            .event-calendar-container {
                 flex-direction: column;
+                gap: 2rem;
+            }
+            
+            .calendar {
+                flex-basis: auto;
+            }
+            
+            /* Contact Section - Stack on tablet */
+            .contact-section {
+                padding: 3rem 1.5rem;
+            }
+            
+            .contact-container {
+                flex-direction: column;
+                gap: 2rem;
             }
         }
 
+        /* Mobile devices (768px and below) */
         @media (max-width: 768px) {
+            /* Welcome Section - Mobile optimizations */
+            .welcome-section {
+                padding: 2rem 1rem;
+            }
+            
+            .welcome-logo {
+                width: 120px;
+            }
+            
+            .welcome-text h2 {
+                font-size: 1.5rem;
+                margin-bottom: 0.75rem;
+            }
+            
+            .welcome-text p {
+                font-size: 0.95rem;
+                line-height: 1.5;
+            }
+            
             .read-more-btn {
                 margin-top: 1rem;
+                padding: 0.6rem 1.25rem;
+                font-size: 0.9rem;
             }
+            
+            /* Objectives Section - Mobile spacing */
+            .objectives-section {
+                padding: 2rem 1rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .objectives-container h2 {
+                font-size: 1.75rem;
+            }
+            
+            .objective-item {
+                padding: 1.5rem;
+            }
+            
+            .objective-number {
+                width: 45px;
+                height: 45px;
+                font-size: 1.2rem;
+            }
+            
+            .objective-text {
+                font-size: 1rem;
+            }
+            
+            /* Info Cards - Mobile spacing */
+            .info-cards-container {
+                margin-top: 1.5rem;
+                gap: 1.25rem;
+            }
+            
+            .info-card {
+                padding: 1.5rem;
+            }
+            
+            .info-card h3 {
+                font-size: 1.5rem;
+            }
+            
+            .info-card p {
+                font-size: 0.95rem;
+            }
+            
+            /* Protect Family Section - Mobile layout */
+            .protect-family-section {
+                padding: 2rem 1rem;
+                margin: 1rem 0.5rem;
+                border-radius: 10px;
+                min-height: auto;
+            }
+            
+            .protect-family-content h2 {
+                font-size: 2rem;
+                line-height: 1.15;
+                margin-bottom: 0.75rem;
+            }
+            
+            .protect-family-content p {
+                font-size: 0.95rem;
+                margin-top: 0.5rem;
+            }
+            
+            .protect-family-content-p {
+                font-size: 0.9rem !important;
+            }
+            
+            .surveillance-card {
+                padding: 1.25rem;
+                min-width: auto;
+                width: 100%;
+                max-width: 100%;
+            }
+            
+            .surveillance-icon img {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .surveillance-header h3 {
+                font-size: 1.1rem;
+            }
+            
+            .surveillance-stats li {
+                padding: 0.6rem 0;
+                font-size: 0.9rem;
+                gap: 0.75rem; /* Reduced gap on mobile */
+            }
+            
+            .surveillance-stats li > span:first-child {
+                font-size: 0.9rem;
+                line-height: 1.4;
+            }
+            
+            .surveillance-stats .stat-number {
+                font-size: 1.1rem;
+                flex-shrink: 0; /* Ensure number stays visible */
+            }
+            
+            /* Content Sections - Mobile padding */
+            .content-section {
+                padding: 2.5rem 1rem;
+            }
+            
             .section-header {
                 flex-direction: column;
                 gap: 1rem;
+                align-items: flex-start;
+                margin-bottom: 1.5rem;
             }
-            /* Hide top button and show bottom one on mobile */
+            
+            .section-header h2 {
+                font-size: 1.5rem;
+            }
+            
+            .section-header .read-more-link {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+            
+            /* Hide top read more button, show mobile version */
             .news-section .section-header .read-more-link {
                 display: none;
             }
+            
             .news-section .read-more-mobile {
                 display: inline-block;
                 margin: 1rem auto 0 auto;
             }
+            
             .services-section .section-header .read-more-link {
                 display: none;
             }
+            
             .services-section .read-more-mobile {
                 display: inline-block;
                 margin: 1rem auto 0 auto;
             }
-            .contact-form {
+            
+            /* Cards Grid - Single column on mobile */
+            .cards-grid {
                 grid-template-columns: 1fr;
+                /* RESPONSIVE: Keep gap consistent with JS slider's assumed 2rem to avoid misalignment */
+                gap: 2rem;
             }
-            .protect-family-content h2 {
-                font-size: 2.2rem;
-                line-height: 1.15;
+            
+            /* Service Cards - Full width on mobile */
+            .services-section .service-card {
+                flex: 0 0 100%;
             }
-            .protect-family-content p {
-                font-size: 1rem;
+            
+            /* RESPONSIVE: Consistent gap with slider math (2rem) */
+            .services-section .cards-grid { gap: 2rem; }
+            
+            /* News Cards - Mobile adjustments */
+            .card-image {
+                height: 180px;
             }
-            .surveillance-card {
+            
+            /* Service Cards - Made smaller on mobile */
+            .service-card-image {
+                height: 200px; /* Reduced from 220px */
+            }
+            
+            .news-card-content {
                 padding: 1.25rem;
             }
-            /* Hide slider dots on mobile for news and services */
-            .news-section .slider-dots,
-            .services-section .slider-dots {
+            
+            .news-card-content h3 {
+                font-size: 1rem;
+            }
+            
+            .news-card-content p {
+                font-size: 0.85rem;
+                padding-right: 15px;
+            }
+            
+            .news-card-content .date {
+                font-size: 0.75rem;
+            }
+            
+            /* RESPONSIVE: Center content and avoid overlap with image on small screens */
+            .service-card-content {
+                padding: 0.85rem 1rem; /* Slightly reduced padding */
+                min-height: 62px; /* Slightly reduced */
+                justify-content: center; /* center text horizontally */
+                text-align: center;
+                margin-top: 0; /* remove negative pull-up to prevent overlap */
+            }
+            
+            .service-card-content h4 {
+                font-size: 0.95rem;
+                line-height: 1.35; /* Better readability on small screens */
+                text-align: center;  /* center title on mobile */
+            }
+            
+            /* Hide slider dots on mobile for news only */
+            .news-section .slider-dots {
                 display: none;
+            }
+            
+            /* Show slider dots on mobile for services */
+            .services-section .slider-dots {
+                /* RESPONSIVE: Flex-center and evenly space dots */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 6px;
+                margin-top: 1.5rem;
+            }
+            
+            .services-section .slider-dots span {
+                /* RESPONSIVE: Make dots smaller on mobile */
+                width: 8px;
+                height: 8px;
+                margin: 0; /* use gap for spacing */
+                cursor: pointer;
+                /* Touch-friendly: larger tap area */
+                padding: 4px;
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+            }
+            
+            /* Show secondary services slider dots on mobile too */
+            .services-secondary-slider .slider-dots {
+                /* RESPONSIVE: Flex-center and evenly space dots */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 6px;
+                margin-top: 1.5rem;
+            }
+            
+            .services-secondary-slider .slider-dots span {
+                /* RESPONSIVE: Make dots smaller on mobile */
+                width: 8px;
+                height: 8px;
+                margin: 0; /* use gap for spacing */
+                cursor: pointer;
+                /* Touch-friendly: larger tap area */
+                padding: 4px;
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+            }
+            
+            /* Event Calendar - Mobile layout */
+            .event-calendar-section {
+                padding: 2rem 1rem;
+            }
+            
+            .event-calendar-info h2 {
+                font-size: 1.5rem;
+            }
+            
+            .event-calendar-info p {
+                font-size: 0.9rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .calendar {
+                padding: 1rem;
+            }
+            
+            .calendar-header {
+                margin-bottom: 1rem;
+                font-size: 0.9rem;
+            }
+            
+            .calendar-grid {
+                gap: 0.35rem;
+            }
+            
+            .calendar-grid span {
+                padding: 0.4rem 0.25rem;
+                font-size: 0.85rem;
+            }
+            
+            .event-item {
+                padding: 0.9rem 1rem;
+            }
+            
+            .event-item .date {
+                font-size: 1.5rem;
+                margin-right: 1rem;
+            }
+            
+            .event-item .details p {
+                font-size: 0.9rem;
+            }
+            
+            .event-item .details span {
+                font-size: 0.8rem;
+            }
+            
+            .event-item .count {
+                width: 25px;
+                height: 25px;
+                font-size: 0.85rem;
+            }
+            
+            /* Contact Section - Mobile form */
+            .contact-section {
+                padding: 2.5rem 1rem;
+            }
+            
+            .contact-form-container h2 {
+                font-size: 1.5rem;
+            }
+            
+            .contact-form-container p {
+                font-size: 0.9rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .contact-form {
+                grid-template-columns: 1fr;
+                gap: 0.9rem;
+            }
+            
+            .contact-form input,
+            .contact-form textarea {
+                padding: 0.7rem 0.9rem;
+                font-size: 0.95rem;
+            }
+            
+            .contact-form textarea {
+                min-height: 100px;
+            }
+            
+            .contact-form button {
+                padding: 0.7rem 1.5rem;
+                font-size: 0.95rem;
+                width: 100%;
+            }
+            
+            .map-container iframe {
+                height: 300px;
+            }
+        }
+        
+        /* Small mobile devices (480px and below) */
+        @media (max-width: 480px) {
+            /* Welcome Section - Extra small screens */
+            .welcome-section {
+                padding: 1.5rem 0.75rem;
+            }
+            
+            .welcome-logo {
+                width: 100px;
+            }
+            
+            .welcome-text h2 {
+                font-size: 1.25rem;
+            }
+            
+            .welcome-text p {
+                font-size: 0.9rem;
+            }
+            
+            .read-more-btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.85rem;
+            }
+            
+            /* Objectives - Extra small spacing */
+            .objectives-section {
+                padding: 1.5rem 0.75rem;
+            }
+            
+            .objectives-container h2 {
+                font-size: 1.5rem;
+            }
+            
+            .objective-item {
+                padding: 1.25rem;
+            }
+            
+            .objective-number {
+                width: 40px;
+                height: 40px;
+                font-size: 1.1rem;
+            }
+            
+            .objective-text {
+                font-size: 0.95rem;
+            }
+            
+            /* Info Cards - Extra small */
+            .info-card {
+                padding: 1.25rem;
+            }
+            
+            .info-card h3 {
+                font-size: 1.3rem;
+            }
+            
+            .info-card p {
+                font-size: 0.9rem;
+            }
+            
+            /* Protect Family - Extra small */
+            .protect-family-section {
+                padding: 1.5rem 0.75rem;
+                margin: 0.75rem 0.25rem;
+            }
+            
+            .protect-family-content h2 {
+                font-size: 1.75rem;
+            }
+            
+            .protect-family-content p {
+                font-size: 0.9rem;
+            }
+            
+            .surveillance-card {
+                padding: 1rem;
+                min-width: auto;
+                width: 100%;
+            }
+            
+            .surveillance-icon img {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .surveillance-header h3 {
+                font-size: 1rem;
+            }
+            
+            .surveillance-stats li {
+                font-size: 0.85rem;
+                padding: 0.5rem 0;
+                gap: 0.5rem; /* Smaller gap on very small screens */
+            }
+            
+            .surveillance-stats li > span:first-child {
+                font-size: 0.85rem;
+            }
+            
+            .surveillance-stats .stat-number {
+                font-size: 1rem;
+            }
+            
+            /* Content Sections - Extra small */
+            .content-section {
+                padding: 2rem 0.75rem;
+            }
+            
+            .section-header h2 {
+                font-size: 1.3rem;
+            }
+            
+            .section-header .read-more-link {
+                padding: 0.45rem 0.9rem;
+                font-size: 0.85rem;
+            }
+            
+            /* Cards - Extra small */
+            .card-image {
+                height: 160px;
+            }
+            
+            /* Service Cards - Even smaller on very small screens */
+            .service-card-image {
+                height: 180px; /* Reduced from 200px */
+            }
+            
+            .news-card-content {
+                padding: 1rem;
+            }
+            
+            .news-card-content h3 {
+                font-size: 0.95rem;
+            }
+            
+            .news-card-content p {
+                font-size: 0.8rem;
+            }
+            
+            /* RESPONSIVE: Keep centered layout on very small screens */
+            .service-card-content {
+                padding: 0.75rem 0.9rem; /* Further reduced */
+                min-height: 58px; /* Further reduced */
+                justify-content: center;
+                text-align: center;
+                margin-top: 0;
+            }
+            
+            .service-card-content h4 {
+                font-size: 0.9rem;
+                line-height: 1.35;
+                text-align: center;
+            }
+            
+            /* Show and style slider dots on very small screens too */
+            .services-section .slider-dots {
+                /* RESPONSIVE: Flex-center and evenly space dots */
+                margin-top: 1.25rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 6px;
+            }
+            
+            .services-section .slider-dots span {
+                /* RESPONSIVE: Make dots even smaller on very small screens */
+                width: 6px;
+                height: 6px;
+                margin: 0;
+            }
+
+            /* RESPONSIVE: Match secondary slider dots size on very small screens */
+            .services-secondary-slider .slider-dots span {
+                width: 6px;
+                height: 6px;
+                margin: 0;
+            }
+            
+            /* Event Calendar - Extra small */
+            .event-calendar-section {
+                padding: 1.5rem 0.75rem;
+            }
+            
+            .event-calendar-info h2 {
+                font-size: 1.3rem;
+            }
+            
+            .calendar {
+                padding: 0.9rem;
+            }
+            
+            .calendar-grid span {
+                padding: 0.3rem 0.2rem;
+                font-size: 0.8rem;
+            }
+            
+            .event-item {
+                padding: 0.75rem 0.9rem;
+            }
+            
+            .event-item .date {
+                font-size: 1.3rem;
+            }
+            
+            /* Contact - Extra small */
+            .contact-section {
+                padding: 2rem 0.75rem;
+            }
+            
+            .contact-form-container h2 {
+                font-size: 1.3rem;
+            }
+            
+            .contact-form input,
+            .contact-form textarea {
+                padding: 0.6rem 0.8rem;
+                font-size: 0.9rem;
+            }
+            
+            .map-container iframe {
+                height: 250px;
             }
         }
     </style>
@@ -1045,7 +1809,7 @@
 
     <!-- Mobile-only read more button (appears below cards) -->
     <div style="text-align:center;">
-        <a href="#" class="read-more-link read-more-mobile">SEE MORE Services &raquo;</a>
+        <a href="news.php" class="read-more-link read-more-mobile">SEE MORE NEWS &raquo;</a>
     </div>
 
     <div class="slider-dots">
@@ -1099,7 +1863,7 @@
                     </div>
                 </a>
                 <a href="mosquitoSurveillance.php" class="service-card">
-                    <img src="asset/image/noimages2.jpg" alt="Scientist with microscope" class="card-image service-card-image">
+                    <img src="asset/image/Entomologicalsurveillance.png" alt="Scientist with microscope" class="card-image service-card-image">
                     <div class="service-card-content">
                         <h4>Mosquito surveillance and vector control</h4>   
                     </div>
@@ -1124,13 +1888,13 @@
                     </div>
                 </a>
                 <a href="#" class="service-card">
-                    <img src="asset/image/noimages2.jpg" alt="Screening" class="card-image service-card-image">
+                    <img src="asset/image/Screening for Leishmaniasis.png" alt="Screening" class="card-image service-card-image">
                     <div class="service-card-content">
                         <h4>Screening</h4>
                     </div>
                 </a>
                 <a href="#" class="service-card">
-                    <img src="asset/image/noimages2.jpg" alt="Risk group surveillance" class="card-image service-card-image">
+                    <img src="asset/image/Leishmaniasis risk group surveillance.png" alt="Risk group surveillance" class="card-image service-card-image">
                     <div class="service-card-content">
                         <h4>Risk group surveillance</h4>
                     </div>
@@ -1142,13 +1906,13 @@
                     </div>
                 </a>
                 <a href="#" class="service-card">
-                    <img src="asset/image/noimages2.jpg" alt="Sandfly surveillance and vector control" class="card-image service-card-image">
+                    <img src="asset/image/Sandfly surveillance.png" alt="Sandfly surveillance and vector control" class="card-image service-card-image">
                     <div class="service-card-content">
                         <h4>Sandfly surveillance and vector control</h4>
                     </div>
                 </a>
                 <a href="#" class="service-card">
-                    <img src="asset/image/noimages2.jpg" alt="Community engagement" class="card-image service-card-image">
+                    <img src="asset/image/Community engagement_Leishmanisis.png" alt="Community engagement" class="card-image service-card-image">
                     <div class="service-card-content">
                         <h4>Community engagement</h4>
                     </div>
