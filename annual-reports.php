@@ -372,25 +372,30 @@
     <main class="reports-container">
         <!-- Filter Bar -->
         <div class="filter-bar">
-            <input type="text" placeholder="Search reports...">
-            <select>
-                <option value="">All Types</option>
-                <option value="annual">Annual Report</option>
-                <option value="quarterly">Quarterly Report</option>
+            <input type="text" id="searchInput" placeholder="Search reports..." onkeyup="filterReports()">
+            <select id="yearSelect" onchange="filterReports()">
+                <option value="">Select Year</option>
+                <option value="2023">2023</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2009">2009</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
             </select>
-            <select>
-                <option value="">All Languages</option>
-                <option value="english">English</option>
-                <option value="sinhala">Sinhala</option>
-                <option value="tamil">Tamil</option>
-            </select>
-            <button class="search-btn">Search</button>
+            <button class="search-btn" onclick="filterReports()">Search</button>
         </div>
 
         <!-- Reports Grid -->
-        <div class="reports-grid">
+        <div class="reports-grid" id="reportsGrid">
             <!-- Report 1 - 2023 -->
-            <div class="report-card">
+            <div class="report-card" data-year="2023">
                 <div class="report-thumbnail" id="pdfThumbnailContainer1">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail1" class="pdf-thumbnail-canvas"></canvas>
@@ -404,7 +409,7 @@
             </div>
 
             <!-- Report 2 - 2019 -->
-            <div class="report-card">
+            <div class="report-card" data-year="2019">
                 <div class="report-thumbnail" id="pdfThumbnailContainer2">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail2" class="pdf-thumbnail-canvas"></canvas>
@@ -418,7 +423,7 @@
             </div>
 
             <!-- Report 3 - 2018 -->
-            <div class="report-card">
+            <div class="report-card" data-year="2018">
                 <div class="report-thumbnail" id="pdfThumbnailContainer3">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail3" class="pdf-thumbnail-canvas"></canvas>
@@ -432,7 +437,7 @@
             </div>
 
             <!-- Report 4 - 2016 -->
-            <div class="report-card">
+            <div class="report-card" data-year="2016">
                 <div class="report-thumbnail" id="pdfThumbnailContainer4">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail4" class="pdf-thumbnail-canvas"></canvas>
@@ -440,13 +445,13 @@
                 <h3 class="report-title">Annual Report 2016</h3>
                 <p class="report-date">01 January 2016</p>
                 <div class="report-actions">
-                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual-Report-2016.pdf')">View</a>
-                    <a href="asset/docs/annual_reports/Annual-Report-2016.pdf" class="btn btn-download" download>Download</a>
+                    <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/annual_reports/Annual_Report_2016.pdf')">View</a>
+                    <a href="asset/docs/annual_reports/Annual_Report_2016.pdf" class="btn btn-download" download>Download</a>
                 </div>
             </div>
 
             <!-- Report 5 - 2015 -->
-            <div class="report-card">
+            <div class="report-card" data-year="2015">
                 <div class="report-thumbnail" id="pdfThumbnailContainer5">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail5" class="pdf-thumbnail-canvas"></canvas>
@@ -460,7 +465,7 @@
             </div>
 
             <!-- Report 6 - 2014 -->
-            <div class="report-card">
+            <div class="report-card" data-year="2014">
                 <div class="report-thumbnail" id="pdfThumbnailContainer6">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail6" class="pdf-thumbnail-canvas"></canvas>
@@ -474,7 +479,7 @@
             </div>
 
             <!-- Report 7 - 2013 -->
-            <div class="report-card">
+            <div class="report-card" data-year="2013">
                 <div class="report-thumbnail" id="pdfThumbnailContainer7">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail7" class="pdf-thumbnail-canvas"></canvas>
@@ -488,7 +493,7 @@
             </div>
 
             <!-- Report 8 - 2012 -->
-            <div class="report-card">
+            <div class="report-card" data-year="2012">
                 <div class="report-thumbnail" id="pdfThumbnailContainer8">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail8" class="pdf-thumbnail-canvas"></canvas>
@@ -502,7 +507,7 @@
             </div>
 
             <!-- Report 9 - 2011 -->
-            <div class="report-card">
+            <div class="report-card" data-year="2011">
                 <div class="report-thumbnail" id="pdfThumbnailContainer9">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail9" class="pdf-thumbnail-canvas"></canvas>
@@ -516,7 +521,7 @@
             </div>
 
             <!-- Report 10 - 2009 -->
-            <div class="report-card">
+            <div class="report-card" data-year="2009">
                 <div class="report-thumbnail" id="pdfThumbnailContainer10">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail10" class="pdf-thumbnail-canvas"></canvas>
@@ -530,7 +535,7 @@
             </div>
 
             <!-- Report 11 - 2008 -->
-            <div class="report-card">
+            <div class="report-card" data-year="2008">
                 <div class="report-thumbnail" id="pdfThumbnailContainer11">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail11" class="pdf-thumbnail-canvas"></canvas>
@@ -544,7 +549,7 @@
             </div>
 
             <!-- Report 12 - 2007 -->
-            <div class="report-card">
+            <div class="report-card" data-year="2007">
                 <div class="report-thumbnail" id="pdfThumbnailContainer12">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail12" class="pdf-thumbnail-canvas"></canvas>
@@ -558,7 +563,7 @@
             </div>
 
             <!-- Report 13 - 2006 -->
-            <div class="report-card">
+            <div class="report-card" data-year="2006">
                 <div class="report-thumbnail" id="pdfThumbnailContainer13">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail13" class="pdf-thumbnail-canvas"></canvas>
@@ -615,6 +620,31 @@
             }
         });
 
+        // Filter Reports Function
+        function filterReports() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            const yearSelect = document.getElementById('yearSelect').value;
+            const reportCards = document.querySelectorAll('.report-card');
+            
+            reportCards.forEach(function(card) {
+                const reportTitle = card.querySelector('.report-title').textContent.toLowerCase();
+                const reportYear = card.getAttribute('data-year');
+                
+                // Check if report matches search text
+                const matchesSearch = searchInput === '' || reportTitle.includes(searchInput);
+                
+                // Check if report matches year filter
+                const matchesYear = yearSelect === '' || reportYear === yearSelect;
+                
+                // Show or hide card based on filters
+                if (matchesSearch && matchesYear) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
         // Set up PDF.js to generate thumbnails
         pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
 
@@ -657,7 +687,7 @@
                 'asset/docs/annual_reports/Annual-Report-2023.pdf',
                 'asset/docs/annual_reports/Annual-Report-2019.pdf',
                 'asset/docs/annual_reports/Annual-Report-2018.pdf',
-                'asset/docs/annual_reports/Annual-Report-2016.pdf',
+                'asset/docs/annual_reports/Annual_Report_2016.pdf',
                 'asset/docs/annual_reports/Annual Report 2015.pdf',
                 'asset/docs/annual_reports/Annual Report 2014.pdf',
                 'asset/docs/annual_reports/Annual Report 2013.pdf',

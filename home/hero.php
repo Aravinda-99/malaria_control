@@ -13,7 +13,7 @@
             display: flex;
             background: url('asset/hero/hero1.png') no-repeat center center/cover;
             color: #fff;
-            min-height: 500px;
+            min-height: 450px;
             align-items: center;
             padding: 2rem 4rem;
             position: relative;
