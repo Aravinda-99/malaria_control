@@ -101,6 +101,7 @@
             gap: 1rem;
             font-size: 0.8rem;
             color: #555;
+            flex-wrap: nowrap; /* ensure items stay on one line */
         }
 
         .header-language-links a {
@@ -109,9 +110,18 @@
             font-weight: 500;
         }
 
+        /* keep text and flag icon on one line and centered vertically */
+        .header-language-links span {
+            display: inline-flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+
         .header-language-links img {
             height: 12px;
             margin-left: 0.25rem;
+            display: inline-block;
+            vertical-align: middle;
         }
 
         /* --- Search Bar --- */
