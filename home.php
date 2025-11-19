@@ -1887,7 +1887,7 @@
                         <h4>Leishmaniasis</h4>
                     </div>
                 </a>
-                <a href="#" class="service-card">
+                <a href="screeningLeishmaniasis.php" class="service-card">
                     <img src="asset/image/Screening for Leishmaniasis.png" alt="Screening" class="card-image service-card-image">
                     <div class="service-card-content">
                         <h4>Screening</h4>
@@ -1899,8 +1899,8 @@
                         <h4>Risk group surveillance</h4>
                     </div>
                 </a>
-                <a href="#" class="service-card">
-                    <img src="asset/image/noimages2.jpg" alt="Case detection, diagnosis, treatment and follow-up" class="card-image service-card-image">
+                <a href="caseDetectionLeishmaniasis.php" class="service-card">
+                    <img src="asset/image/caseDetection11.png" alt="Case detection, diagnosis, treatment and follow-up" class="card-image service-card-image">
                     <div class="service-card-content">
                         <h4>Case detection, diagnosis, treatment and follow-up</h4>
                     </div>

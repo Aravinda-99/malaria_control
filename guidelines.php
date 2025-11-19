@@ -404,54 +404,10 @@
         <!-- Guidelines Grid -->
         <div class="guidelines-grid">
             <!-- Guideline 1 -->
-            <div class="guideline-card" data-year="2024" data-category="surveillance">
+            <div class="guideline-card" data-year="2024" data-category="procedures">
                 <div class="guideline-cover" id="pdfThumbnailContainer1">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail1" class="pdf-thumbnail-canvas"></canvas>
-                </div>
-                <div class="guideline-content">
-                    <div class="guideline-details">
-                        <h3 class="guideline-title">National Strategic Plan_Leishmaniasis_2024-2028</h3>
-                        <!-- <div class="guideline-date">28 June 2024</div> -->
-                    </div>
-                    <div class="guideline-actions">
-                        <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/guidelines/National Strategic Plan_Leishmaniasis_2024-2028.pdf')">
-                            View
-                        </a>
-                        <a href="asset/docs/guidelines/National Strategic Plan_Leishmaniasis_2024-2028.pdf" download class="btn btn-download">
-                            Download
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Guideline 2 -->
-            <div class="guideline-card" data-year="2023" data-category="surveillance">
-                <div class="guideline-cover" id="pdfThumbnailContainer2">
-                    <div class="thumbnail-loading">Loading thumbnail...</div>
-                    <canvas id="pdfThumbnail2" class="pdf-thumbnail-canvas"></canvas>
-                </div>
-                <div class="guideline-content">
-                    <div class="guideline-details">
-                        <h3 class="guideline-title">National Strategic Plan_Malaria_2023-2027</h3>
-                        <!-- <div class="guideline-date">14 November 2020</div> -->
-                    </div>
-                    <div class="guideline-actions">
-                        <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/guidelines/National Strategic Plan_Malaria_2023-2027.pdf')">
-                            View
-                        </a>
-                        <a href="asset/docs/guidelines/National Strategic Plan_Malaria_2023-2027.pdf" download class="btn btn-download">
-                            Download
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Guideline 3 -->
-            <div class="guideline-card" data-year="2024" data-category="procedures">
-                <div class="guideline-cover" id="pdfThumbnailContainer3">
-                    <div class="thumbnail-loading">Loading thumbnail...</div>
-                    <canvas id="pdfThumbnail3" class="pdf-thumbnail-canvas"></canvas>
                 </div>
                 <div class="guideline-content">
                     <div class="guideline-details">
@@ -469,11 +425,11 @@
                 </div>
             </div>
 
-            <!-- Guideline 4 -->
+            <!-- Guideline 2 -->
             <div class="guideline-card" data-year="2024" data-category="entomological">
-                <div class="guideline-cover" id="pdfThumbnailContainer4">
+                <div class="guideline-cover" id="pdfThumbnailContainer2">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
-                    <canvas id="pdfThumbnail4" class="pdf-thumbnail-canvas"></canvas>
+                    <canvas id="pdfThumbnail2" class="pdf-thumbnail-canvas"></canvas>
                 </div>
                 <div class="guideline-content">
                     <div class="guideline-details">
@@ -536,6 +492,50 @@
             </div>
 
             <!-- Guideline 7 -->
+            <div class="guideline-card" data-year="2018" data-category="strategic">
+                <div class="guideline-cover" id="pdfThumbnailContainer7">
+                    <div class="thumbnail-loading">Loading thumbnail...</div>
+                    <canvas id="pdfThumbnail7" class="pdf-thumbnail-canvas"></canvas>
+                </div>
+                <div class="guideline-content">
+                    <div class="guideline-details">
+                        <h3 class="guideline-title">National Strategic Plan for POR</h3>
+                        <div class="guideline-date">2018-2022</div>
+                    </div>
+                    <div class="guideline-actions">
+                        <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/strategies/National_Strategic_Plan_for_Por___AMC_Sri_lanka_2018-2022.pdf')">
+                            View
+                        </a>
+                        <a href="asset/docs/strategies/National_Strategic_Plan_for_Por___AMC_Sri_lanka_2018-2022.pdf" download class="btn btn-download">
+                            Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guideline 8 -->
+            <div class="guideline-card" data-year="2014" data-category="strategic">
+                <div class="guideline-cover" id="pdfThumbnailContainer8">
+                    <div class="thumbnail-loading">Loading thumbnail...</div>
+                    <canvas id="pdfThumbnail8" class="pdf-thumbnail-canvas"></canvas>
+                </div>
+                <div class="guideline-content">
+                    <div class="guideline-details">
+                        <h3 class="guideline-title">AMC National Strategic Plan</h3>
+                        <div class="guideline-date">2014-2018</div>
+                    </div>
+                    <div class="guideline-actions">
+                        <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/strategies/AMC NSP.pdf')">
+                            View
+                        </a>
+                        <a href="asset/docs/strategies/AMC NSP.pdf" download class="btn btn-download">
+                            Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Guideline 9 -->
             <!-- <div class="guideline-card">
                 <div class="guideline-cover" id="pdfThumbnailContainer7">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
@@ -909,12 +909,12 @@
         document.addEventListener('DOMContentLoaded', function() {
             // Generate thumbnails for each PDF
             const pdfFiles = [
-                'asset/docs/guidelines/National Strategic Plan_Leishmaniasis_2024-2028.pdf',
-                'asset/docs/guidelines/National Strategic Plan_Malaria_2023-2027.pdf',
                 'asset/docs/guidelines/SCOPE OF WORK TO BE PERFORMED WHEN A MALARIA PATIENT IS REPORTED_2024.pdf',
                 'asset/docs/guidelines/Guidlines for Leismaniasis vector surveillance-2024_AMC.pdf',
                 'asset/docs/guidelines/Ento Surveillance Guide 2023 Ed.pdf',
                 'asset/docs/guidelines/Vector Control Guidelines 2020.pdf',
+                'asset/docs/strategies/National_Strategic_Plan_for_Por___AMC_Sri_lanka_2018-2022.pdf',
+                'asset/docs/strategies/AMC NSP.pdf',
                 'asset/docs/guidelines/Instructions_on_sample_collection_for_laboratory_diagnosis_of_malaria_during_Covid_19_pandemic.pdf',
                 'asset/docs/guidelines/Ento_surveillance_guide_2019.pdf',
                 'asset/docs/guidelines/PROCEDURE_FOR_THE_PROCUREMENT_OF_ESSENTIAL_ANTI_MALARIAL_DRUGS_COMMODITIES_AND_SERVICES_FOR_ANTI_MALARIA_CAMPAIGN_OF_SRI_LANKA_IN_PREVENTION_OF_RE_INTRODUCTION_PHASE_OF_MALARIA.pdf',
