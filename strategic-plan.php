@@ -391,8 +391,8 @@
             <input type="text" placeholder="Search strategic plans">
             <select>
                 <option value="">Year</option>
-                <option value="2018-2022" selected>2018-2022</option>
-                <option value="2014-2018">2014-2018</option>
+                <option value="2024-2028">2024-2028</option>
+                <option value="2023-2027">2023-2027</option>
             </select>
             <select>
                 <option value="">Language</option>
@@ -410,18 +410,18 @@
                 <div class="strategy-cover" id="pdfThumbnailContainer1">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail1" class="pdf-thumbnail-canvas"></canvas>
-                    <div class="strategy-date">2018-2022</div>
+                    <div class="strategy-date">2024-2028</div>
                 </div>
                 <div class="strategy-content">
                     <div class="strategy-details">
-                        <h3 class="strategy-title">National Strategic Plan for POR</h3>
-                        <p class="strategy-description">National Strategic Plan for Prevention of Re-introduction of Malaria in Sri Lanka 2018-2022. Contains strategies and action plans to maintain malaria-free status.</p>
+                        <h3 class="strategy-title">National Strategic Plan - Leishmaniasis</h3>
+                        <p class="strategy-description">National Strategic Plan for Leishmaniasis 2024-2028. Comprehensive strategies and action plans for leishmaniasis control and prevention in Sri Lanka.</p>
                     </div>
                     <div class="strategy-actions">
-                        <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/strategies/National_Strategic_Plan_for_Por___AMC_Sri_lanka_2018-2022.pdf')">
+                        <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/guidelines/National Strategic Plan_Leishmaniasis_2024-2028.pdf')">
                             <i class="fas fa-eye"></i> View
                         </a>
-                        <a href="asset/docs/strategies/National_Strategic_Plan_for_Por___AMC_Sri_lanka_2018-2022.pdf" download class="btn btn-download">
+                        <a href="asset/docs/guidelines/National Strategic Plan_Leishmaniasis_2024-2028.pdf" download class="btn btn-download">
                             <i class="fas fa-download"></i> Download
                         </a>
                     </div>
@@ -433,23 +433,24 @@
                 <div class="strategy-cover" id="pdfThumbnailContainer2">
                     <div class="thumbnail-loading">Loading thumbnail...</div>
                     <canvas id="pdfThumbnail2" class="pdf-thumbnail-canvas"></canvas>
-                    <div class="strategy-date">2014-2018</div>
+                    <div class="strategy-date">2023-2027</div>
                 </div>
                 <div class="strategy-content">
                     <div class="strategy-details">
-                        <h3 class="strategy-title">AMC National Strategic Plan</h3>
-                        <p class="strategy-description">Anti Malaria Campaign National Strategic Plan for eliminating malaria in Sri Lanka from 2014 to 2018.</p>
+                        <h3 class="strategy-title">National Strategic Plan - Malaria</h3>
+                        <p class="strategy-description">National Strategic Plan for Malaria 2023-2027. Comprehensive strategies and action plans to maintain malaria-free status in Sri Lanka.</p>
                     </div>
                     <div class="strategy-actions">
-                        <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/strategies/AMC NSP.pdf')">
+                        <a href="#" class="btn btn-view" onclick="openPdfViewer('asset/docs/guidelines/National Strategic Plan_Malaria_2023-2027.pdf')">
                             <i class="fas fa-eye"></i> View
                         </a>
-                        <a href="asset/docs/strategies/AMC NSP.pdf" download class="btn btn-download">
+                        <a href="asset/docs/guidelines/National Strategic Plan_Malaria_2023-2027.pdf" download class="btn btn-download">
                             <i class="fas fa-download"></i> Download
                         </a>
                     </div>
                 </div>
             </div>
+
         </div>
     </main>
 
@@ -522,13 +523,13 @@
         // Generate PDF thumbnails on page load
         document.addEventListener('DOMContentLoaded', function() {
             generatePdfThumbnail(
-                'asset/docs/strategies/National_Strategic_Plan_for_Por___AMC_Sri_lanka_2018-2022.pdf',
+                'asset/docs/guidelines/National Strategic Plan_Leishmaniasis_2024-2028.pdf',
                 'pdfThumbnail1',
                 '#pdfThumbnailContainer1 .thumbnail-loading'
             );
             
             generatePdfThumbnail(
-                'asset/docs/strategies/AMC NSP.pdf',
+                'asset/docs/guidelines/National Strategic Plan_Malaria_2023-2027.pdf',
                 'pdfThumbnail2',
                 '#pdfThumbnailContainer2 .thumbnail-loading'
             );

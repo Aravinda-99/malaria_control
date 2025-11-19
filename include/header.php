@@ -297,6 +297,70 @@
             background-color: rgb(0, 53, 16);
         }
 
+        /* --- Services two-column dropdown inside the main dropdown --- */
+        .dropdown-menu .services-dropdown {
+            display: flex;
+            gap: 1rem;
+            padding: 0.75rem;
+            max-width: 640px;
+            flex-wrap: wrap; /* allow stacking on small screens */
+            position: relative; /* needed for absolute-positioned sublists */
+        }
+        .dropdown-menu .services-col {
+            flex: 1 1 260px;
+            background: transparent;
+            padding: 0.25rem 0.75rem;
+        }
+        .dropdown-menu .services-col h4 {
+            color: #f7b733;
+            margin: 0 0 0.5rem 0;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .dropdown-menu .services-col ul { list-style: none; padding: 0; margin: 0; }
+        .dropdown-menu .services-col li { padding: 0.35rem 0; }
+        .dropdown-menu .services-col a { color: #fff; text-decoration: none; font-weight: 600; }
+        .dropdown-menu .services-col a:hover { color: #f7b733; text-decoration: underline; }
+
+        /* Hide sublists by default and show them on hover/focus positioned at left side */
+        .dropdown-menu .services-col ul {
+            display: none;
+        }
+        .dropdown-menu .services-col:focus-within ul,
+        .dropdown-menu .services-col:hover ul {
+            display: block;
+            position: absolute;
+            left: 0; /* always show at left of the services-dropdown */
+            top: 0.75rem;
+            width: 48%;
+            background-color: rgba(1,82,25,0.95);
+            padding: 0.75rem 0.9rem;
+            border-radius: 6px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+            z-index: 1200;
+        }
+        /* Ensure list items inside the floating panel inherit readable styles */
+        .dropdown-menu .services-col:focus-within ul a,
+        .dropdown-menu .services-col:hover ul a {
+            color: #fff;
+        }
+
+        /* On small screens keep lists inline/stacked (no absolute positioning) */
+        @media (max-width: 768px) {
+            .dropdown-menu .services-dropdown {
+                position: static;
+            }
+            .dropdown-menu .services-col ul {
+                display: block;
+                position: static;
+                width: auto;
+                background: transparent;
+                padding: 0;
+                box-shadow: none;
+            }
+        }
+
         /* --- Sub-submenu Styles --- */
         .dropdown-menu li {
             position: relative;
@@ -690,17 +754,32 @@
                     <li>
                         <a href="service.php" <?php echo ($current_page == 'service.php') ? 'class="active"' : ''; ?>>Our Services <span class="dropdown-arrow">▼</span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="provisionOfProphylaxis.php">Provision of Prophylaxis</a></li>
-                            <li><a href="screeningOfReturnees.php">Screening of Returnees</a></li>
-                            <li><a href="caseDetection.php">Case Detection & Follow-Up</a></li>
-                            <li><a href="caseBased.php">Case-Based Reactive Response</a></li>
-                            <li><a href="mosquitoSurveillance.php">Mosquito Surveillance & Vector Control</a></li>
-                            <li><a href="riskGroup.php">Risk-Group Surveillance</a></li>
-                            <li><a href="communityEngagement.php">Community Engagement</a></li>
-                            <li><a href="hotlineService.php">Hotline Service</a></li>
+                            <li>
+                                <a href="#">Malaria <span class="dropdown-arrow">▶</span></a>
+                                <ul class="sub-dropdown">
+                                    <li><a href="Provisionofprophylaxis.php">Provision of Prophylaxis</a></li>
+                                    <li><a href="screeningOfReturnees.php">Screening of Returnees</a></li>
+                                    <li><a href="caseDetection.php">Case Detection &amp; Follow-Up</a></li>
+                                    <li><a href="caseBased.php">Case-Based Reactive Response</a></li>
+                                    <li><a href="mosquitoSurveillance.php">Mosquito Surveillance &amp; Vector Control</a></li>
+                                    <li><a href="riskGroup.php">Risk-Group Surveillance</a></li>
+                                    <li><a href="communityEngagement.php">Community Engagement</a></li>
+                                    <li><a href="hotlineService.php">Hotline Service</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Leishmaniasis <span class="dropdown-arrow">▶</span></a>
+                                <ul class="sub-dropdown">
+                                    <li><a href="#">Screening</a></li>
+                                    <li><a href="#">Risk-group surveillance</a></li>
+                                    <li><a href="#">Case detection, diagnosis, treatment &amp; follow-up</a></li>
+                                    <li><a href="#">Sandfly surveillance &amp; vector control</a></li>
+                                    <li><a href="#">Community engagement</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
-                    <li><a href="travelLerN.php" <?php echo ($current_page == 'traveler.php') ? 'class="active"' : ''; ?>>Travelers</a></li>
+                    <li><a href="travellerN.php" <?php echo ($current_page == 'traveler.php') ? 'class="active"' : ''; ?>>Travelers</a></li>
                     
                     <li>
                         <a href="#" <?php echo ($current_page == 'download.php' || $current_page == 'case-management.php' || $current_page == 'parasitology.php' || $current_page == 'entomology.php' || $current_page == 'vector-control.php' || $current_page == 'human-resource.php' || $current_page == 'rdt-distribution.php') ? 'class="active"' : ''; ?>>Downloads <span class="dropdown-arrow">▼</span></a>
