@@ -11,11 +11,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
+        html {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
         body {
             margin: 0;
+            padding: 0;
             font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             box-sizing: border-box;
             background-color: #f8f9fa;
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 100vw;
         }
 
         *, *:before, *:after {
@@ -23,8 +32,8 @@
         }
 
         .hero-section {
-            height: 60vh;
-            min-height: 450px;
+            /* Changed from fixed height to min-height for responsiveness */
+            min-height: 60vh; 
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -35,6 +44,11 @@
             background-size: cover;
             background-position: center;
             color: white;
+            /* Added padding to prevent text touching edges on mobile */
+            padding: 20px;
+            width: 100%;
+            max-width: 100vw;
+            overflow: hidden;
         }
 
         .hero-section::before {
@@ -53,7 +67,10 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 20px;
+            width: 100%; /* Ensure it takes full width */
+            max-width: 800px; /* Prevent text stretching too wide */
+            box-sizing: border-box;
+            padding: 0 20px;
         }
 
         .hero-content h1 {
@@ -61,12 +78,27 @@
             margin: 0;
             font-weight: 500;
             text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+            line-height: 1.2; /* Better spacing for wrapping text */
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        main {
+            width: 100%;
+            max-width: 100vw;
+            overflow-x: hidden;
+            box-sizing: border-box;
         }
 
         .content-section {
             max-width: 1250px;
             margin: 4rem auto;
             padding: 0 1rem;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .content-card {
@@ -75,6 +107,9 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
             padding: 2.5rem;
             margin-bottom: 2.5rem;
+            width: 100%;
+            box-sizing: border-box;
+            max-width: 100%;
         }
 
         .content-card h2 {
@@ -85,6 +120,14 @@
             margin-bottom: 1.25rem;
             border-bottom: 2px solid #f0f0f0;
             padding-bottom: 0.75rem;
+        }
+
+        /* Styling for Font Awesome Icons in headings */
+        .content-card h2 .icon {
+            margin-right: 12px;
+            font-size: 1.75rem;
+            color: rgb(5, 44, 0);
+            opacity: 0.8;
         }
 
         .content-card h3 {
@@ -104,6 +147,12 @@
             line-height: 1.7;
             color: #555;
             margin-bottom: 1rem;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+        
+        .content-card p:first-child {
+            margin-top: 0;
         }
         .intro-card {
             border-left: 5px solid rgb(5, 44, 0);
@@ -138,6 +187,8 @@
             margin-bottom: 0.8rem;
             line-height: 1.7;
             color: #555;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
 
         .content-card li::before {
@@ -146,21 +197,27 @@
             font-weight: 900;
             position: absolute;
             left: 0;
-            top: 4px;
+            top: 10px; /* Adjusted alignment */
             font-size: 0.5rem;
             color: rgb(5, 44, 0);
         }
 
         .two-col {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 1.5rem;
+            /* Improved Grid logic for better wrapping */
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .highlight-box {
             border-left: 5px solid rgb(5, 44, 0);
             padding-left: 1.25rem;
             background-color: #f9fbf8;
+            width: 100%;
+            box-sizing: border-box;
+            max-width: 100%;
         }
 
         .contact-card {
@@ -184,6 +241,9 @@
             padding: 1.5rem 2rem;
             border-radius: 8px;
             margin-bottom: 2.5rem;
+            width: 100%;
+            box-sizing: border-box;
+            max-width: 100%;
         }
 
         .alert-box-summary h3 {
@@ -196,23 +256,223 @@
             color: #333;
         }
 
-        @media (max-width: 768px) {
-            .hero-content h1 {
-                font-size: 2.4rem;
+        /* RESPONSIVE CSS START */
+        
+        /* Force single column for grid on screens smaller than grid min-width */
+        @media (max-width: 600px) {
+            .two-col {
+                grid-template-columns: 1fr;
+                min-width: 0;
             }
+        }
+        
+        /* Tablet and below (992px) */
+        @media (max-width: 992px) {
+            .content-section {
+                margin: 3rem auto;
+                padding: 0 1.5rem;
+            }
+            
+            .content-card {
+                padding: 2rem;
+            }
+        }
+        
+        /* Mobile devices (768px) */
+        @media (max-width: 768px) {
+            .hero-section {
+                min-height: 400px;
+                height: auto;
+                padding: 15px;
+            }
+
+            .hero-content {
+                padding: 0 10px;
+            }
+
+            .hero-content h1 {
+                font-size: 2.2rem;
+                line-height: 1.3;
+            }
+            
             .hero-content p {
                 font-size: 1rem;
             }
+            
+            .content-section {
+                margin: 2rem auto;
+                padding: 0 1rem;
+            }
+
             .content-card {
-                padding: 1.75rem;
+                padding: 1.5rem;
+                margin-bottom: 2rem;
             }
+
             .content-card h2 {
-                font-size: 1.65rem;
+                font-size: 1.6rem;
+                margin-bottom: 1rem;
             }
+            
+            .content-card h2 .icon {
+                font-size: 1.4rem;
+                margin-right: 8px;
+            }
+            
             .content-card h3 {
-                font-size: 1.25rem;
+                font-size: 1.3rem;
+                margin-top: 1.5rem;
+            }
+
+            .intro-card {
+                padding: 1.5rem;
+            }
+            
+            .intro-card p {
+                font-size: 1rem;
+            }
+
+            .highlight-box {
+                padding-left: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .alert-box-summary {
+                padding: 1.25rem 1.5rem;
+                margin-bottom: 2rem;
+            }
+
+            /* Force single column on mobile for stability */
+            .two-col {
+                grid-template-columns: 1fr; 
+                gap: 1.5rem;
+                min-width: 0; /* Prevent grid overflow */
+            }
+            
+            .content-section {
+                width: 100%;
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+            
+            .content-card {
+                width: 100%;
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+            
+            .content-card li {
+                padding-left: 24px;
+                font-size: 0.95rem;
             }
         }
+        
+        /* Very small mobile devices (480px) */
+        @media (max-width: 480px) {
+            .hero-section {
+                min-height: 350px;
+                padding: 10px;
+            }
+
+            .hero-content h1 {
+                font-size: 1.8rem;
+                line-height: 1.2;
+            }
+            
+            .content-section {
+                margin: 1.5rem auto;
+                padding: 0 0.75rem;
+            }
+
+            .content-card {
+                padding: 1.25rem;
+                margin-bottom: 1.5rem;
+                border-radius: 8px;
+            }
+
+            .content-card h2 {
+                font-size: 1.4rem;
+                margin-bottom: 0.875rem;
+                padding-bottom: 0.5rem;
+            }
+            
+            .content-card h2 .icon {
+                font-size: 1.2rem;
+                margin-right: 6px;
+            }
+            
+            .content-card h3 {
+                font-size: 1.15rem;
+                margin-top: 1.25rem;
+            }
+
+            .content-card p {
+                font-size: 0.95rem;
+                line-height: 1.6;
+            }
+
+            .intro-card {
+                padding: 1.25rem;
+            }
+            
+            .intro-card h2 {
+                font-size: 1.4rem;
+            }
+            
+            .intro-card p {
+                font-size: 0.95rem;
+            }
+
+            .highlight-box {
+                padding-left: 0.875rem;
+            }
+
+            .alert-box-summary {
+                padding: 1rem 1.25rem;
+            }
+            
+            .alert-box-summary h3 {
+                font-size: 1.1rem;
+            }
+            
+            .alert-box-summary p {
+                font-size: 0.9rem;
+            }
+
+            .two-col {
+                gap: 1.25rem;
+                min-width: 0; /* Prevent grid overflow */
+            }
+            
+            .content-section {
+                width: 100%;
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+            
+            .content-card {
+                width: 100%;
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+            
+            .hero-section {
+                width: 100%;
+                max-width: 100vw;
+            }
+            
+            .content-card li {
+                padding-left: 22px;
+                font-size: 0.9rem;
+                margin-bottom: 0.7rem;
+            }
+            
+            .content-card li::before {
+                font-size: 0.45rem;
+                top: 8px;
+            }
+        }
+        /* RESPONSIVE CSS END */
     </style>
 </head>
 <body>
@@ -262,7 +522,7 @@
                     <h3>Cutaneous Leishmaniasis</h3>
                     <ul>
                         <li>Clinical assessment of suspected skin lesions.</li>
-                        <li>Slit-skin smear (SSS) by trained Public Health Laboratory Technicians (PHLTs); SSS is &gt;70% sensitive and 100% specific for CL.</li>
+                        <li>Slit-skin smear (SSS) performed at hospitals by trained Public Health Laboratory Technicians (PHLTs). SSS is over 70% sensitive and 100% specific for cutaneous leishmaniasis.</li>
                         <li>Biopsy and histopathology for smear-negative cases.</li>
                         <li>PCR and culture (select tertiary centres) for confirmation.</li>
                     </ul>
@@ -288,25 +548,8 @@
             <p>AMC strengthens screening by organizing community clinics, mobile dermatology services, and enhanced surveillance in endemic districts.</p>
         </div>
 
-        <!-- <div class="content-card">
-            <h2><i class="fas fa-hands-helping icon"></i>Support for Patients & Clinicians</h2>
-            <p>The Anti Malaria Campaign provides technical guidance, screening kits, and referral pathways for suspected cases.</p>
-            <div class="contact-card">
-                <p><strong>Anti Malaria Campaign Headquarters</strong></p>
-                <p>Public Health Building, 555/5 Elvitigala Mawatha, Colombo 05</p>
-                <p><strong>Hotline:</strong> 071 284 1767</p>
-                <p><strong>Email:</strong> amc.office@health.gov.lk</p>
-            </div>
-        </div>
-
-        <div class="alert-box-summary">
-            <h3>Together, Let's Keep Sri Lanka Leishmaniasis-Safe</h3>
-            <p>Screening clinics, mobile dermatology units, and community awareness programmes ensure early detection.</p>
-            <p>Report suspected cases promptly, share travel or residence history, and follow AMC guidance for testing.</p>
-        </div> -->
-    </main>
+        </main>
 
     <?php include 'include/footer.php'; ?>
 </body>
 </html>
-

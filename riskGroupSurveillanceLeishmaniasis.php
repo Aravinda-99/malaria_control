@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Detection & Follow-Up - Cutaneous Leishmaniasis</title>
+    <title>Risk-Group Surveillance for Leishmaniasis - Malaria Control</title>
     <link rel="icon" type="image/png" href="asset/image/fav.png">
     <link rel="shortcut icon" type="image/png" href="asset/image/fav.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,18 +32,18 @@
         }
 
         .hero-section {
-            height: 60vh;
-            min-height: 450px;
+            min-height: 60vh; 
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
             position: relative;
-            background-image: url('asset/image/caseDetection11.png');
+            background-image: url('asset/image/Leishmaniasis risk group surveillance.png');
             background-size: cover;
             background-position: center;
             color: white;
+            padding: 20px;
             width: 100%;
             max-width: 100vw;
             overflow: hidden;
@@ -65,30 +65,23 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 20px;
             width: 100%;
+            max-width: 800px;
             box-sizing: border-box;
+            padding: 0 20px;
         }
 
         .hero-content h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin: 0;
             font-weight: 500;
             text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+            line-height: 1.2;
             width: 100%;
             max-width: 100%;
             box-sizing: border-box;
             word-wrap: break-word;
             overflow-wrap: break-word;
-            line-height: 1.3;
-        }
-
-        .hero-content p {
-            font-size: 1.25rem;
-            margin-top: 0.5rem;
-            font-weight: 300;
-            max-width: 650px;
-            text-shadow: 0 1px 3px rgba(0,0,0,0.2);
         }
 
         main {
@@ -136,19 +129,23 @@
         }
 
         .content-card h3 {
-            font-size: 1.35rem;
+            font-size: 1.4rem;
             font-weight: 600;
             color: #333;
-            margin-top: 1.5rem;
-            margin-bottom: 0.7rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-card h3:first-of-type {
+            margin-top: 0;
         }
 
         .content-card h4 {
-            font-size: 1.15rem;
+            font-size: 1.2rem;
             font-weight: 600;
             color: #444;
-            margin-top: 1.25rem;
-            margin-bottom: 0.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
         }
 
         .content-card p {
@@ -162,6 +159,20 @@
         
         .content-card p:first-child {
             margin-top: 0;
+        }
+
+        .intro-card {
+            border-left: 5px solid rgb(5, 44, 0);
+            background: linear-gradient(135deg, #f2fbf4, #ffffff);
+        }
+        .intro-card h2 {
+            border-bottom: none;
+            margin-bottom: 0.5rem;
+        }
+        .intro-card p {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: #0c2f40;
         }
 
         .content-card ul {
@@ -186,29 +197,17 @@
             font-weight: 900;
             position: absolute;
             left: 0;
-            top: 4px;
+            top: 10px;
             font-size: 0.5rem;
             color: rgb(5, 44, 0);
         }
 
         .two-col {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
             width: 100%;
             box-sizing: border-box;
-        }
-
-        .indication-box {
-            background-color: #fdfcf1;
-            border: 1px solid #f0e0a0;
-            border-left: 5px solid #d8ab00;
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            width: 100%;
-            box-sizing: border-box;
-            max-width: 100%;
         }
 
         .highlight-box {
@@ -218,6 +217,7 @@
             width: 100%;
             box-sizing: border-box;
             max-width: 100%;
+            margin-bottom: 1.5rem;
         }
 
         .alert-box {
@@ -248,10 +248,14 @@
             .content-section {
                 margin: 3rem auto;
                 padding: 0 1.5rem;
+                width: 100%;
+                box-sizing: border-box;
             }
             
             .content-card {
                 padding: 2rem;
+                width: 100%;
+                box-sizing: border-box;
             }
             
             .two-col {
@@ -268,16 +272,12 @@
             }
 
             .hero-content {
-                padding: 0 15px;
+                padding: 0 10px;
             }
 
             .hero-content h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
                 line-height: 1.3;
-            }
-            
-            .hero-content p {
-                font-size: 1rem;
             }
             
             .content-section {
@@ -307,13 +307,21 @@
             }
             
             .content-card h3 {
-                font-size: 1.2rem;
-                margin-top: 1.25rem;
+                font-size: 1.3rem;
+                margin-top: 1.5rem;
             }
             
             .content-card h4 {
-                font-size: 1.05rem;
-                margin-top: 1rem;
+                font-size: 1.1rem;
+                margin-top: 1.25rem;
+            }
+
+            .intro-card {
+                padding: 1.5rem;
+            }
+            
+            .intro-card p {
+                font-size: 1rem;
             }
 
             .highlight-box {
@@ -323,11 +331,6 @@
 
             .alert-box {
                 padding: 1.25rem 1.25rem;
-                margin-bottom: 1.5rem;
-            }
-            
-            .indication-box {
-                padding: 1.25rem;
             }
 
             /* Force single column on mobile for stability */
@@ -355,25 +358,19 @@
             }
 
             .hero-content h1 {
-                font-size: 1.7rem;
+                font-size: 1.8rem;
                 line-height: 1.2;
             }
             
             .content-section {
                 margin: 1.5rem auto;
                 padding: 0 0.75rem;
-                width: 100%;
-                max-width: 100%;
-                box-sizing: border-box;
             }
 
             .content-card {
                 padding: 1.25rem;
                 margin-bottom: 1.5rem;
                 border-radius: 8px;
-                width: 100%;
-                max-width: 100%;
-                box-sizing: border-box;
             }
 
             .content-card h2 {
@@ -388,7 +385,7 @@
             }
             
             .content-card h3 {
-                font-size: 1.1rem;
+                font-size: 1.15rem;
                 margin-top: 1.25rem;
             }
             
@@ -402,16 +399,24 @@
                 line-height: 1.6;
             }
 
+            .intro-card {
+                padding: 1.25rem;
+            }
+            
+            .intro-card h2 {
+                font-size: 1.4rem;
+            }
+            
+            .intro-card p {
+                font-size: 0.95rem;
+            }
+
             .highlight-box {
                 padding-left: 0.875rem;
             }
 
             .alert-box {
                 padding: 1rem 1.25rem;
-            }
-            
-            .indication-box {
-                padding: 1rem;
             }
 
             .two-col {
@@ -444,7 +449,7 @@
             
             .content-card li::before {
                 font-size: 0.45rem;
-                top: 6px;
+                top: 8px;
             }
         }
         /* RESPONSIVE CSS END */
@@ -455,120 +460,156 @@
 
     <section class="hero-section">
         <div class="hero-content">
-            <h1>Case Detection, Diagnosis, Treatment & Follow-Up</h1>
+            <h1>Risk-Group Surveillance for Leishmaniasis</h1>
         </div>
     </section>
 
     <main class="content-section">
+        <div class="content-card intro-card">
+            <h2><i class="fas fa-users-cog icon"></i> Risk-Group Surveillance for Leishmaniasis</h2>
+            <p>Effective prevention and control of leishmaniasis in Sri Lanka requires targeted surveillance of populations at highest risk of exposure. Risk-group surveillance helps identify early infections, detect transmission hotspots, and guide public health action before disease spreads further. This forms a key component of the national strategy for surveillance and early detection outlined in the NSP 2024–2028.</p>
+        </div>
+
         <div class="content-card">
-            <h2><i class="fas fa-search icon"></i>Case Detection</h2>
-            <div class="alert-box">
-                <h3>Cutaneous leishmaniasis (CL) typically presents as a:</h3>
+            <h2><i class="fas fa-user-shield icon"></i> Who Are the High-Risk Groups?</h2>
+            <p>Based on epidemiological patterns, behaviour, and environmental exposure, the following groups are considered at higher risk:</p>
+            
+            <div class="highlight-box">
+                <h3>1. Outdoor and Agricultural Workers</h3>
                 <ul>
-                    <li>Painless papule, nodule, plaque, or non-healing ulcer</li>
-                    <li>Located mostly on exposed body areas such as the face, neck, arms, and legs
-Most patients remain asymptomatic, and lesions can persist for weeks to months.</li>
+                    <li>Farmers, cultivators, chena workers</li>
+                    <li>Cattle herders and persons working in paddy fields</li>
+                    <li>Workers involved in forestry, land clearing, irrigation schemes</li>
+                </ul>
+                <p>These groups are frequently exposed to sandfly habitats, especially during dawn and dusk.</p>
+            </div>
+
+            <div class="highlight-box">
+                <h3>2. Military Personnel and Security Forces</h3>
+                <p>Historically, soldiers stationed in scrubland and jungle areas were the earliest affected group in Sri Lanka. Many are stationed in highly endemic districts with active sandfly breeding sites.</p>
+            </div>
+
+            <div class="highlight-box">
+                <h3>3. Residents in Endemic Areas</h3>
+                <p>Communities living in districts such as:</p>
+                <ul>
+                    <li>Anuradhapura</li>
+                    <li>Polonnaruwa</li>
+                    <li>Hambantota</li>
+                    <li>Matara</li>
+                    <li>Kurunegala</li>
+                    <li>Matale</li>
+                    <li>Monaragala, Ratnapura, Gampaha and Badulla (emerging high-reporting areas)</li>
+                </ul>
+                <p>are at sustained risk because of environmental factors favouring vector breeding.</p>
+            </div>
+
+            <div class="highlight-box">
+                <h3>4. People Living Near High-Risk Environments</h3>
+                <ul>
+                    <li>Houses with cracks, damp walls, and poor plastering</li>
+                    <li>Residences close to cattle sheds, banana groves, thick vegetation</li>
+                    <li>Poorly maintained gardens with decaying organic matter</li>
+                </ul>
+                <p>These settings provide ideal sandfly breeding sites.</p>
+            </div>
+
+            <div class="highlight-box">
+                <h3>5. Immunocompromised Individuals</h3>
+                <p>Patients with:</p>
+                <ul>
+                    <li>HIV/AIDS</li>
+                    <li>Chronic illnesses</li>
+                    <li>Long-term steroid use</li>
+                </ul>
+                <p>may experience more severe disease forms and require close monitoring.</p>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2><i class="fas fa-clipboard-list icon"></i> What Does Risk-Group Surveillance Involve?</h2>
+            <p>Risk-group surveillance focuses on systematically screening, monitoring, and investigating populations who are at increased risk. A Structured parasitological and entomological surveillance in these groups are needed to be strengthened.</p>
+            
+            <div class="highlight-box">
+                <h3>1. Active Case Detection (ACD)</h3>
+                <ul>
+                    <li>Field-based screening in high-risk communities</li>
+                    <li>Mobile dermatology clinics for point-of-care diagnosis</li>
+                    <li>Household visits by PHFOs and entomology staff</li>
+                    <li>Screening outdoor workers, military camps, and farming communities</li>
                 </ul>
             </div>
+
+            <div class="highlight-box">
+                <h3>2. Early Referral and Laboratory Confirmation</h3>
+                <p>Suspected cases undergo:</p>
+                <ul>
+                    <li>Slit-skin smear (SSS)</li>
+                    <li>Biopsy and histopathology</li>
+                    <li>PCR where available</li>
+                </ul>
+                <p>This ensures prompt confirmation and treatment.</p>
+            </div>
+
+            <div class="highlight-box">
+                <h3>3. Monitoring Transmission Hotspots</h3>
+                <p>Villages reporting clusters or increased cases undergo:</p>
+                <ul>
+                    <li>Entomological surveillance</li>
+                    <li>Reservoir host assessments</li>
+                    <li>Environmental evaluations</li>
+                </ul>
+            </div>
+
+            <div class="highlight-box">
+                <h3>4. Seasonal Surveillance</h3>
+                <p>Case peaks occur after monsoon rains (Feb–Mar and Jul–Oct). Enhanced surveillance is carried out during these months.</p>
+            </div>
+
+            <div class="highlight-box">
+                <h3>5. Surveillance for Visceral Leishmaniasis (VL)</h3>
+                <p>Although rare, VL remains a serious threat.</p>
+                <p>High-risk individuals with:</p>
+                <ul>
+                    <li>Prolonged fever</li>
+                    <li>Weight loss</li>
+                    <li>Enlarged liver and spleen</li>
+                </ul>
+                <p>are screened using rK-39 rapid diagnostic tests and bone marrow biopsy.</p>
+            </div>
         </div>
 
         <div class="content-card">
-            <h2><i class="fas fa-vials icon"></i>Diagnosis</h2>
+            <h2><i class="fas fa-heart icon"></i> How Communities Benefit</h2>
+            
             <div class="two-col">
                 <div class="highlight-box">
-                    <h3>Clinical Criteria</h3>
-                    <p>A suspected case meets at least four of the following features:</p>
-                    <ul>
-                        <li>Residence in or travel to endemic areas.</li>
-                        <li>Painless, non-itchy lesions.</li>
-                        <li>Lesions persisting for weeks or months.</li>
-                        <li>Poor response to conventional antibiotics.</li>
-                        <li>History of similar lesions in the locality.</li>
-                    </ul>
+                    <h3>Early Detection Saves Time & Prevents Spread</h3>
+                    <p>Risk-group surveillance helps diagnose cases early, preventing complications and reducing the transmission cycle.</p>
                 </div>
-                <!-- <div>
-                    <h3>Clinical Notes</h3>
-                    <ul>
-                        <li>Most lesions are painless; absence of pruritus should raise suspicion.</li>
-                        <li>Document duration, travel history, and previous antibiotic courses.</li>
-                        <li>Photograph lesions to assist dermatology referrals.</li>
-                        <li>Notify the RMO early if criteria are met.</li>
-                    </ul>
-                </div> -->
+                <div class="highlight-box">
+                    <h3>Improved Access to Care</h3>
+                    <p>Mobile clinics and community screening bring dermatology services closer to remote populations.</p>
+                </div>
             </div>
-            <div class="alert-box">
-                <h3>Confirmatory Tests</h3>
-                <div class="two-col">
-                    <div>
-                        <h4>Cutaneous Leishmaniasis</h4>
-                        <ul>
-                            <li>Slit Skin Smear (SSS) – first-line diagnostic method.</li>
-                            <li>Biopsy and histology for smear-negative cases.</li>
-                            <li>PCR where available.</li>
-                            <li>Culture in select settings.</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>Visceral Leishmaniasis</h4>
-                        <ul>
-                            <li>rK-39 serology for visceral and mucocutaneous types.</li>
-                            <li>Bone marrow biopsy.</li>
-                        </ul>
-                    </div>
-                </div>
+
+            <div class="highlight-box">
+                <h3>Better Social and Environmental Response</h3>
+                <p>When hotspots are identified early, vector control and community awareness programmes can begin immediately.</p>
             </div>
         </div>
 
         <div class="content-card">
-            <h2><i class="fas fa-syringe icon"></i>Treatment</h2>
-            <p>Treatment for CL is offered only in government hospitals by dermatology teams, following nationally approved guidelines.</p>
-            <div class="two-col">
-                <div>
-                    <div class="indication-box">
-                    <h3>Indications for Treatment</h3>
-                    <ul>
-                        <li>All confirmed cases</li>
-                    </ul>
-                    <p>Treatment regimen will be based on:</p>
-                    <ul>
-                        <li>Lesions near vital structures (eye, nose, joints).</li>
-                        <li>Large, multiple, or progressive lesions.</li>
-                        <li>Immunocompromised patients.</li>
-                        <li>Cosmetic concerns.</li>
-                        <li>Suspected treatment failure or relapse.</li>
-                    </ul>
-                    </div>
-                </div>
-                <div>
-                    <h3>Available Treatment Options</h3>
-                    <h4>First-line Therapies</h4>
-                    <ul>
-                        <li>Intralesional Sodium Stibogluconate (IL-SSG).</li>
-                        <li>Cryotherapy.</li>
-                    </ul>
-                    <h4>Second-line Therapies</h4>
-                    <ul>
-                        <li>Systemic Sodium Stibogluconate.</li>
-                        <li>Thermotherapy.</li>
-                        <li>Oral azoles (e.g., fluconazole) in selected cases.</li>
-                        <li>Amphotericin B for complicated or atypical forms.</li>
-                        <li>Miltefosine in specific indications.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="content-card">
-            <h2><i class="fas fa-clipboard-check icon"></i> Follow-Up of Patients</h2>
-            <p>Follow-up is critical for early detection of relapse and monitoring treatment response. Patients with CL are assessed for:</p>
+            <h2><i class="fas fa-handshake icon"></i> AMC's Commitment</h2>
+            <p>The AMC is strengthening risk-group surveillance by:</p>
             <ul>
-                <li>Lesion healing – complete re-epithelialization expected within 45 days.</li>
-                <li>Signs of relapse.</li>
-                <li>Treatment failure – lesions worsening within 14 days or failing to heal by day 45.</li>
-                <li>Adverse drug reactions.</li>
-                <li>Need for additional therapy.</li>
+                <li>Establishing a national surveillance plan for CL, MCL, and VL</li>
+                <li>Conducting active case detection in endemic and emerging districts</li>
+                <li>Training health staff in surveillance and integrated vector management</li>
+                <li>Improving access to diagnostic tools and strengthening PHFO-led community surveillance</li>
+                <li>Engaging communities, schools, and local institutions in early detection and prevention</li>
             </ul>
-            <p>AMC supports follow-up through dermatology clinics and Public Health Inspector (PHI) home visits.</p>
+            <p>Through focused surveillance of high-risk groups, Sri Lanka aims to reduce the burden of cutaneous leishmaniasis and prevent the emergence of more severe forms of the disease.</p>
         </div>
     </main>
 
