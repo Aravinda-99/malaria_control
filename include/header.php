@@ -680,7 +680,7 @@
         <section class="header-top-bar"></section>
 
         <section class="header-main">
-            <div class="header-logo-container">
+            <div class="header-logo-container" onclick="window.location.href='home.php'">
                 <img src="asset/image/AMC_logo_black.png" alt="Malaria Control Campaign Logo">
             </div>
 
@@ -770,11 +770,12 @@
                             <li>
                                 <a href="#">Leishmaniasis <span class="dropdown-arrow">▶</span></a>
                                 <ul class="sub-dropdown">
-                                    <li><a href="#">Screening</a></li>
-                                    <li><a href="#">Risk-group surveillance</a></li>
-                                    <li><a href="#">Case detection, diagnosis, treatment &amp; follow-up</a></li>
-                                    <li><a href="#">Sandfly surveillance &amp; vector control</a></li>
-                                    <li><a href="#">Community engagement</a></li>
+                                    <li><a href="leishmaniasis.php">Leishmaniasis</a></li>
+                                    <li><a href="screeningLeishmaniasis.php">Screening</a></li>
+                                    <li><a href="riskGroupSurveillanceLeishmaniasis.php">Risk-group surveillance</a></li>
+                                    <li><a href="caseDetectionLeishmaniasis.php">Case detection, diagnosis, treatment &amp; follow-up</a></li>
+                                    <li><a href="sandflySurveillanceLeishmaniasis.php">Sandfly surveillance &amp; vector control</a></li>
+                                    <li><a href="communityEngagementLeishmaniasis.php">Community engagement</a></li>
                                 </ul>
                             </li>
                         </ul>

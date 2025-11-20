@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Detection & Follow-Up - Cutaneous Leishmaniasis</title>
+    <title>Leishmaniasis - Malaria Control</title>
     <link rel="icon" type="image/png" href="asset/image/fav.png">
     <link rel="shortcut icon" type="image/png" href="asset/image/fav.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,18 +32,18 @@
         }
 
         .hero-section {
-            height: 60vh;
-            min-height: 450px;
+            min-height: 60vh; 
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
             position: relative;
-            background-image: url('asset/image/caseDetection11.png');
+            background-image: url('asset/image/noimages2.jpg');
             background-size: cover;
             background-position: center;
             color: white;
+            padding: 20px;
             width: 100%;
             max-width: 100vw;
             overflow: hidden;
@@ -65,30 +65,23 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 20px;
             width: 100%;
+            max-width: 800px;
             box-sizing: border-box;
+            padding: 0 20px;
         }
 
         .hero-content h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin: 0;
             font-weight: 500;
             text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+            line-height: 1.2;
             width: 100%;
             max-width: 100%;
             box-sizing: border-box;
             word-wrap: break-word;
             overflow-wrap: break-word;
-            line-height: 1.3;
-        }
-
-        .hero-content p {
-            font-size: 1.25rem;
-            margin-top: 0.5rem;
-            font-weight: 300;
-            max-width: 650px;
-            text-shadow: 0 1px 3px rgba(0,0,0,0.2);
         }
 
         main {
@@ -136,19 +129,15 @@
         }
 
         .content-card h3 {
-            font-size: 1.35rem;
+            font-size: 1.4rem;
             font-weight: 600;
             color: #333;
-            margin-top: 1.5rem;
-            margin-bottom: 0.7rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
         }
 
-        .content-card h4 {
-            font-size: 1.15rem;
-            font-weight: 600;
-            color: #444;
-            margin-top: 1.25rem;
-            margin-bottom: 0.5rem;
+        .content-card h3:first-of-type {
+            margin-top: 0;
         }
 
         .content-card p {
@@ -162,6 +151,20 @@
         
         .content-card p:first-child {
             margin-top: 0;
+        }
+
+        .intro-card {
+            border-left: 5px solid rgb(5, 44, 0);
+            background: linear-gradient(135deg, #f2fbf4, #ffffff);
+        }
+        .intro-card h2 {
+            border-bottom: none;
+            margin-bottom: 0.5rem;
+        }
+        .intro-card p {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: #0c2f40;
         }
 
         .content-card ul {
@@ -186,29 +189,17 @@
             font-weight: 900;
             position: absolute;
             left: 0;
-            top: 4px;
+            top: 10px;
             font-size: 0.5rem;
             color: rgb(5, 44, 0);
         }
 
         .two-col {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
             width: 100%;
             box-sizing: border-box;
-        }
-
-        .indication-box {
-            background-color: #fdfcf1;
-            border: 1px solid #f0e0a0;
-            border-left: 5px solid #d8ab00;
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            width: 100%;
-            box-sizing: border-box;
-            max-width: 100%;
         }
 
         .highlight-box {
@@ -218,6 +209,7 @@
             width: 100%;
             box-sizing: border-box;
             max-width: 100%;
+            margin-bottom: 1.5rem;
         }
 
         .alert-box {
@@ -248,10 +240,14 @@
             .content-section {
                 margin: 3rem auto;
                 padding: 0 1.5rem;
+                width: 100%;
+                box-sizing: border-box;
             }
             
             .content-card {
                 padding: 2rem;
+                width: 100%;
+                box-sizing: border-box;
             }
             
             .two-col {
@@ -268,16 +264,12 @@
             }
 
             .hero-content {
-                padding: 0 15px;
+                padding: 0 10px;
             }
 
             .hero-content h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
                 line-height: 1.3;
-            }
-            
-            .hero-content p {
-                font-size: 1rem;
             }
             
             .content-section {
@@ -307,13 +299,16 @@
             }
             
             .content-card h3 {
-                font-size: 1.2rem;
-                margin-top: 1.25rem;
+                font-size: 1.3rem;
+                margin-top: 1.5rem;
+            }
+
+            .intro-card {
+                padding: 1.5rem;
             }
             
-            .content-card h4 {
-                font-size: 1.05rem;
-                margin-top: 1rem;
+            .intro-card p {
+                font-size: 1rem;
             }
 
             .highlight-box {
@@ -323,11 +318,6 @@
 
             .alert-box {
                 padding: 1.25rem 1.25rem;
-                margin-bottom: 1.5rem;
-            }
-            
-            .indication-box {
-                padding: 1.25rem;
             }
 
             /* Force single column on mobile for stability */
@@ -355,25 +345,19 @@
             }
 
             .hero-content h1 {
-                font-size: 1.7rem;
+                font-size: 1.8rem;
                 line-height: 1.2;
             }
             
             .content-section {
                 margin: 1.5rem auto;
                 padding: 0 0.75rem;
-                width: 100%;
-                max-width: 100%;
-                box-sizing: border-box;
             }
 
             .content-card {
                 padding: 1.25rem;
                 margin-bottom: 1.5rem;
                 border-radius: 8px;
-                width: 100%;
-                max-width: 100%;
-                box-sizing: border-box;
             }
 
             .content-card h2 {
@@ -388,18 +372,25 @@
             }
             
             .content-card h3 {
-                font-size: 1.1rem;
+                font-size: 1.15rem;
                 margin-top: 1.25rem;
-            }
-            
-            .content-card h4 {
-                font-size: 1rem;
-                margin-top: 1rem;
             }
 
             .content-card p {
                 font-size: 0.95rem;
                 line-height: 1.6;
+            }
+
+            .intro-card {
+                padding: 1.25rem;
+            }
+            
+            .intro-card h2 {
+                font-size: 1.4rem;
+            }
+            
+            .intro-card p {
+                font-size: 0.95rem;
             }
 
             .highlight-box {
@@ -408,10 +399,6 @@
 
             .alert-box {
                 padding: 1rem 1.25rem;
-            }
-            
-            .indication-box {
-                padding: 1rem;
             }
 
             .two-col {
@@ -444,7 +431,7 @@
             
             .content-card li::before {
                 font-size: 0.45rem;
-                top: 6px;
+                top: 8px;
             }
         }
         /* RESPONSIVE CSS END */
@@ -455,120 +442,38 @@
 
     <section class="hero-section">
         <div class="hero-content">
-            <h1>Case Detection, Diagnosis, Treatment & Follow-Up</h1>
+            <h1>Get to know about Leishmaniasis</h1>
         </div>
     </section>
 
     <main class="content-section">
+        <div class="content-card intro-card">
+            <h2><i class="fas fa-info-circle icon"></i> Get to know about Leishmaniasis</h2>
+            <p>A protozoan parasite from more than 20 Leishmania species causes leishmaniasis. Leishmania parasites are known to be spread by more than 90 species of sandflies. The illness comes in three primary forms:</p>
+        </div>
+
         <div class="content-card">
-            <h2><i class="fas fa-search icon"></i>Case Detection</h2>
-            <div class="alert-box">
-                <h3>Cutaneous leishmaniasis (CL) typically presents as a:</h3>
-                <ul>
-                    <li>Painless papule, nodule, plaque, or non-healing ulcer</li>
-                    <li>Located mostly on exposed body areas such as the face, neck, arms, and legs
-Most patients remain asymptomatic, and lesions can persist for weeks to months.</li>
-                </ul>
+            <h2><i class="fas fa-virus icon"></i> Forms of Leishmaniasis</h2>
+            
+            <div class="highlight-box">
+                <h3>Visceral leishmaniasis</h3>
+                <p>In more than 95% of cases, visceral leishmaniasis (VL), commonly referred to as kala-azar, is fatal if treatment is not received. It is typified by sporadic episodes of fever, weight loss, liver and spleen enlargement, and anaemia. India, Brazil, and East Africa account for the majority of instances. Every year, between 50,000 and 90,000 new cases of VL are reported globally. Rare cases are being documented in Sri Lanka. It has the ability to spread and cause death.</p>
+            </div>
+
+            <div class="highlight-box">
+                <h3>Cutaneous leishmaniasis (CL)</h3>
+                <p>The most prevalent type, cutaneous leishmaniasis (CL), results in skin lesions, primarily ulcers, on exposed body parts. These may result in severe impairment or stigma, as well as permanent scarring. The Americas, the Mediterranean basin, the Middle East, and central Asia account for about 95% of CL cases. An estimated 600,000 to one million new cases are reported globally each year. Anuradhapura, Polonnaruwa, Kurunegala, Hambantota, Matara, Matale, and numerous other districts account for the majority of the more than 3,000 cases of cutaneous leishmaniasis reported in Sri Lanka each year.</p>
+            </div>
+
+            <div class="highlight-box">
+                <h3>Mucocutaneous leishmaniasis</h3>
+                <p>The mucous membranes of the mouth, throat, and nose can be partially or completely destroyed by mucocutaneous leishmaniasis. Brazil, Ethiopia, Peru, and Bolivia (the Plurinational State) account for more than 90% of cases of mucocutaneous leishmaniasis. In Sri Lanka, this is not reported.</p>
             </div>
         </div>
 
         <div class="content-card">
-            <h2><i class="fas fa-vials icon"></i>Diagnosis</h2>
-            <div class="two-col">
-                <div class="highlight-box">
-                    <h3>Clinical Criteria</h3>
-                    <p>A suspected case meets at least four of the following features:</p>
-                    <ul>
-                        <li>Residence in or travel to endemic areas.</li>
-                        <li>Painless, non-itchy lesions.</li>
-                        <li>Lesions persisting for weeks or months.</li>
-                        <li>Poor response to conventional antibiotics.</li>
-                        <li>History of similar lesions in the locality.</li>
-                    </ul>
-                </div>
-                <!-- <div>
-                    <h3>Clinical Notes</h3>
-                    <ul>
-                        <li>Most lesions are painless; absence of pruritus should raise suspicion.</li>
-                        <li>Document duration, travel history, and previous antibiotic courses.</li>
-                        <li>Photograph lesions to assist dermatology referrals.</li>
-                        <li>Notify the RMO early if criteria are met.</li>
-                    </ul>
-                </div> -->
-            </div>
-            <div class="alert-box">
-                <h3>Confirmatory Tests</h3>
-                <div class="two-col">
-                    <div>
-                        <h4>Cutaneous Leishmaniasis</h4>
-                        <ul>
-                            <li>Slit Skin Smear (SSS) – first-line diagnostic method.</li>
-                            <li>Biopsy and histology for smear-negative cases.</li>
-                            <li>PCR where available.</li>
-                            <li>Culture in select settings.</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>Visceral Leishmaniasis</h4>
-                        <ul>
-                            <li>rK-39 serology for visceral and mucocutaneous types.</li>
-                            <li>Bone marrow biopsy.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="content-card">
-            <h2><i class="fas fa-syringe icon"></i>Treatment</h2>
-            <p>Treatment for CL is offered only in government hospitals by dermatology teams, following nationally approved guidelines.</p>
-            <div class="two-col">
-                <div>
-                    <div class="indication-box">
-                    <h3>Indications for Treatment</h3>
-                    <ul>
-                        <li>All confirmed cases</li>
-                    </ul>
-                    <p>Treatment regimen will be based on:</p>
-                    <ul>
-                        <li>Lesions near vital structures (eye, nose, joints).</li>
-                        <li>Large, multiple, or progressive lesions.</li>
-                        <li>Immunocompromised patients.</li>
-                        <li>Cosmetic concerns.</li>
-                        <li>Suspected treatment failure or relapse.</li>
-                    </ul>
-                    </div>
-                </div>
-                <div>
-                    <h3>Available Treatment Options</h3>
-                    <h4>First-line Therapies</h4>
-                    <ul>
-                        <li>Intralesional Sodium Stibogluconate (IL-SSG).</li>
-                        <li>Cryotherapy.</li>
-                    </ul>
-                    <h4>Second-line Therapies</h4>
-                    <ul>
-                        <li>Systemic Sodium Stibogluconate.</li>
-                        <li>Thermotherapy.</li>
-                        <li>Oral azoles (e.g., fluconazole) in selected cases.</li>
-                        <li>Amphotericin B for complicated or atypical forms.</li>
-                        <li>Miltefosine in specific indications.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="content-card">
-            <h2><i class="fas fa-clipboard-check icon"></i> Follow-Up of Patients</h2>
-            <p>Follow-up is critical for early detection of relapse and monitoring treatment response. Patients with CL are assessed for:</p>
-            <ul>
-                <li>Lesion healing – complete re-epithelialization expected within 45 days.</li>
-                <li>Signs of relapse.</li>
-                <li>Treatment failure – lesions worsening within 14 days or failing to heal by day 45.</li>
-                <li>Adverse drug reactions.</li>
-                <li>Need for additional therapy.</li>
-            </ul>
-            <p>AMC supports follow-up through dermatology clinics and Public Health Inspector (PHI) home visits.</p>
+            <h2><i class="fas fa-exchange-alt icon"></i> Transmission</h2>
+            <p>The bites of female phlebotomine sandflies, which feed on blood to lay their eggs, can spread the Leishmania parasite. Leishmania parasites can originate from about 70 animal species, including humans.</p>
         </div>
     </main>
 

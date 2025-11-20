@@ -1881,7 +1881,7 @@
             <!-- Secondary list below dots (with its own slider) -->
             <div class="services-slider services-secondary-slider">
                 <div class="cards-grid services-secondary-grid">
-                <a href="#" class="service-card meroon">
+                <a href="leishmaniasis.php" class="service-card meroon">
                     <img src="asset/image/noimages2.jpg" alt="Leishmaniasis" class="card-image service-card-image">
                     <div class="service-card-content">
                         <h4>Leishmaniasis</h4>
@@ -1893,7 +1893,7 @@
                         <h4>Screening</h4>
                     </div>
                 </a>
-                <a href="#" class="service-card">
+                <a href="riskGroupSurveillanceLeishmaniasis.php" class="service-card">
                     <img src="asset/image/Leishmaniasis risk group surveillance.png" alt="Risk group surveillance" class="card-image service-card-image">
                     <div class="service-card-content">
                         <h4>Risk group surveillance</h4>
@@ -1905,13 +1905,13 @@
                         <h4>Case detection, diagnosis, treatment and follow-up</h4>
                     </div>
                 </a>
-                <a href="#" class="service-card">
+                <a href="sandflySurveillanceLeishmaniasis.php" class="service-card">
                     <img src="asset/image/Sandfly surveillance.png" alt="Sandfly surveillance and vector control" class="card-image service-card-image">
                     <div class="service-card-content">
                         <h4>Sandfly surveillance and vector control</h4>
                     </div>
                 </a>
-                <a href="#" class="service-card">
+                <a href="communityEngagementLeishmaniasis.php" class="service-card">
                     <img src="asset/image/Community engagement_Leishmanisis.png" alt="Community engagement" class="card-image service-card-image">
                     <div class="service-card-content">
                         <h4>Community engagement</h4>
