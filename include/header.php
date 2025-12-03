@@ -22,6 +22,14 @@
             background-color: #f8f9fa;
         }
 
+        /* --- Header Spacer --- */
+        #header-spacer {
+            display: block;
+            width: 100%;
+            min-height: 150px; /* Minimum height to prevent overlap */
+            transition: height 0.35s ease;
+        }
+
         /* --- Main Header Container --- */
         .site-header {
             width: 100%;
@@ -856,15 +864,45 @@
             if(!header || !spacer) return;
 
             function setSpacerHeight(){
-                spacer.style.height = header.offsetHeight + 'px';
+                // Force a reflow to ensure accurate height calculation
+                void header.offsetHeight;
+                var height = header.offsetHeight;
+                spacer.style.height = height + 'px';
+            }
+
+            // Set initial height
+            function initSpacer(){
+                // Use requestAnimationFrame to ensure DOM is fully rendered
+                requestAnimationFrame(function(){
+                    setSpacerHeight();
+                    // Double check after a short delay to catch any late-loading content
+                    setTimeout(setSpacerHeight, 100);
+                });
             }
 
             if(document.readyState === 'complete' || document.readyState === 'interactive'){
-                setSpacerHeight();
+                initSpacer();
             } else {
-                window.addEventListener('DOMContentLoaded', setSpacerHeight);
+                window.addEventListener('DOMContentLoaded', initSpacer);
             }
-            window.addEventListener('resize', setSpacerHeight);
+
+            // Update on resize
+            var resizeTimeout;
+            window.addEventListener('resize', function(){
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(setSpacerHeight, 100);
+            });
+
+            // Update when header state changes (condensed/expanded)
+            var observer = new MutationObserver(function(mutations) {
+                mutations.forEach(function(mutation) {
+                    if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                        // Header class changed, update spacer
+                        setTimeout(setSpacerHeight, 50);
+                    }
+                });
+            });
+            observer.observe(header, { attributes: true, attributeFilter: ['class'] });
 
             var isShown = true;
             function onScroll(){
@@ -875,9 +913,16 @@
                 } else {
                     header.classList.remove('is-condensed');
                 }
+                // Update spacer height when scrolling (header height changes)
+                setSpacerHeight();
             }
             window.addEventListener('scroll', onScroll, { passive: true });
             header.classList.add('is-visible');
+            
+            // Final update after everything loads
+            window.addEventListener('load', function(){
+                setTimeout(setSpacerHeight, 200);
+            });
         })();
     </script>
 

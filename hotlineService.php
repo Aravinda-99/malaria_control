@@ -36,7 +36,7 @@
             align-items: center;
             text-align: center;
             position: relative;
-            background-image: url('asset/image/travelbanner.png');
+            background-image: url('asset/image/Hotline.png');
             background-size: cover;
             background-position: center;
             color: white;

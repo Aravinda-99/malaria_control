@@ -37,7 +37,7 @@
             align-items: center;
             text-align: center;
             position: relative;
-            background-image: url('asset/image/travelbanner.png');
+            background-image: url('asset/image/Screening of returnees from malaria endemic countries.png');
             background-size: cover;
             background-position: center;
             color: white;
