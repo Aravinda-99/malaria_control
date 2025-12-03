@@ -11,7 +11,7 @@
         /* --- Hero Section --- */
         .hero-section {
             display: flex;
-            background: url('asset/hero/hero1.png') no-repeat center center/cover;
+            background: url('asset/hero/hero11.png') no-repeat center center/cover;
             color: #fff;
             min-height: 450px;
             align-items: center;
@@ -19,6 +19,13 @@
             position: relative;
             overflow: hidden;
             transition: background 0.5s ease-in-out;
+        }
+        
+        /* Mobile initial background */
+        @media (max-width: 768px) {
+            .hero-section {
+                background-image: url('asset/mobile/mhero11.jpg');
+            }
         }
 
         .hero-section::before {
@@ -30,6 +37,21 @@
             bottom: 0;
             background-color: rgba(0, 0, 0, 0.03); 
             z-index: 0;
+            transition: background-color 0.3s ease;
+        }
+        
+        /* Darker overlay for mobile view */
+        @media (max-width: 768px) {
+            .hero-section::before {
+                background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+            }
+        }
+        
+        /* Even darker overlay for very small mobile screens */
+        @media (max-width: 480px) {
+            .hero-section::before {
+                background-color: rgba(0, 0, 0, 0.6); /* Darker overlay for small screens */
+            }
         }
 
         /* --- Hero dots --- */
@@ -222,10 +244,10 @@
                 /* CHANGED: උස අඩු කිරීම සඳහා padding අඩු කලා */
                 padding: 4rem 1rem; 
                 /* CHANGED: උස අඩු කිරීම සඳහා min-height අඩු කලා */
-                min-height: 380px;
+                min-height: 350px;
             }
             .hero-content h1 {
-                font-size: 1.75rem; 
+                font-size: 1.5rem; 
             }
             .hero-content p {
                 font-size: 0.95rem;
@@ -268,6 +290,7 @@
             <span class="hero-dot active" data-index="0" aria-label="Slide 1"></span>
             <span class="hero-dot" data-index="1" aria-label="Slide 2"></span>
             <span class="hero-dot" data-index="2" aria-label="Slide 3"></span>
+            <span class="hero-dot" data-index="3" aria-label="Slide 4"></span>
         </div>
     </section>
 
@@ -275,15 +298,39 @@
         (function () {
             var heroSection = document.querySelector('.hero-section');
             var dots = Array.prototype.slice.call(document.querySelectorAll('.hero-dot'));
-            var images = [
+            
+            // Check if mobile view (768px and below)
+            function isMobileView() {
+                return window.innerWidth <= 768;
+            }
+            
+            // Desktop images
+            var desktopImages = [
                 'asset/hero/hero11.jpg',
                 'asset/hero/Frame3.png',
-                'asset/hero/Frame4.png'
+                'asset/hero/Frame4.png',
+                'asset/hero/hero4.jpg'
             ];
+            
+            // Mobile images
+            var mobileImages = [
+                'asset/mobile/mhero11.jpg',
+                'asset/mobile/mhero2.png',
+                'asset/mobile/mFrame4.png',
+                'asset/mobile/mhero4.jpg'
+            ];
+            
+            // Get images based on screen size
+            function getImages() {
+                return isMobileView() ? mobileImages : desktopImages;
+            }
+            
+            var images = getImages();
             var titles = [
                 'Protect our country.<br>Prevent re-introduction of Malaria',
                 'District-wise distribution of <br>Imported malaria cases 2013-2024',
-                'Countries with malaria in 2024.'
+                'Countries with malaria in 2024.',
+                'Early detection of malaria cases save life <br>and prevent spread.'
             ];
             var subtitles = [
                 'Travel smart. Stay safe.',
@@ -295,6 +342,14 @@
             var timerId;
 
             function setBackground(index) {
+                // Update images array if screen size changed
+                images = getImages();
+                
+                // Ensure index is within bounds
+                if (index >= images.length) {
+                    index = 0;
+                }
+                
                 // Preload image to prevent flicker
                 var img = new Image();
                 img.src = images[index];
@@ -384,6 +439,23 @@
             // Optional: pause on hover for desktop
             heroSection.addEventListener('mouseenter', stop);
             heroSection.addEventListener('mouseleave', start);
+            
+            // Update images when window is resized
+            var resizeTimeout;
+            window.addEventListener('resize', function() {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(function() {
+                    var wasMobile = images === mobileImages;
+                    var nowMobile = isMobileView();
+                    
+                    // Only update if switching between mobile/desktop
+                    if (wasMobile !== nowMobile) {
+                        images = getImages();
+                        // Reset to first image when switching
+                        show(0);
+                    }
+                }, 250);
+            });
         })();
     </script>
 </body>

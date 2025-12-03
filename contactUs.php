@@ -208,6 +208,41 @@
             .hero-content p { font-size: 1rem; }
             .contact-section { padding: 2rem 1rem; }
             .contact-form { grid-template-columns: 1fr; }
+            /* Smaller static Google map on mobile */
+            .map-container { 
+                height: 200px;
+                width: 100%;
+            }
+            /* SHOW Leaflet map + office details on mobile */
+            .interactive-map-section {
+                display: block;
+                margin-top: 1.5rem;
+            }
+            .map-and-details-container {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            .map-container-leaflet {
+                width: 100%;
+                height: auto;
+                min-height: 320px !important; /* force visible height on small screens */
+                position: relative;
+                z-index: 2; /* Ensure map is above any overlapping content */
+                overflow: hidden;
+            }
+            #map {
+                height: 320px !important;
+                min-height: 320px !important;
+            }
+            .details-container {
+                width: 100%;
+                position: relative;
+                z-index: 1;
+                margin-top: 0.5rem; /* small space under map */
+            }
+            .location-details-card img {
+                height: 200px;
+            }
         }
     </style>
 </head>

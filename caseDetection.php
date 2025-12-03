@@ -36,7 +36,7 @@
             align-items: center;
             text-align: center;
             position: relative;
-            background-image: url('asset/image/travelbanner.png');
+            background-image: url('asset/image/Casedetection_Treatment_Followup_Malaria.png');
             background-size: cover;
             background-position: center;
             color: white;
@@ -245,6 +245,13 @@
             .content-card h2 .icon {
                 font-size: 1.5rem;
             }
+            .justified {
+            text-align: justify;        /* main: left + right justify */
+            text-justify: inter-word;   /* better spacing (mostly for IE/Edge) */
+            line-height: 1.6;           /* optional — readability */
+            hyphens: auto;              /* allow hyphenation in long words (browser dependent) */
+            /* text-align-last: justify;  -- last line justify karanna ona nam uncomment karanna (limited support) */
+            }
         }
     </style>
 </head>
@@ -265,24 +272,24 @@
     
         <div class="content-card">
             <h2><i class="fas fa-search-plus icon"></i>Case Detection</h2>
-            <p>All patients presenting with fever — especially with a
+            <p class="justified">All patients presenting with fever — especially with a
             history of travel to malaria-endemic countries — must be screened for malaria
             before any treatment is given. Laboratory confirmation through microscopy
             and/or RDT is mandatory for diagnosis.</p>
             
             <div class="alert-box-warning">
-                <p><i class="fas fa-exclamation-triangle icon"></i>If the patient is negative, continue microscopy for three
+                <p class="justified"><i class="fas fa-exclamation-triangle icon"></i>If the patient is negative, continue microscopy for three
                 consecutive days to confirm negativity.</p>
             </div>
             
-            <p style="margin-top: 1.5rem;">Positive cases are validated through AMC reference laboratories using PCR and
+            <p class="justified" style="margin-top: 1.5rem;">Positive cases are validated through AMC reference laboratories using PCR and
             quality-assured microscopy to ensure diagnostic accuracy.</p>
         </div>
 
         <div class="content-card">
             <h2><i class="fas fa-pills icon"></i>Treatment</h2>
             <p>Once malaria is confirmed:</p>
-            <ul>
+            <ul >
                 <li>Treatment begins within two hours of laboratory confirmation.</li>
                 <li>Patients are treated as inpatients under a consultant physician, following AMC’s Guidelines
                 for the Management and Treatment of Patients with Malaria in Sri Lanka.</li>

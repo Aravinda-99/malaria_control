@@ -293,11 +293,18 @@
 
         /* Responsive adjustments */
         @media (max-width: 768px) {
+            .staff-hero-section {
+                height: 45vh;
+            }
+            .staff-hero-section h1 {
+                font-size: 2.5rem;
+                font-weight: 500;
+            }
             .about-hero-section {
-                height: 40vh;
+                height: 10vh;
             }
             .about-hero-section h1 {
-                font-size: 2rem;
+                font-size: 1rem;
             }
             .about-hero-section p {
                 font-size: 1rem;

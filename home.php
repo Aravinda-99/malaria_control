@@ -1086,6 +1086,11 @@
             .calendar {
                 flex-basis: auto;
             }
+
+            .event-list {
+                width: 100%;
+                max-width: 100%;
+            }
             
             /* Contact Section - Stack on tablet */
             .contact-section {
@@ -1400,6 +1405,7 @@
             
             .event-item {
                 padding: 0.9rem 1rem;
+                width: 100%;
             }
             
             .event-item .date {
@@ -1420,6 +1426,13 @@
                 height: 25px;
                 font-size: 0.85rem;
             }
+
+            .event-list {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .
             
             /* Contact Section - Mobile form */
             .contact-section {
@@ -1659,10 +1672,17 @@
             
             .event-item {
                 padding: 0.75rem 0.9rem;
+                width: 100%;
             }
             
             .event-item .date {
                 font-size: 1.3rem;
+            }
+
+            .event-list {
+                flex: 1;
+                width: 90%;
+                max-width: 100%;
             }
             
             /* Contact - Extra small */
@@ -1682,6 +1702,7 @@
             
             .map-container iframe {
                 height: 250px;
+                width: 110%;
             }
         }
     </style>

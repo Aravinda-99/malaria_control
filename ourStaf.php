@@ -94,25 +94,38 @@
 
         /* Individual Member Card */
         .staff-team-member {
-            background-color: #ffffff;
+            background-color:rgba(206, 206, 206, 0.56);
             text-align: center;
             padding: 15px;
             border-radius: 8px; /* Optional: for slightly rounded corners */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow */
-            width: 220px;
+            /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); Optional: adds a subtle shadow */
+            width: 230px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        /* Member Photo */
+        /* Member Photo - circular, smaller and cover to ensure correct cropping */
         .staff-team-member img {
-            width: 240px;
-            height: 240px;
-            object-fit: contain; /* Ensures the image covers the area without distortion */
-            border-radius: 2px; /* Matches the image's slightly rounded square look */
+            width: 140px;
+            height: 140px;
+            object-fit: cover; /* Fill the circle without distortion */
+            object-position: center center; /* center the focal point */
+            border-radius: 50%; /* Make image circular */
             margin-bottom: 12px;
+            border: 3px solid #ffffff; /* subtle white ring */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            background-color: #f0f0f0; /* fallback background while image loads */
+            display: block; /* remove inline descender gaps */
         }
+
+        /* (removed avatar-bg fallback - using <img> avatars only) */
+
+        /* If some images are low-resolution or badly cropped, we can provide
+           a fallback that uses the image as a background for better positioning.
+           Use the class .avatar-bg on the element to switch. This requires
+           changing <img> to a div.avatar-bg with inline style `background-image: url(...)`.
+           Leave it optional for now; object-position covers most cases. */
 
         /* Member Name */
         .staff-team-member h3 {
@@ -263,11 +276,20 @@
     <div class="staff-row-group">
         <h2 class="staff-row-title">Director</h2>
         <div class="staff-team-member">
-            <img src="asset/image/staf/s11.jpg" alt="Photo of Dr. Champa Aluthweera">
-            <h3>Dr. Champa Aluthweera </h3>
+            <img src="asset/image/profileN.jpg" alt="Photo of Dr. XXX">
+            <h3>Dr. XXX</h3>
             <p class="staff-role">Director</p>
             <p class="staff-qualifications">
-                
+             Anti Malaria Campaign
+            </p>
+        </div>
+        <!-- Added Deputy Director -->
+        <div class="staff-team-member">
+            <img src="asset/image/profileN.jpg" alt="Photo of Deputy Director">
+            <h3>Dr. XXX</h3>
+            <p class="staff-role">Deputy Director</p>
+            <p class="staff-qualifications">
+                Anti Malaria Campaign
             </p>
         </div>
     </div>
@@ -276,20 +298,32 @@
     <div class="staff-row-group">
         <h2 class="staff-row-title">Consultant Community Physician</h2>
         <div class="staff-team-member">
-            <img src="asset/image/staf/s9.jpg" alt="Photo of Dr.  M P P U Chulasiri">
-            <h3>Dr.  M P P U Chulasiri</h3>
+            <img src="asset/image/profileN.jpg" alt="Photo of Dr.  M P P U Chulasiri">
+            <h3 style="margin-bottom: 10px;">Dr. Pubudu Chulasiri</h3>
             <p class="staff-role">Consultant Community Physician</p>
             <p class="staff-qualifications">
-            MBBS (Colombo), MSc., MD (Community Medicine)
+            MBBS, MSc., MD (Community Medicine) <br> <br> MSc. (Applied Statistics)
             </p>
         </div>
 
         <div class="staff-team-member">
-            <img src="asset/image/staf/s10.jpg" alt="Photo of Dr. Nethmini Thenuwara">
-            <h3>Dr. Nethmini Thenuwara</h3>
-            <p class="staff-role">Consultant Community Physician (Surveillance, Monitoring and Evaluation)</p>
+            <img src="asset/image/profileN.jpg" alt="Photo of Dr. Nethmini Thenuwara">
+            <h3 style="margin-bottom: 10px;">Dr. Indeewarie Gunaratna</h3>
+            <p class="staff-role">Consultant Community Physician</p>
             <p class="staff-qualifications">
-            MBBS (Colombo), MSc, MD (Community Medicine)
+            MBBS, MSc., MD (Community Medicine)
+            </p>
+            <p class="staff-qualifications" style="margin-top: 5px;">
+            MSc. (Medical Entomology and Applied Parasitology)
+            </p>
+        </div>
+        <!-- Added another Consultant Community Physician -->
+        <div class="staff-team-member">
+            <img src="asset/image/profileN.jpg" alt="Photo of Consultant Community Physician">
+            <h3>Dr. Arulkumaran Segarajasingham</h3>
+            <p class="staff-role">Consultant Community Physician</p>
+            <p class="staff-qualifications" style="margin-top: 5px;">
+            MBBS, MSc., MD (Community Medicine)
             </p>
         </div>
     </div>
@@ -298,17 +332,17 @@
     <div class="staff-row-group">
         <h2 class="staff-row-title">Medical Officer</h2>
         <div class="staff-team-member">
-            <img src="asset/image/staf/s5.jpg" alt="Photo of Dr. Gayani Ranasinghe">
-            <h3>Dr. Gayani Ranasinghe</h3>
+            <img src="asset/image/profileN.jpg" alt="Photo of Dr. Gayani Ranasinghe">
+            <h3 style="margin-bottom: 10px;">Dr. Samantha Jayasinghe</h3>
             <p class="staff-role">Medical Officer</p>
             <p class="staff-qualifications">
-            MBBS, MSc (Com-Med)
+              MBBS
             </p>
         </div>
 
         <div class="staff-team-member">
-            <img src="asset/image/staf/s6.jpg" alt="Photo of Dr. S Jayasinghe">
-            <h3>Dr. S Jayasinghe</h3>
+            <img src="asset/image/profileN.jpg" alt="Photo of Dr. Shamila Jayakuru">
+            <h3 style="margin-bottom: 10px;">Dr. Shamila Jayakuru</h3>
             <p class="staff-role">Medical Officer</p>
             <p class="staff-qualifications">
             MBBS
@@ -316,8 +350,48 @@
         </div>
 
         <div class="staff-team-member">
-            <img src="asset/image/staf/s7.jpg" alt="Photo of Dr. A H N Maduranga">
-            <h3>Dr. A H N Maduranga</h3>
+            <img src="asset/image/profileN.jpg" alt="Photo of Dr. Sarojini Gallage">
+            <h3 style="margin-bottom: 10px;">Dr. Sarojini Gallage</h3>
+            <p class="staff-role">Medical Officer</p>
+            <p class="staff-qualifications">
+            MBBS
+            </p>
+        </div>
+        <div class="staff-team-member">
+            <img src="asset/image/profileN.jpg" alt="Photo of Dr. Nalin Maduranga">
+            <h3 style="margin-bottom: 10px;">Dr. Nalin Maduranga</h3>
+            <p class="staff-role">Medical Officer</p>
+            <p class="staff-qualifications">
+            MBBS
+            </p>
+        </div>
+        <div class="staff-team-member">
+            <img src="asset/image/profileN.jpg" alt="Photo of Dr. Srimal de Silva">
+            <h3 style="margin-bottom: 10px;">Dr. Srimal de Silva</h3>
+            <p class="staff-role">Medical Officer</p>
+            <p class="staff-qualifications">
+            MBBS
+            </p>
+        </div>
+        <div class="staff-team-member">
+            <img src="asset/image/profileN.jpg" alt="Photo of Dr. xxx">
+            <h3 style="margin-bottom: 10px;">Dr. xxx</h3>
+            <p class="staff-role">Medical Officer</p>
+            <p class="staff-qualifications">
+            MBBS
+            </p>
+        </div>
+        <div class="staff-team-member">
+            <img src="asset/image/profileN.jpg" alt="Photo of Dr. xxx">
+            <h3 style="margin-bottom: 10px;">Dr. xxx</h3>
+            <p class="staff-role">Medical Officer</p>
+            <p class="staff-qualifications">
+            MBBS
+            </p>
+        </div>
+        <div class="staff-team-member">
+            <img src="asset/image/profileN.jpg" alt="Photo of Dr. xxx">
+            <h3 style="margin-bottom: 10px;">Dr. xxx</h3>
             <p class="staff-role">Medical Officer</p>
             <p class="staff-qualifications">
             MBBS
@@ -329,8 +403,8 @@
     <div class="staff-row-group">
         <h2 class="staff-row-title">Parasitologist</h2>
         <div class="staff-team-member">
-            <img src="asset/image/staf/s4.jpg" alt="Photo of Ms. W M K Gunasekara">
-            <h3>Ms. W M K Gunasekara</h3>
+            <img src="asset/image/profileN.jpg" alt="Photo of Dr. Kumudu Gunasekara">
+            <h3>Dr. Kumudu Gunasekara</h3>
             <p class="staff-role">Parasitologist</p>
             <p class="staff-qualifications">
                 MSc Reading for PhD
@@ -342,38 +416,38 @@
     <div class="staff-row-group">
         <h2 class="staff-row-title">Entomologist</h2>
         <div class="staff-team-member">
-            <img src="asset/image/staf/s1.jpg" alt="Photo of Ms. P Somasekaran">
-            <h3>Ms. P Somasekaran</h3>
+            <img src="asset/image/profileN.jpg" alt="Photo of Dr. Mihirini Hewawitharana">
+            <h3 style="margin-bottom: 10px;">Dr. Mihirini Hewawitharana</h3>
             <p class="staff-role">Entomologist</p>
             <p class="staff-qualifications">
-                B.Sc. sp. Zoology (Colombo),MSc in Medical Entomology and Applied Parasitology (reading)
+            BSc. (Hons.) Zoology, M.Sc., PhD (Medical and Molecular Entomology)
             </p>
         </div>
 
         <div class="staff-team-member">
-            <img src="asset/image/staf/s2.jpg" alt="Photo of Ms. R D J Harishchandra">
-            <h3><span class="staff-title-green">Ms. R D J</span> Harishchandra</h3>
+            <img src="asset/image/profileN.jpg" alt="Photo of Dr. Jeewani Harishchandra">
+            <h3 style="margin-bottom: 10px;">Dr. Jeewani Harishchandra</h3>
             <p class="staff-role">Entomologist</p>
             <p class="staff-qualifications">
-                B.Sc. Special Degree in Zoology, M.Sc.
+            BSc. (Hons.) Zoology, M.Sc., PhD (Medical Entomology)
             </p>
         </div>
 
         <div class="staff-team-member">
-            <img src="asset/image/staf/s3.jpg" alt="Photo of Ms. H M P Hewavitharane">
-            <h3>Ms. H M P Hewavitharane</h3>
+            <img src="asset/image/profileN.jpg" alt="Photo of Mr. Thilan Fernando">
+            <h3 style="margin-bottom: 10px;">Mr. Thilan Fernando</h3>
             <p class="staff-role">Entomologist</p>
             <p class="staff-qualifications">
-                B.Sc. Special Degree in Zoology, M.Sc.
+            BSc. (Hons.) Zoology, M.Phil. (Molecular Entomology)
             </p>
         </div>
 
         <div class="staff-team-member">
-            <img src="asset/image/staf/s8.jpg" alt="Photo of Mr M A S T Fernando">
-            <h3>Mr M A S T Fernando</h3>
+            <img src="asset/image/profileN.jpg" alt="Photo of Ms. P Somasekaran">
+            <h3 style="margin-bottom: 10px;">Ms. P Somasekaran</h3>
             <p class="staff-role">Entomologist</p>
             <p class="staff-qualifications">
-            B.Sc. sp. Zoology (Kelaniya), M.Phil. (Kelaniya)
+            BSc. (Hons.) Zoology, MSc. (Medical Entomology and Applied Parasitology)
             </p>
         </div>
     </div>
@@ -383,3 +457,4 @@
 <?php include 'include/footer.php'; ?>
 </body>
 </html>
+

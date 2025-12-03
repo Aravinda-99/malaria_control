@@ -32,7 +32,7 @@
         }
 
         .hero-section {
-            min-height: 60vh; 
+            min-height: 75vh; 
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -72,7 +72,7 @@
         }
 
         .hero-content h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             margin: 0;
             font-weight: 500;
             text-shadow: 0 2px 4px rgba(0,0,0,0.4);

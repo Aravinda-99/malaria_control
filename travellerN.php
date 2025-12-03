@@ -60,7 +60,7 @@
 
             height: 60vh;
 
-            min-height: 450px;
+            min-height: 480px;
 
             display: flex;
 
@@ -74,7 +74,7 @@
 
             position: relative;
 
-            background-image: url('asset/image/travelBanner.png');
+            background-image: url('asset/image/traveller12.jpg');
 
             background-size: cover;
 
@@ -556,6 +556,222 @@
 
             margin-right: 8px;
 
+        }
+
+        /* --- View Button Styling --- */
+        .view-button {
+            background-color: rgb(5, 44, 0);
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .view-button:hover {
+            background-color: rgb(8, 65, 0);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .view-button .icon {
+            font-size: 1rem;
+        }
+
+        /* --- Modal/Image Viewer Styling --- */
+        .country-list-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .country-list-modal.active {
+            display: flex;
+        }
+
+        .modal-container {
+            position: relative;
+            width: 90%;
+            max-width: 1200px;
+            max-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            background-color: rgb(5, 44, 0);
+            color: white;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 1.25rem;
+            transition: all 0.3s ease;
+            border: none;
+        }
+
+        .modal-close:hover {
+            background-color: rgb(8, 65, 0);
+            transform: scale(1.1);
+        }
+
+        .modal-image {
+            max-width: 100%;
+            max-height: 85vh;
+            object-fit: contain;
+            border-radius: 5px;
+        }
+
+        /* Country List Content Styling */
+        .country-list-content {
+            width: 100%;
+            max-height: 85vh;
+            overflow-y: auto;
+            padding: 1rem 0;
+        }
+
+        .country-list-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: rgb(5, 44, 0);
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .country-list-columns {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .country-column {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .country-column h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: rgb(5, 44, 0);
+            margin-top: 0;
+            margin-bottom: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid rgb(5, 44, 0);
+            text-align: center;
+        }
+
+        .country-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .country-list li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #333;
+            line-height: 1.6;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .country-list li:last-child {
+            border-bottom: none;
+        }
+
+        .country-list li::before {
+            content: '\f0a9';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: rgb(5, 44, 0);
+            opacity: 0.6;
+            font-size: 0.85rem;
+        }
+
+        .country-note {
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+            margin-top: 0.25rem;
+            padding-left: 1.5rem;
+        }
+
+        @media (max-width: 1024px) {
+            .country-list-columns {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .modal-container {
+                width: 95%;
+                padding: 1rem;
+            }
+
+            .modal-close {
+                top: -35px;
+                width: 2rem;
+                height: 2rem;
+                font-size: 1rem;
+            }
+
+            .modal-image {
+                max-height: 80vh;
+            }
+
+            .country-list-content {
+                max-height: 80vh;
+            }
+
+            .country-list-title {
+                font-size: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .country-list-columns {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .country-column {
+                padding: 1rem;
+            }
+
+            .country-column h3 {
+                font-size: 1.25rem;
+            }
         }
 
 
@@ -1065,6 +1281,14 @@ Check with the <strong>Anti-Malaria Campaign</strong> or visit the WHO website t
 
         </div> -->
 
+        <div class="content-card">
+            <h2><i class="fas fa-globe-americas icon"></i>Malaria Endemic Country List – 2025</h2>
+            <p>View the complete list of countries where malaria is endemic. This information is crucial for travellers planning to visit these regions.</p>
+            <button class="view-button" onclick="openCountryListModal()">
+                <i class="fas fa-eye icon"></i>View Country List
+            </button>
+        </div>
+
         <div class="alert-box-summary">
 
             <h3>Together, Let's Keep Sri Lanka Malaria-Free</h3>
@@ -1087,7 +1311,153 @@ Check with the <strong>Anti-Malaria Campaign</strong> or visit the WHO website t
 
     </main>
 
+    <!-- Country List Modal -->
+    <div class="country-list-modal" id="countryListModal" onclick="closeCountryListModal(event)">
+        <div class="modal-container">
+            <button class="modal-close" onclick="closeCountryListModal(event)">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="country-list-content">
+                <h2 class="country-list-title">Malaria Endemic Country List – 2025</h2>
+                <div class="country-list-columns">
+                    <!-- Africa Column -->
+                    <div class="country-column">
+                        <h3>AFRICA</h3>
+                        <ul class="country-list">
+                            <li>Angola</li>
+                            <li>Benin</li>
+                            <li>Botswana</li>
+                            <li>Burkina Faso</li>
+                            <li>Burundi</li>
+                            <li>Cameroon</li>
+                            <li>Central African Republic</li>
+                            <li>Chad</li>
+                            <li>Comoros</li>
+                            <li>Congo</li>
+                            <li>Cote d'Ivoire</li>
+                            <li>Djibouti</li>
+                            <li>Democratic Republic of Congo</li>
+                            <li>Equatorial Guinea</li>
+                            <li>Eritrea</li>
+                            <li>Eswatini</li>
+                            <li>Ethiopia</li>
+                            <li>Gabon</li>
+                            <li>Gambia</li>
+                            <li>Ghana</li>
+                            <li>Guinea</li>
+                            <li>Guinea-Bissau</li>
+                            <li>Kenya</li>
+                            <li>Liberia</li>
+                            <li>Madagascar</li>
+                            <li>Malawi</li>
+                            <li>Mali</li>
+                            <li>Mauritania</li>
+                            <li>Mayotte</li>
+                            <li>Mozambique</li>
+                            <li>Namibia</li>
+                            <li>Niger</li>
+                            <li>Nigeria</li>
+                            <li>Rwanda</li>
+                            <li>Sao Tome & Principe</li>
+                            <li>Senegal</li>
+                            <li>Sierra Leone</li>
+                            <li>Somalia</li>
+                            <li>South Africa</li>
+                            <li>Sudan</li>
+                            <li>South Sudan</li>
+                            <li>Togo</li>
+                            <li>Tanzania</li>
+                            <li>Uganda</li>
+                            <li>Zambia</li>
+                            <li>Zimbabwe</li>
+                        </ul>
+                    </div>
 
+                    <!-- Asia Column -->
+                    <div class="country-column">
+                        <h3>ASIA</h3>
+                        <ul class="country-list">
+                            <li>Afghanistan</li>
+                            <li>Bangladesh</li>
+                            <li>Bhutan</li>
+                            <li>Cambodia</li>
+                            <li>India</li>
+                            <li>Indonesia</li>
+                            <li>Iran</li>
+                            <li>Iraq</li>
+                            <li>Laos</li>
+                            <li>Malaysia</li>
+                            <li>Myanmar</li>
+                            <li>Nepal</li>
+                            <li>North Korea</li>
+                            <li>Pakistan</li>
+                            <li>Papua New Guinea</li>
+                            <li>Philippines</li>
+                            <li>Saudi Arabia
+                                <div class="country-note">(Yemen border)</div>
+                            </li>
+                            <li>Solomon Islands</li>
+                            <li>South Korea</li>
+                            <li>Thailand</li>
+                            <li>Turkey</li>
+                            <li>Vanuatu</li>
+                            <li>Vietnam</li>
+                            <li>Yemen</li>
+                        </ul>
+                    </div>
+
+                    <!-- The Americas Column -->
+                    <div class="country-column">
+                        <h3>THE AMERICAS</h3>
+                        <ul class="country-list">
+                            <li>Belize</li>
+                            <li>Bolivia</li>
+                            <li>Brazil</li>
+                            <li>Colombia</li>
+                            <li>Costa Rica</li>
+                            <li>Dominican Republic</li>
+                            <li>Ecuador</li>
+                            <li>French Guiana</li>
+                            <li>Guatemala</li>
+                            <li>Guyana</li>
+                            <li>Haiti</li>
+                            <li>Honduras</li>
+                            <li>Mexico</li>
+                            <li>Nicaragua</li>
+                            <li>Panama</li>
+                            <li>Peru</li>
+                            <li>Venezuela</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openCountryListModal() {
+            document.getElementById('countryListModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeCountryListModal(event) {
+            // Close if clicking the close button or the overlay (not the container)
+            if (!event || event.target.classList.contains('modal-close') || event.target.id === 'countryListModal') {
+                document.getElementById('countryListModal').classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const modal = document.getElementById('countryListModal');
+                if (modal.classList.contains('active')) {
+                    closeCountryListModal();
+                }
+            }
+        });
+    </script>
 
     <?php include 'include/footer.php'; ?>
 
